@@ -1,0 +1,95 @@
+extends CharacterBody2D
+
+@export var SPEED = 300.0
+const JUMP_VELOCITY = -600.0
+
+@export var post_knockback_wait := 0.4
+
+var knockback_timer := 0.0
+var post_knockback_timer := 0.0
+@onready var camera: Camera2D = get_viewport().get_camera_2d()
+@onready var animation_player: AnimationPlayer = $AnimationPlayer
+@onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+
+
+
+func apply_knockback(direction: Vector2, force: float) -> void:
+	velocity = direction * force
+	knockback_timer = 0.2
+	post_knockback_timer = 0.0
+
+
+func _physics_process(delta: float) -> void:
+
+	# Knockback
+	if knockback_timer > 0:
+		knockback_timer -= delta
+		velocity += get_gravity() * delta
+		move_and_slide()
+
+		# Knockback just finished
+		if knockback_timer <= 0:
+			post_knockback_timer = post_knockback_wait
+
+		return
+
+	# Post-knockback penalty
+	if post_knockback_timer > 0:
+		post_knockback_timer -= delta
+
+		velocity.x = 0
+
+		if not is_on_floor():
+			velocity += get_gravity() * delta
+
+		move_and_slide()
+		return
+
+	# Gravity
+	if not is_on_floor():
+		velocity += get_gravity() * delta
+
+	# Jump
+	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+		velocity.y = JUMP_VELOCITY
+
+	if Input.is_action_just_pressed("ui_up") and is_on_floor():
+		velocity.y = JUMP_VELOCITY
+
+	var direction := Input.get_axis("ui_left", "ui_right")
+
+	if direction:
+		velocity.x = direction * SPEED
+		animated_sprite_2d.flip_h = direction < 0
+	else:
+		velocity.x = 0
+
+	# Slide
+	if Input.is_action_pressed("ui_down"):
+		velocity.y = -JUMP_VELOCITY
+		animated_sprite_2d.play("Slide")
+		animation_player.play("Slide")
+
+	# Run
+	elif direction != 0:
+		animated_sprite_2d.play("Run")
+
+	# Idle
+	else:
+		animated_sprite_2d.play("Idle")
+
+	move_and_slide()
+
+	if camera:
+		var half_width := get_viewport_rect().size.x / 2.0
+
+		var left_edge := camera.global_position.x - half_width
+		var right_edge := camera.global_position.x + half_width
+
+		if global_position.x < left_edge + 50:
+			global_position.x = left_edge + 50
+
+		if global_position.x > right_edge - 100:
+			camera.speed_up(delta)
+		else:
+			camera.slow_down(delta)

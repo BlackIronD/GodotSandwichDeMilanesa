@@ -1,0 +1,5 @@
+res://level.tscn
+res://areae_end.tscn
+res://player.tscn
+res://obstacle.tscn
+res://Scripts/Obstacle.gd
