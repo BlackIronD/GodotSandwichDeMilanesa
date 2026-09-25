@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://c6yfr8q5yeigv"]
+
+[node name="Mejoras" type="Control" unique_id=662157870]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1531869927]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0.64262706, 0.3157021, 1)
+
+[node name="Label" type="Label" parent="." unique_id=1328815459]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -79.0
+offset_top = -11.5
+offset_right = 79.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.2074426, 1.2357104)
+text = "TIENDA DE MEJORAS"

@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://ctuyrwwpjmjh6"]
+
+[ext_resource type="Texture2D" uid="uid://b3kkkr64oy2jf" path="res://Arte/imgmenu.png" id="1_bj1uy"]
+[ext_resource type="Script" uid="uid://d2yxmdg07xoyr" path="res://menu_principal.gd" id="1_gmcsc"]
+[ext_resource type="Texture2D" uid="uid://c85c2uh3s6ac4" path="res://Arte/botonjugar2.png" id="3_ul6ys"]
+
+[node name="MenuPrincipal" type="Control" unique_id=275778130]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gmcsc")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=446691835]
+layout_mode = 0
+offset_right = 1152.0
+offset_bottom = 648.0
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=541910412]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_bj1uy")
+expand_mode = 1
+
+[node name="BotonJugar" type="TextureButton" parent="." unique_id=113141446]
+layout_mode = 0
+offset_left = 301.0
+offset_top = 93.0
+offset_right = 854.0
+offset_bottom = 229.0
+texture_normal = ExtResource("3_ul6ys")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2134553650]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -166.0
+offset_top = -89.0
+offset_right = 169.0
+offset_bottom = 261.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 15
+
+[node name="BotonOpciones" type="Button" parent="VBoxContainer" unique_id=1505806287]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "OPCIONES"
+
+[node name="BotonMejoras" type="Button" parent="VBoxContainer" unique_id=1141752916]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "MEJORAS"
+
+[node name="BotonVehiculos" type="Button" parent="VBoxContainer" unique_id=1882304598]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "VEHÍCULOS
+"
+
+[node name="BotonCreditos" type="Button" parent="VBoxContainer" unique_id=1927722639]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "CRÉDITOS"
+
+[node name="BotonSalir" type="Button" parent="VBoxContainer" unique_id=1457597555]
+layout_mode = 2
+theme_override_font_sizes/font_size = 36
+text = "SALIR"
+
+[connection signal="pressed" from="BotonJugar" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/BotonMejoras" to="." method="_on_boton_mejoras_pressed"]
+[connection signal="pressed" from="VBoxContainer/BotonSalir" to="." method="_on_boton_salir_pressed"]
