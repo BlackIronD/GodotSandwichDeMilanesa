@@ -17,16 +17,16 @@ func sandwich_state(new_state: int) -> void:
 	
 	match state:
 		0:
-			sprite.texture = load("res://Sanwich.jpg")
+			sprite.texture = load("res://Arte/Sanwich.jpg")
 		
 		1:
-			sprite.texture = load("res://Sanwiahstate1.png")
+			sprite.texture = load("res://Arte/Sanwiahstate1.png")
 		
 		2:
-			sprite.texture = load("res://Sanwiahstate2.png")
+			sprite.texture = load("res://Arte/Sanwiahstate2.png")
 		
 		3:
-			sprite.texture = load("res://Sanwiahstate3.png")
+			sprite.texture = load("res://Arte/Sanwiahstate3.png")
 
 
 func _process(delta: float) -> void:
