@@ -1,0 +1,26 @@
+78098b89c88a74ebe8c20117b8754620
+::res://::1790341310
+areae_end.tscn::PackedScene::5450210693918614891::1790290799::0::1::::<><><>0<>0<><>::uid://du1hrlqxh3i4y::::res://Scripts/EndScript.gd<>uid://84w0nmqfeg0a::::res://Arte/Sanwich.jpg<>uid://bjumjt7atdj6f::::res://Arte/Sanwiahstate1.png<>uid://xmbwrh8cdu1r::::res://Arte/Sanwiahstate2.png<>uid://dg3r30a3no5je::::res://Arte/Sanwiahstate3.png<>uid://b80atco4jb530::::res://icon.svg
+coin.tscn::PackedScene::2648656114419898838::1790290799::0::1::::<><><>0<>0<><>::uid://b80atco4jb530::::res://icon.svg
+icon.svg::CompressedTexture2D::4754296025687548545::1790290799::1790290897::1::::<><><>0<>0<>e0dbbfebd26b73a2eadc1b9c74e9415c<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+level.tscn::PackedScene::5455374014304218998::1790336149::0::1::::<><><>0<>0<><>::uid://b80atco4jb530::::res://icon.svg<>uid://84w0nmqfeg0a::::res://Arte/Sanwich.jpg<>uid://06jbi1p0lyj5::::res://player.tscn<>uid://b3d4jo8rd2rak::::res://Scripts/TimeLimit.gd<>uid://cjwef57y1ty0b::::res://areae_end.tscn<>uid://dhw6dbnstu78p::::res://Scripts/CamraSlide.gd<>uid://whp651biq2pp::::res://obstacle.tscn
+menu_principal.gd::GDScript::9105323983782545873::1790341310::0::1::::<>Control<><>0<>0<><>::
+menu_principal.tscn::PackedScene::6149205708106232321::1790341310::0::1::::<><><>0<>0<><>::uid://b3kkkr64oy2jf::::res://Arte/imgmenu.png<>uid://d2yxmdg07xoyr::::res://menu_principal.gd<>uid://c85c2uh3s6ac4::::res://Arte/botonjugar2.png
+obstacle.tscn::PackedScene::1559572934739885465::1790290799::0::1::::<><><>0<>0<><>::uid://da3mpbfuuylci::::res://Scripts/Obstacle.gd<>uid://b80atco4jb530::::res://icon.svg
+player.tscn::PackedScene::1819265501122581880::1790290799::0::1::::<><><>0<>0<><>::uid://ccnwrefje3rd2::::res://Scripts/player.gd<>uid://lhyn2var8l7g::::res://Arte/Untitled14-ezgif.com-gif-to-sprite-converter.png
+::res://Arte/::1790342068
+botonhover.png::CompressedTexture2D::4269926598213994008::1790342068::1790342069::1::::<><><>0<>0<>7d7840dfc22e5916053667d6fc462b1d<>res://.godot/imported/botonhover.png-f9ea5c0a5c2c5954ed45659c02c82c0a.ctex::
+botonjugar2.png::CompressedTexture2D::7151175253062127417::1790339452::1790339463::1::::<><><>0<>0<>2d2227304bceea5f364d0ebf0b1afc30<>res://.godot/imported/botonjugar2.png-decac26ed1222dfa5b60ac03abc9f793.ctex::
+download (3).png::CompressedTexture2D::4074521738852760289::1790290799::1790339372::1::::<><><>0<>0<>be4c5e83aec74986da26cc074dca41ea<>res://.godot/imported/download (3).png-ae5545f6049ca9ba90ac2992a361eccb.ctex::
+imgmenu.png::CompressedTexture2D::4372978053088519331::1790295074::1790295075::1::::<><><>0<>0<>b113fcae433bc62d646334653a7c2514<>res://.godot/imported/imgmenu.png-ed4cf17c60d136d6a1d593fcb8351c35.ctex::
+Sanwiahstate1.png::CompressedTexture2D::3060153554977843471::1790290799::1790290897::1::::<><><>0<>0<>30f2a1048a9029ff266a61a6882bb4b1<>res://.godot/imported/Sanwiahstate1.png-769f7079f2eb2a3286dde2dabd1a8856.ctex::
+Sanwiahstate2.png::CompressedTexture2D::1639216846394903277::1790290799::1790290897::1::::<><><>0<>0<>35497719bd8fd72c527a67045ed227a8<>res://.godot/imported/Sanwiahstate2.png-8572e036ed9a74848d5cc50614d58493.ctex::
+Sanwiahstate3.png::CompressedTexture2D::7639281195501441262::1790290799::1790290897::1::::<><><>0<>0<>d7ea18c2df9133716f463c56b066fcaf<>res://.godot/imported/Sanwiahstate3.png-360a990c49e3487a656b2682270f2f8b.ctex::
+Sanwich.jpg::CompressedTexture2D::2377479915686305114::1790290799::1790290897::1::::<><><>0<>0<>f46b1db387c6fe88849b2a5aa6b2079b<>res://.godot/imported/Sanwich.jpg-db3ce0235a0aed69e2147d6bee11f397.ctex::
+Untitled14-ezgif.com-gif-to-sprite-converter.png::CompressedTexture2D::788009798039308618::1790290799::1790290898::1::::<><><>0<>0<>17717f07181f57ec4f3fbeb2028d97f5<>res://.godot/imported/Untitled14-ezgif.com-gif-to-sprite-converter.png-fc1ce9b5d8fd46c5748f9c23ff2b92a5.ctex::
+::res://Scripts/::1790337298
+CamraSlide.gd::GDScript::7697887924742179777::1790290799::0::1::::<>Camera2D<><>0<>0<><>::
+EndScript.gd::GDScript::8617168726420455618::1790290799::0::1::::<>Area2D<><>0<>0<><>::
+Obstacle.gd::GDScript::7217820080198511416::1790290799::0::1::::<>Node2D<><>0<>0<><>::
+player.gd::GDScript::4941422316035096517::1790290799::0::1::::<>CharacterBody2D<><>0<>0<><>::
+TimeLimit.gd::GDScript::4359679090838498486::1790337298::0::1::::<>Timer<><>0<>0<><>::
