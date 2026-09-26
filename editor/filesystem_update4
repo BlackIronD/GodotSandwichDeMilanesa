@@ -1,5 +1,8 @@
-res://level.tscn
 res://areae_end.tscn
+res://Scripts/TimeLimit.gd
 res://player.tscn
-res://obstacle.tscn
+res://back_pack.gd
 res://Scripts/Obstacle.gd
+res://Scripts/player.gd
+res://Scripts/EndScript.gd
+res://level.tscn
