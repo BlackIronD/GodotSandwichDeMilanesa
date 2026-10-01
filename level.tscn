@@ -1,0 +1,188 @@
+[gd_scene format=3 uid="uid://cjyvhig114x31"]
+
+[ext_resource type="Texture2D" uid="uid://b80atco4jb530" path="res://icon.svg" id="1_u52ul"]
+[ext_resource type="Texture2D" uid="uid://84w0nmqfeg0a" path="res://Arte/Sanwich.jpg" id="2_0b4ue"]
+[ext_resource type="PackedScene" uid="uid://06jbi1p0lyj5" path="res://player.tscn" id="2_vonw3"]
+[ext_resource type="Script" uid="uid://b3d4jo8rd2rak" path="res://Scripts/TimeLimit.gd" id="3_oi3di"]
+[ext_resource type="PackedScene" uid="uid://cjwef57y1ty0b" path="res://areae_end.tscn" id="4_n6hdu"]
+[ext_resource type="PackedScene" uid="uid://whp651biq2pp" path="res://obstacle.tscn" id="6_1ainy"]
+[ext_resource type="Script" uid="uid://dhw6dbnstu78p" path="res://Scripts/CamraSlide.gd" id="8_2orkt"]
+[ext_resource type="Texture2D" uid="uid://b82d5nxnpx1eb" path="res://Arte/parallax backgound pack/_01_ground.png" id="8_8cye3"]
+[ext_resource type="Texture2D" uid="uid://2hfdejnpcft" path="res://Arte/parallax backgound pack/_03_distant_trees.png" id="9_2orkt"]
+[ext_resource type="Texture2D" uid="uid://bbq52475qc06j" path="res://Arte/parallax backgound pack/_04_bushes.png" id="10_aicyk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fx85w"]
+size = Vector2(534, 67)
+
+[node name="Level" type="Node2D" unique_id=860741880]
+
+[node name="AreaeEnd" parent="." unique_id=681665101 instance=ExtResource("4_n6hdu")]
+position = Vector2(1920, 308)
+disable_mode = 2
+
+[node name="Player" parent="." unique_id=61275997 instance=ExtResource("2_vonw3")]
+position = Vector2(-87, 386)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=477890269]
+position = Vector2(10, 378)
+scale = Vector2(1.72, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=556889498]
+position = Vector2(592.05994, 106.5)
+scale = Vector2(10.2040615, 0.5234375)
+texture = ExtResource("1_u52ul")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1710601393]
+position = Vector2(591.55994, 107.5)
+scale = Vector2(2.4505062, 1)
+shape = SubResource("RectangleShape2D_fx85w")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=1837187629]
+position = Vector2(1838, 378)
+scale = Vector2(1.72, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2" unique_id=457797653]
+position = Vector2(592.05994, 106.5)
+scale = Vector2(10.2040615, 0.5234375)
+texture = ExtResource("1_u52ul")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=1761308545]
+position = Vector2(591.55994, 107.5)
+scale = Vector2(2.4505062, 1)
+shape = SubResource("RectangleShape2D_fx85w")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="." unique_id=530131743]
+position = Vector2(617, 341.00003)
+scale = Vector2(0.16017507, 0.6453999)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D3" unique_id=2115796484]
+position = Vector2(592.05994, 106.5)
+scale = Vector2(10.2040615, 0.5234375)
+texture = ExtResource("1_u52ul")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3" unique_id=389927022]
+position = Vector2(591.55994, 107.5)
+scale = Vector2(2.4505062, 1)
+shape = SubResource("RectangleShape2D_fx85w")
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="." unique_id=119127041]
+position = Vector2(1343, 221)
+scale = Vector2(0.16307715, 0.7770008)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D6" unique_id=1507343526]
+position = Vector2(592.05994, 106.5)
+scale = Vector2(10.2040615, 0.5234375)
+texture = ExtResource("1_u52ul")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6" unique_id=1314803978]
+position = Vector2(591.55994, 107.5)
+scale = Vector2(2.4505062, 1)
+shape = SubResource("RectangleShape2D_fx85w")
+
+[node name="Obstacle" parent="." unique_id=199272284 instance=ExtResource("6_1ainy")]
+position = Vector2(226.00003, 370.99997)
+scale = Vector2(0.6439645, 0.22948706)
+
+[node name="Obstacle2" parent="." unique_id=850504583 instance=ExtResource("6_1ainy")]
+position = Vector2(709.00006, 425.99997)
+scale = Vector2(0.6439645, 0.22948706)
+
+[node name="Obstacle3" parent="." unique_id=500063031 instance=ExtResource("6_1ainy")]
+position = Vector2(1110, 414.99997)
+scale = Vector2(0.6439645, 0.22948706)
+
+[node name="Obstacle4" parent="." unique_id=320233304 instance=ExtResource("6_1ainy")]
+position = Vector2(1440, 306.99994)
+scale = Vector2(0.6439645, 0.22948706)
+
+[node name="01Ground" type="Sprite2D" parent="." unique_id=345937418]
+z_index = -2
+position = Vector2(916, -53)
+texture = ExtResource("8_8cye3")
+
+[node name="03DistantTrees" type="Sprite2D" parent="." unique_id=190212391]
+z_index = -3
+position = Vector2(909, -11)
+texture = ExtResource("9_2orkt")
+
+[node name="04Bushes" type="Sprite2D" parent="." unique_id=129700276]
+z_index = -3
+position = Vector2(884, 17)
+texture = ExtResource("10_aicyk")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1939341080]
+position = Vector2(25.07, 231)
+offset = Vector2(0, -13.16)
+zoom = Vector2(1.06, 1.06)
+script = ExtResource("8_2orkt")
+
+[node name="Control" type="Control" parent="Camera2D" unique_id=2054909362]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -647.07
+offset_top = -319.0
+offset_right = 506.93
+offset_bottom = 323.0
+
+[node name="TemperaturaSandwich" type="ProgressBar" parent="Camera2D/Control" unique_id=257886665]
+modulate = Color(18.892157, 0, 0, 1)
+self_modulate = Color(18.892157, 18.892157, 18.892157, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.934
+anchor_bottom = 0.91600007
+offset_left = 1024.0001
+offset_top = 126.0
+offset_right = -3.8359375
+offset_bottom = -362.07202
+scale = Vector2(1.0707814, 1.2238864)
+max_value = 600.0
+step = 1.0
+value = 600.0
+fill_mode = 3
+
+[node name="Sprite2D" type="Sprite2D" parent="Camera2D/Control" unique_id=106149827]
+position = Vector2(1052.9999, 70)
+scale = Vector2(0.17991069, 0.1619387)
+texture = ExtResource("2_0b4ue")
+
+[node name="Tiempo" type="Timer" parent="Camera2D/Control" unique_id=659249927]
+autostart = true
+script = ExtResource("3_oi3di")
+
+[node name="CantidadSangu" type="Label" parent="Camera2D/Control" unique_id=34962284]
+texture_filter = 2
+layout_mode = 0
+offset_left = 1113.0001
+offset_top = 75.0
+offset_right = 1153.0001
+offset_bottom = 98.0
+scale = Vector2(2.119024, 1.8895631)
+text = "x2"
+
+[node name="EndPanel" type="Control" parent="Camera2D" unique_id=2070445865]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="Camera2D/EndPanel" unique_id=133885398]
+layout_mode = 0
+offset_left = -201.07
+offset_top = -238.0
+offset_right = -161.07
+offset_bottom = -198.0
+scale = Vector2(9.455576, 10.273192)
+
+[node name="Label" type="Label" parent="Camera2D/EndPanel/Panel" unique_id=727648689]
+texture_filter = 1
+layout_mode = 0
+offset_left = 0.52878857
+offset_top = 3.8936293
+offset_right = 296.52878
+offset_bottom = 169.89363
+scale = Vector2(0.050077677, 0.03433911)
+theme_override_font_sizes/font_size = 121
+text = "Pago: "
+
+[connection signal="timeout" from="Camera2D/Control/Tiempo" to="Camera2D/Control/Tiempo" method="_on_timeout"]

@@ -5,49 +5,18 @@ const JUMP_VELOCITY = -600.0
 
 @export var post_knockback_wait := 0.4
 
-# Backpack
-@export var backpack_level := 1
-@export var sandwich_quantity := 3
-
-
-@export var hits_per_sandwich := 3
-var sandwich_hits := 0
-
 var knockback_timer := 0.0
 var post_knockback_timer := 0.0
-
 @onready var camera: Camera2D = get_viewport().get_camera_2d()
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
-@onready var cantidad_sangu: Label = $"../Camera2D/Control/CantidadSangu"
+
 
 
 func apply_knockback(direction: Vector2, force: float) -> void:
 	velocity = direction * force
 	knockback_timer = 0.2
 	post_knockback_timer = 0.0
-
-
-func take_hit() -> void:
-	if sandwich_quantity <= 0:
-		return
-
-	# Damage current sandwich
-	sandwich_hits += 1
-
-	print("Sandwich damage: ", sandwich_hits, "/", hits_per_sandwich)
-
-	# Destroy sandwich after 3 hits
-	if sandwich_hits >= hits_per_sandwich:
-		sandwich_quantity -= 1
-		sandwich_hits = 0
-
-		print("Sandwich destroyed!")
-		print("quadan: ", sandwich_quantity)
-		cantidad_sangu.text = "x"+ str(sandwich_quantity)
-		if sandwich_quantity <= 0:
-			print("Sin sannguches")
-			
 
 
 func _physics_process(delta: float) -> void:
