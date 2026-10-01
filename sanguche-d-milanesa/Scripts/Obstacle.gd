@@ -12,16 +12,23 @@ func _ready() -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	if body is CharacterBody2D:
-		
+
 		var difference = body.global_position - global_position
-		
-		#sanguche
+
+		body.take_hit()
+
 		tiempo.sandwich_state((tiempo.state + 1) % 4)
-		
-		#gracias a dios por redit y su incomesurable sabiduria, esot melo robo
+
+		# Knockback
 		if abs(difference.x) > abs(difference.y):
 			var direction_x = sign(difference.x)
-			body.apply_knockback(Vector2(direction_x, 0), knockback_force)
+			body.apply_knockback(
+				Vector2(direction_x, 0),
+				knockback_force
+			)
 		else:
 			var direction_y = sign(difference.y)
-			body.apply_knockback(Vector2(0, direction_y), knockback_force)
+			body.apply_knockback(
+				Vector2(0, direction_y),
+				knockback_force
+			)

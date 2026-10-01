@@ -57,6 +57,16 @@ texture = ExtResource("2_0b4ue")
 autostart = true
 script = ExtResource("3_oi3di")
 
+[node name="CantidadSangu" type="Label" parent="Camera2D/Control" unique_id=34962284]
+texture_filter = 2
+layout_mode = 0
+offset_left = 1113.0001
+offset_top = 75.0
+offset_right = 1153.0001
+offset_bottom = 98.0
+scale = Vector2(2.119024, 1.8895631)
+text = "x2"
+
 [node name="EndPanel" type="Control" parent="Camera2D" unique_id=2070445865]
 layout_mode = 3
 anchors_preset = 0
