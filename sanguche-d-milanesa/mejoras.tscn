@@ -1,5 +1,10 @@
 [gd_scene format=3 uid="uid://c6yfr8q5yeigv"]
 
+[ext_resource type="Texture2D" uid="uid://v80huggi6hsr" path="res://Arte/FondoMejoras.png" id="1_le2be"]
+[ext_resource type="Script" uid="uid://b6acp2o217iy" path="res://mejoras.gd" id="1_mtvv0"]
+[ext_resource type="Texture2D" uid="uid://bqy20f1ra3ole" path="res://Arte/CartaMejoras.png" id="2_mtvv0"]
+[ext_resource type="Texture2D" uid="uid://b0hvsagehso3r" path="res://Arte/moneda.png" id="4_0mo0r"]
+
 [node name="Mejoras" type="Control" unique_id=662157870]
 layout_mode = 3
 anchors_preset = 15
@@ -7,28 +12,271 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_mtvv0")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1531869927]
+[node name="FondoTienda" type="TextureRect" parent="." unique_id=760627268]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0.64262706, 0.3157021, 1)
+texture = ExtResource("1_le2be")
+expand_mode = 1
 
-[node name="Label" type="Label" parent="." unique_id=1328815459]
+[node name="DineroDisponible" type="HBoxContainer" parent="." unique_id=1071373239]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 22.0
+offset_right = 302.0
+offset_bottom = 60.0
+
+[node name="Moneda" type="TextureRect" parent="DineroDisponible" unique_id=573595933]
+layout_mode = 2
+texture = ExtResource("4_0mo0r")
+
+[node name="TextoDinero" type="Label" parent="DineroDisponible" unique_id=989500898]
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+text = "DINERO DISPONIBLE: "
+
+[node name="CantidadDinero" type="Label" parent="DineroDisponible" unique_id=1629615449]
+layout_mode = 2
+theme_override_font_sizes/font_size = 29
+text = "$75.000"
+
+[node name="TiendaScroll" type="ScrollContainer" parent="." unique_id=1119806396]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -79.0
-offset_top = -11.5
-offset_right = 79.0
-offset_bottom = 11.5
-grow_horizontal = 2
-grow_vertical = 2
-scale = Vector2(1.2074426, 1.2357104)
-text = "TIENDA DE MEJORAS"
+anchors_preset = -1
+anchor_left = 0.142
+anchor_top = 0.725
+anchor_right = 0.84800005
+anchor_bottom = 0.77900004
+offset_left = 70.359985
+offset_top = -246.0
+offset_right = -31.160156
+offset_bottom = 140.67993
+horizontal_scroll_mode = 0
+
+[node name="Cartas" type="GridContainer" parent="TiendaScroll" unique_id=414788992]
+layout_mode = 2
+columns = 3
+
+[node name="Mejora1" type="VBoxContainer" parent="TiendaScroll/Cartas" unique_id=1421580923]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="CartaMejora1" type="TextureRect" parent="TiendaScroll/Cartas/Mejora1" unique_id=153335333]
+layout_mode = 2
+texture = ExtResource("2_mtvv0")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TiendaScroll/Cartas/Mejora1" unique_id=1080662914]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Moneda" type="TextureRect" parent="TiendaScroll/Cartas/Mejora1/HBoxContainer" unique_id=1720108732]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("4_0mo0r")
+
+[node name="Precio" type="Label" parent="TiendaScroll/Cartas/Mejora1/HBoxContainer" unique_id=1910322527]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "$15.000"
+horizontal_alignment = 1
+
+[node name="BotonComprar" type="Button" parent="TiendaScroll/Cartas/Mejora1" unique_id=908092285]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "COMPRAR"
+
+[node name="Control" type="Control" parent="TiendaScroll/Cartas/Mejora1" unique_id=61323951]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="Mejora2" type="VBoxContainer" parent="TiendaScroll/Cartas" unique_id=143104027]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="CartaMejora1" type="TextureRect" parent="TiendaScroll/Cartas/Mejora2" unique_id=1284836730]
+layout_mode = 2
+texture = ExtResource("2_mtvv0")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TiendaScroll/Cartas/Mejora2" unique_id=201445906]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Moneda" type="TextureRect" parent="TiendaScroll/Cartas/Mejora2/HBoxContainer" unique_id=605098096]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("4_0mo0r")
+
+[node name="Precio" type="Label" parent="TiendaScroll/Cartas/Mejora2/HBoxContainer" unique_id=1231695837]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "$20.000"
+horizontal_alignment = 1
+
+[node name="BotonComprar" type="Button" parent="TiendaScroll/Cartas/Mejora2" unique_id=490626052]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "COMPRAR"
+
+[node name="Mejora3" type="VBoxContainer" parent="TiendaScroll/Cartas" unique_id=1246636772]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="CartaMejora1" type="TextureRect" parent="TiendaScroll/Cartas/Mejora3" unique_id=1362260797]
+layout_mode = 2
+texture = ExtResource("2_mtvv0")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TiendaScroll/Cartas/Mejora3" unique_id=1926274920]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Moneda" type="TextureRect" parent="TiendaScroll/Cartas/Mejora3/HBoxContainer" unique_id=1652827322]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("4_0mo0r")
+
+[node name="Precio" type="Label" parent="TiendaScroll/Cartas/Mejora3/HBoxContainer" unique_id=297240129]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "$25.000"
+horizontal_alignment = 1
+
+[node name="BotonComprar" type="Button" parent="TiendaScroll/Cartas/Mejora3" unique_id=1596057753]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "COMPRAR"
+
+[node name="Mejora4" type="VBoxContainer" parent="TiendaScroll/Cartas" unique_id=2133090761]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="CartaMejora1" type="TextureRect" parent="TiendaScroll/Cartas/Mejora4" unique_id=1204381212]
+layout_mode = 2
+texture = ExtResource("2_mtvv0")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TiendaScroll/Cartas/Mejora4" unique_id=316944087]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Moneda" type="TextureRect" parent="TiendaScroll/Cartas/Mejora4/HBoxContainer" unique_id=1380349733]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("4_0mo0r")
+
+[node name="Precio" type="Label" parent="TiendaScroll/Cartas/Mejora4/HBoxContainer" unique_id=2064689201]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "$30.000"
+horizontal_alignment = 1
+
+[node name="BotonComprar" type="Button" parent="TiendaScroll/Cartas/Mejora4" unique_id=388381136]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "COMPRAR"
+
+[node name="Control" type="Control" parent="TiendaScroll/Cartas/Mejora4" unique_id=1293966373]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="Mejora5" type="VBoxContainer" parent="TiendaScroll/Cartas" unique_id=1795091941]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="CartaMejora1" type="TextureRect" parent="TiendaScroll/Cartas/Mejora5" unique_id=614842035]
+layout_mode = 2
+texture = ExtResource("2_mtvv0")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TiendaScroll/Cartas/Mejora5" unique_id=2013025459]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Moneda" type="TextureRect" parent="TiendaScroll/Cartas/Mejora5/HBoxContainer" unique_id=1000315514]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("4_0mo0r")
+
+[node name="Precio" type="Label" parent="TiendaScroll/Cartas/Mejora5/HBoxContainer" unique_id=1831780660]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "$35.000"
+horizontal_alignment = 1
+
+[node name="BotonComprar" type="Button" parent="TiendaScroll/Cartas/Mejora5" unique_id=1050345683]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "COMPRAR"
+
+[node name="Mejora6" type="VBoxContainer" parent="TiendaScroll/Cartas" unique_id=490476529]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="CartaMejora1" type="TextureRect" parent="TiendaScroll/Cartas/Mejora6" unique_id=1536331822]
+layout_mode = 2
+texture = ExtResource("2_mtvv0")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TiendaScroll/Cartas/Mejora6" unique_id=398832475]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Moneda" type="TextureRect" parent="TiendaScroll/Cartas/Mejora6/HBoxContainer" unique_id=1174821805]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("4_0mo0r")
+
+[node name="Precio" type="Label" parent="TiendaScroll/Cartas/Mejora6/HBoxContainer" unique_id=1066946442]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "$40.000"
+horizontal_alignment = 1
+
+[node name="BotonComprar" type="Button" parent="TiendaScroll/Cartas/Mejora6" unique_id=170579954]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "COMPRAR"
+
+[node name="Mejora7" type="VBoxContainer" parent="TiendaScroll/Cartas" unique_id=1885645823]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="CartaMejora1" type="TextureRect" parent="TiendaScroll/Cartas/Mejora7" unique_id=1092210231]
+layout_mode = 2
+texture = ExtResource("2_mtvv0")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TiendaScroll/Cartas/Mejora7" unique_id=80839999]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Moneda" type="TextureRect" parent="TiendaScroll/Cartas/Mejora7/HBoxContainer" unique_id=317646177]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("4_0mo0r")
+
+[node name="Precio" type="Label" parent="TiendaScroll/Cartas/Mejora7/HBoxContainer" unique_id=237594705]
+layout_mode = 2
+theme_override_font_sizes/font_size = 25
+text = "$45.000"
+horizontal_alignment = 1
+
+[node name="BotonComprar" type="Button" parent="TiendaScroll/Cartas/Mejora7" unique_id=466677396]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "COMPRAR"
+
+[connection signal="pressed" from="TiendaScroll/Cartas/Mejora1/BotonComprar" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="TiendaScroll/Cartas/Mejora2/BotonComprar" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="TiendaScroll/Cartas/Mejora3/BotonComprar" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="TiendaScroll/Cartas/Mejora4/BotonComprar" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="TiendaScroll/Cartas/Mejora5/BotonComprar" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="TiendaScroll/Cartas/Mejora6/BotonComprar" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="TiendaScroll/Cartas/Mejora7/BotonComprar" to="." method="_on_button_pressed"]
