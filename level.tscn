@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://bbq52475qc06j" path="res://Arte/parallax backgound pack/_04_bushes.png" id="10_aicyk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fx85w"]
-size = Vector2(534, 67)
+size = Vector2(642.6896, 115)
 
 [node name="Level" type="Node2D" unique_id=860741880]
 
@@ -33,7 +33,7 @@ scale = Vector2(10.2040615, 0.5234375)
 texture = ExtResource("1_u52ul")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1710601393]
-position = Vector2(591.55994, 107.5)
+position = Vector2(458.38766, 131.5)
 scale = Vector2(2.4505062, 1)
 shape = SubResource("RectangleShape2D_fx85w")
 

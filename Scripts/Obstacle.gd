@@ -5,7 +5,6 @@ extends Node2D
 @onready var hit_area: Area2D = $Area2D
 @onready var tiempo: Timer = $"../Camera2D/Control/Tiempo"
 
-
 func _ready() -> void:
 	hit_area.body_entered.connect(_on_body_entered)
 
