@@ -2,3 +2,7 @@ res://V-currentmixed.txt
 res://Scripts/Obstacle.gd
 res://level.tscn
 res://menu_principal.tscn
+res://areae_end.tscn
+res://obstacle.tscn
+res://obstacleSky.tscn
+res://ReturnToMenu.gd

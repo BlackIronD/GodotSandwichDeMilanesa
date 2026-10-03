@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://qs5fqp3tyo75"]
+
+[ext_resource type="Texture2D" uid="uid://dfjhgyo5dw41k" path="res://Arte/park-bench-isolated-on-white-260nw-2519629265.webp" id="1_242p8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fx85w"]
+size = Vector2(642.6896, 115)
+
+[node name="Banca" type="StaticBody2D" unique_id=330028208]
+scale = Vector2(0.16017507, 0.6453999)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=466593646]
+position = Vector2(591.55994, 107.5)
+scale = Vector2(2.4505062, 1)
+shape = SubResource("RectangleShape2D_fx85w")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=894964983]
+z_index = 1039
+texture_filter = 1
+position = Vector2(593.1011, 108.45983)
+scale = Vector2(3.8861976, 0.35741445)
+texture = ExtResource("1_242p8")

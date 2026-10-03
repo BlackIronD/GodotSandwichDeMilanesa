@@ -3,11 +3,14 @@
 [ext_resource type="Texture2D" uid="uid://84w0nmqfeg0a" path="res://Arte/Sanwich.jpg" id="2_0b4ue"]
 [ext_resource type="PackedScene" uid="uid://06jbi1p0lyj5" path="res://player.tscn" id="2_vonw3"]
 [ext_resource type="Script" uid="uid://b3d4jo8rd2rak" path="res://Scripts/TimeLimit.gd" id="3_oi3di"]
+[ext_resource type="PackedScene" uid="uid://qs5fqp3tyo75" path="res://banca.tscn" id="4_2orkt"]
 [ext_resource type="PackedScene" uid="uid://cjwef57y1ty0b" path="res://areae_end.tscn" id="4_n6hdu"]
+[ext_resource type="PackedScene" uid="uid://co58gasnip40b" path="res://obstacleSky.tscn" id="5_aicyk"]
 [ext_resource type="PackedScene" uid="uid://whp651biq2pp" path="res://obstacle.tscn" id="6_1ainy"]
 [ext_resource type="Script" uid="uid://dhw6dbnstu78p" path="res://Scripts/CamraSlide.gd" id="8_2orkt"]
 [ext_resource type="Texture2D" uid="uid://b82d5nxnpx1eb" path="res://Arte/parallax backgound pack/_01_ground.png" id="8_8cye3"]
 [ext_resource type="Texture2D" uid="uid://2hfdejnpcft" path="res://Arte/parallax backgound pack/_03_distant_trees.png" id="9_2orkt"]
+[ext_resource type="Script" uid="uid://1ijjy4r8ter8" path="res://ReturnToMenu.gd" id="9_aicyk"]
 [ext_resource type="Texture2D" uid="uid://bbq52475qc06j" path="res://Arte/parallax backgound pack/_04_bushes.png" id="10_aicyk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fx85w"]
@@ -16,7 +19,7 @@ size = Vector2(642.6896, 115)
 [node name="Level" type="Node2D" unique_id=860741880]
 
 [node name="AreaeEnd" parent="." unique_id=681665101 instance=ExtResource("4_n6hdu")]
-position = Vector2(1920, 308)
+position = Vector2(7105, 308)
 disable_mode = 2
 
 [node name="Player" parent="." unique_id=61275997 instance=ExtResource("2_vonw3")]
@@ -54,43 +57,42 @@ position = Vector2(1838, 378)
 scale = Vector2(1.72, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=1761308545]
-position = Vector2(924.4186, 131)
+position = Vector2(929.06976, 132)
 scale = Vector2(2.4505062, 1)
 shape = SubResource("RectangleShape2D_fx85w")
 
-[node name="StaticBody2D3" type="StaticBody2D" parent="." unique_id=530131743]
+[node name="Obstacle" parent="StaticBody2D2" unique_id=199272284 instance=ExtResource("6_1ainy")]
+position = Vector2(761.0465, -28)
+
+[node name="Banca" parent="StaticBody2D2" unique_id=330028208 instance=ExtResource("4_2orkt")]
+position = Vector2(558.7209, -221)
+
+[node name="Obstacle2" parent="StaticBody2D2" unique_id=1084492022 instance=ExtResource("5_aicyk")]
+position = Vector2(1194.7675, -413)
+
+[node name="Obstacle3" parent="StaticBody2D2" unique_id=1888594481 instance=ExtResource("6_1ainy")]
+position = Vector2(-937.2092, -7.0000305)
+scale = Vector2(0.37439796, 0.22948706)
+
+[node name="Obstacle4" parent="StaticBody2D2" unique_id=500063031 instance=ExtResource("6_1ainy")]
+position = Vector2(-344.18604, 38.99997)
+scale = Vector2(0.37439796, 0.22948706)
+
+[node name="Obstacle5" parent="StaticBody2D2" unique_id=320233304 instance=ExtResource("6_1ainy")]
+position = Vector2(75.58142, -69.00003)
+scale = Vector2(0.37439796, 0.22948706)
+
+[node name="Banca" parent="." unique_id=957249796 instance=ExtResource("4_2orkt")]
 position = Vector2(617, 341.00003)
-scale = Vector2(0.16017507, 0.6453999)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3" unique_id=389927022]
-position = Vector2(591.55994, 107.5)
-scale = Vector2(2.4505062, 1)
-shape = SubResource("RectangleShape2D_fx85w")
 
 [node name="StaticBody2D6" type="StaticBody2D" parent="." unique_id=119127041]
 position = Vector2(1343, 221)
 scale = Vector2(0.16307715, 0.7770008)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6" unique_id=1314803978]
-position = Vector2(591.55994, 107.5)
+position = Vector2(3832.5415, 100.385994)
 scale = Vector2(2.4505062, 1)
 shape = SubResource("RectangleShape2D_fx85w")
-
-[node name="Obstacle" parent="." unique_id=199272284 instance=ExtResource("6_1ainy")]
-position = Vector2(226.00003, 370.99997)
-scale = Vector2(0.6439645, 0.22948706)
-
-[node name="Obstacle2" parent="." unique_id=850504583 instance=ExtResource("6_1ainy")]
-position = Vector2(709.00006, 425.99997)
-scale = Vector2(0.6439645, 0.22948706)
-
-[node name="Obstacle3" parent="." unique_id=500063031 instance=ExtResource("6_1ainy")]
-position = Vector2(1110, 414.99997)
-scale = Vector2(0.6439645, 0.22948706)
-
-[node name="Obstacle4" parent="." unique_id=320233304 instance=ExtResource("6_1ainy")]
-position = Vector2(1440, 306.99994)
-scale = Vector2(0.6439645, 0.22948706)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1939341080]
 position = Vector2(25.07, 231)
@@ -167,6 +169,22 @@ scale = Vector2(0.050077677, 0.03433911)
 theme_override_font_sizes/font_size = 121
 text = "Pago: "
 
+[node name="Button" type="Button" parent="Camera2D/EndPanel/Panel" unique_id=1732555043]
+texture_filter = 2
+texture_repeat = 3
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.5
+anchor_right = 0.77500004
+anchor_bottom = 0.98600006
+offset_left = 7.9318285
+offset_top = 12.122444
+offset_right = 38.93183
+offset_bottom = 23.682442
+scale = Vector2(0.3992961, 0.2212742)
+text = "Return"
+script = ExtResource("9_aicyk")
+
 [node name="ParallaxBackground" type="ParallaxBackground" parent="Camera2D" unique_id=2027872962]
 
 [node name="Arboles" type="ParallaxLayer" parent="Camera2D/ParallaxBackground" unique_id=1034616916]
@@ -211,4 +229,8 @@ position = Vector2(-2, 0)
 texture = ExtResource("8_8cye3")
 centered = false
 
+[node name="Banca2" parent="." unique_id=1475284195 instance=ExtResource("4_2orkt")]
+position = Vector2(2423, 346)
+
 [connection signal="timeout" from="Camera2D/Control/Tiempo" to="Camera2D/Control/Tiempo" method="_on_timeout"]
+[connection signal="pressed" from="Camera2D/EndPanel/Panel/Button" to="Camera2D/EndPanel/Panel/Button" method="_on_pressed"]

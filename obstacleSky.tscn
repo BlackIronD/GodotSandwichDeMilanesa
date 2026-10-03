@@ -1,13 +1,13 @@
-[gd_scene format=3 uid="uid://whp651biq2pp"]
+[gd_scene format=3 uid="uid://co58gasnip40b"]
 
-[ext_resource type="Script" uid="uid://da3mpbfuuylci" path="res://Scripts/Obstacle.gd" id="1_aubd6"]
-[ext_resource type="Texture2D" uid="uid://br75ocb5adn7x" path="res://Arte/Ladron.jpg" id="2_aubd6"]
+[ext_resource type="Script" uid="uid://da3mpbfuuylci" path="res://Scripts/Obstacle.gd" id="1_4n56j"]
+[ext_resource type="Texture2D" uid="uid://vixb7xwstbtf" path="res://Arte/images (4).jpg" id="2_4n56j"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fx85w"]
 size = Vector2(534, 67)
 
 [node name="Obstacle" type="StaticBody2D" unique_id=199272284 groups=["Obstacle"]]
-script = ExtResource("1_aubd6")
+script = ExtResource("1_4n56j")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=522777017]
 
@@ -21,6 +21,6 @@ scale = Vector2(0.5195577, 3.0668566)
 shape = SubResource("RectangleShape2D_fx85w")
 
 [node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D" unique_id=389832052]
-position = Vector2(-5.5715303, -1.0158509)
-scale = Vector2(1.2748002, 0.12707974)
-texture = ExtResource("2_aubd6")
+position = Vector2(-2.887066, -1.9563997)
+scale = Vector2(1.3028297, 0.13301641)
+texture = ExtResource("2_4n56j")

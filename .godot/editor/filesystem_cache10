@@ -1,30 +1,34 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1791008476
-areae_end.tscn::PackedScene::5450210693918614891::1791008408::0::1::::<><><>0<>0<><>::uid://du1hrlqxh3i4y::::res://Scripts/EndScript.gd<>uid://84w0nmqfeg0a::::res://Arte/Sanwich.jpg<>uid://bjumjt7atdj6f::::res://Arte/Sanwiahstate1.png<>uid://xmbwrh8cdu1r::::res://Arte/Sanwiahstate2.png<>uid://dg3r30a3no5je::::res://Arte/Sanwiahstate3.png<>uid://b80atco4jb530::::res://icon.svg
+::res://::1791032344
+areae_end.tscn::PackedScene::5450210693918614891::1791031106::0::1::::<><><>0<>0<><>::uid://du1hrlqxh3i4y::::res://Scripts/EndScript.gd
 back_pack.gd::GDScript::1263375806121503637::1791008408::0::1::::<>Node2D<><>0<>0<><>::
 coin.tscn::PackedScene::2648656114419898838::1791008408::0::1::::<><><>0<>0<><>::uid://b80atco4jb530::::res://icon.svg
 global_script_class_cache.cfg::TextFile::-1::1790427820::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::4754296025687548545::1791008408::1791008478::1::::<><><>0<>0<>e0dbbfebd26b73a2eadc1b9c74e9415c<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-level.tscn::PackedScene::5455374014304218998::1791008408::0::1::::<><><>0<>0<><>::uid://b80atco4jb530::::res://icon.svg<>uid://84w0nmqfeg0a::::res://Arte/Sanwich.jpg<>uid://06jbi1p0lyj5::::res://player.tscn<>uid://b3d4jo8rd2rak::::res://Scripts/TimeLimit.gd<>uid://cjwef57y1ty0b::::res://areae_end.tscn<>uid://whp651biq2pp::::res://obstacle.tscn<>uid://dhw6dbnstu78p::::res://Scripts/CamraSlide.gd<>uid://b82d5nxnpx1eb::::res://Arte/parallax backgound pack/_01_ground.png<>uid://2hfdejnpcft::::res://Arte/parallax backgound pack/_03_distant_trees.png<>uid://bbq52475qc06j::::res://Arte/parallax backgound pack/_04_bushes.png
-mejoras.tscn::PackedScene::6998576289105583073::1791008408::0::1::::<><><>0<>0<><>::
+level.tscn::PackedScene::5455374014304218998::1791032344::0::1::::<><><>0<>0<><>::uid://84w0nmqfeg0a::::res://Arte/Sanwich.jpg<>uid://06jbi1p0lyj5::::res://player.tscn<>uid://dfjhgyo5dw41k::::res://Arte/park-bench-isolated-on-white-260nw-2519629265.webp<>uid://b3d4jo8rd2rak::::res://Scripts/TimeLimit.gd<>uid://cjwef57y1ty0b::::res://areae_end.tscn<>uid://whp651biq2pp::::res://obstacle.tscn<>uid://dhw6dbnstu78p::::res://Scripts/CamraSlide.gd<>uid://b82d5nxnpx1eb::::res://Arte/parallax backgound pack/_01_ground.png<>uid://2hfdejnpcft::::res://Arte/parallax backgound pack/_03_distant_trees.png<>uid://bbq52475qc06j::::res://Arte/parallax backgound pack/_04_bushes.png
+mejoras.tscn::PackedScene::6998576289105583073::1791008587::0::1::::<><><>0<>0<><>::
 menu_principal.gd::GDScript::9105323983782545873::1791008408::0::1::::<>Control<><>0<>0<><>::
-menu_principal.tscn::PackedScene::6149205708106232321::1791008408::0::1::::<><><>0<>0<><>::uid://b3kkkr64oy2jf::::res://Arte/imgmenu.png<>uid://d2yxmdg07xoyr::::res://menu_principal.gd<>uid://c85c2uh3s6ac4::::res://Arte/botonjugar2.png
-minigame.tscn::PackedScene::6211353475632634903::1791008408::0::1::::<><><>0<>0<><>::
-obstacle.tscn::PackedScene::1559572934739885465::1791008408::0::1::::<><><>0<>0<><>::uid://da3mpbfuuylci::::res://Scripts/Obstacle.gd<>uid://b80atco4jb530::::res://icon.svg
-player.tscn::PackedScene::1819265501122581880::1791008408::0::1::::<><><>0<>0<><>::uid://ccnwrefje3rd2::::res://Scripts/player.gd<>uid://bukoksg5yl7ws::::res://Arte/miss_1.png<>uid://bgswca3tetomw::::res://Arte/run_frame_2 (1).png<>uid://cbox1qointhdf::::res://Arte/miss_2.png<>uid://cwv2scld67lob::::res://Arte/run_frame_1.png<>uid://3hivt8gh2dss::::res://Arte/run_frame_2.png<>uid://c84xw2605pl81::::res://Arte/run_frame_3.png<>uid://dbiijhj30r25t::::res://Arte/run_frame_4.png<>uid://bkx5sdc3qw8uy::::res://Arte/jump_down.png<>uid://c0vj0bclyrfp2::::res://Arte/run_frame_5.png<>uid://c3hmgugvjkcwk::::res://Arte/jump_up.png<>uid://cuk6s6ldpjp1i::::res://Arte/run_frame_6.png<>uid://bk5odt5o8mhk7::::res://Arte/slide_1.png<>uid://cppr3t4s51tb7::::res://Arte/slide_2.png
+menu_principal.tscn::PackedScene::6149205708106232321::1791013619::0::1::::<><><>0<>0<><>::uid://b3kkkr64oy2jf::::res://Arte/imgmenu.png<>uid://d2yxmdg07xoyr::::res://menu_principal.gd<>uid://c85c2uh3s6ac4::::res://Arte/botonjugar2.png
+obstacle.tscn::PackedScene::1559572934739885465::1791032333::0::1::::<><><>0<>0<><>::uid://da3mpbfuuylci::::res://Scripts/Obstacle.gd<>uid://br75ocb5adn7x::::res://Arte/Ladron.jpg
+player.tscn::PackedScene::1819265501122581880::1791008585::0::1::::<><><>0<>0<><>::uid://ccnwrefje3rd2::::res://Scripts/player.gd<>uid://bukoksg5yl7ws::::res://Arte/miss_1.png<>uid://bgswca3tetomw::::res://Arte/run_frame_2 (1).png<>uid://cbox1qointhdf::::res://Arte/miss_2.png<>uid://cwv2scld67lob::::res://Arte/run_frame_1.png<>uid://3hivt8gh2dss::::res://Arte/run_frame_2.png<>uid://c84xw2605pl81::::res://Arte/run_frame_3.png<>uid://dbiijhj30r25t::::res://Arte/run_frame_4.png<>uid://bkx5sdc3qw8uy::::res://Arte/jump_down.png<>uid://c0vj0bclyrfp2::::res://Arte/run_frame_5.png<>uid://c3hmgugvjkcwk::::res://Arte/jump_up.png<>uid://cuk6s6ldpjp1i::::res://Arte/run_frame_6.png<>uid://bk5odt5o8mhk7::::res://Arte/slide_1.png<>uid://cppr3t4s51tb7::::res://Arte/slide_2.png
 README.md::TextFile::-1::1790427820::0::1::::<><><>0<>0<><>::
+minigame.tscn::PackedScene::6211353475632634903::1791008519::0::1::::<><><>0<>0<><>::
+obstacleSky.tscn::PackedScene::5819430914873626079::1791032292::0::1::::<><><>0<>0<><>::uid://da3mpbfuuylci::::res://Scripts/Obstacle.gd<>uid://b80atco4jb530::::res://icon.svg
 scene_groups_cache.cfg::TextFile::-1::1791008409::0::1::::<><><>0<>0<><>::
-V-currentmixed.txt::TextFile::-1::1791008408::0::1::::<><><>0<>0<><>::
-::res://Arte/::1791008408
+V-currentmixed.txt::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+::res://Arte/::1791032353
 botonjugar2.png::CompressedTexture2D::7151175253062127417::1791008408::1791008479::1::::<><><>0<>0<>2d2227304bceea5f364d0ebf0b1afc30<>res://.godot/imported/botonjugar2.png-decac26ed1222dfa5b60ac03abc9f793.ctex::
 download (3).png::CompressedTexture2D::4815663972043742506::1791008408::1791008479::1::::<><><>0<>0<>b6937d01da90e2b03540b576ab89dce1<>res://.godot/imported/download (3).png-ae5545f6049ca9ba90ac2992a361eccb.ctex::
 Final_chica.png::CompressedTexture2D::6583139626178420190::1791008408::1791008480::1::::<><><>0<>0<>9a0a936e879b2089b1b33f11faf44a1e<>res://.godot/imported/Final_chica.png-0eb00f9c633fa59f3370abfff57d0e6a.ctex::
 Final_mano.png::CompressedTexture2D::941177781354632105::1791008408::1791008479::1::::<><><>0<>0<>9f9e42614eb14546c9beae295f040dab<>res://.godot/imported/Final_mano.png-2c96491a093ee9190be3dad6ef92e5c2.ctex::
+images (4).jpg::CompressedTexture2D::1491880732360779975::1791032353::1791032353::1::::<><><>0<>0<>11a148c0e53ccef3c051a2af5cb8c09d<>res://.godot/imported/images (4).jpg-549937b60a05f024da79833934dc12e5.ctex::
 imgmenu.png::CompressedTexture2D::4372978053088519331::1791008408::1791008479::1::::<><><>0<>0<>b113fcae433bc62d646334653a7c2514<>res://.godot/imported/imgmenu.png-ed4cf17c60d136d6a1d593fcb8351c35.ctex::
 jump_down.png::CompressedTexture2D::3137643624444217844::1791008408::1791008480::1::::<><><>0<>0<>a1892c9f4ee98fc5401bb129a44ba200<>res://.godot/imported/jump_down.png-7cfa13b6077dd47e899ea21a46fee96d.ctex::
 jump_up.png::CompressedTexture2D::6753320012908550654::1791008408::1791008480::1::::<><><>0<>0<>6868bfb1f4e5608e3bfa9b0aff87be45<>res://.godot/imported/jump_up.png-c5eb56f68d07fe1d9c7356ff7c546b70.ctex::
+Ladron.jpg::CompressedTexture2D::3647537732521928355::1791031721::1791031722::1::::<><><>0<>0<>63ad3e6e97792f174c8592c2a59424e8<>res://.godot/imported/Ladron.jpg-035b03cbfbe82197a46339c54b5cc2db.ctex::
 miss_1.png::CompressedTexture2D::3811710185916859926::1791008408::1791008478::1::::<><><>0<>0<>5286c78ceba536c18632c336c2643a6c<>res://.godot/imported/miss_1.png-2ce3fc96ccf8763c152d02d2e652099c.ctex::
 miss_2.png::CompressedTexture2D::4873375283438702191::1791008408::1791008477::1::::<><><>0<>0<>c4e25e74faf37b3439b4d0277b3655da<>res://.godot/imported/miss_2.png-eff105dc6ba5a10a2e8045681250f6b4.ctex::
+park-bench-isolated-on-white-260nw-2519629265.webp::CompressedTexture2D::7529222686324433810::1791031910::1791031911::1::::<><><>0<>0<>142c3f771ca61a7ceaf34bf97203ceff<>res://.godot/imported/park-bench-isolated-on-white-260nw-2519629265.webp-1120c385b06122963d1f5854bd3b86e8.ctex::
 run_frame_1.png::CompressedTexture2D::6362019485571704985::1791008408::1791008478::1::::<><><>0<>0<>d65c20a2183745287618bd674a245375<>res://.godot/imported/run_frame_1.png-b86b476dedf53a8f04bf18e492b3ce44.ctex::
 run_frame_2 (1).png::CompressedTexture2D::2846051934646948766::1791008408::1791008477::1::::<><><>0<>0<>3ca8a8e29974b64c6abf23d016d63b45<>res://.godot/imported/run_frame_2 (1).png-8ef9448b96fe14f417bc74f5b600a99b.ctex::
 run_frame_2.png::CompressedTexture2D::1980262552962690378::1791008408::1791008477::1::::<><><>0<>0<>db860299fc49a534bd1db0af3b106a78<>res://.godot/imported/run_frame_2.png-83f73040904be96004218583bbe8083e.ctex::
@@ -39,7 +43,7 @@ Sanwich.jpg::CompressedTexture2D::2377479915686305114::1791008408::1791008478::1
 slide_1.png::CompressedTexture2D::3151096892944123712::1791008408::1791008478::1::::<><><>0<>0<>d812a12de533911b4fa4ed83e6e4a3f9<>res://.godot/imported/slide_1.png-9f1a2a27613bfe257b17b3edc3b21876.ctex::
 slide_2.png::CompressedTexture2D::5857722922975903934::1791008408::1791008478::1::::<><><>0<>0<>23c49e85679be34feb24909b672f0c6a<>res://.godot/imported/slide_2.png-b19572be50db0dad86cf12bb7e117e06.ctex::
 Untitled14-ezgif.com-gif-to-sprite-converter.png::CompressedTexture2D::788009798039308618::1791008408::1791008479::1::::<><><>0<>0<>17717f07181f57ec4f3fbeb2028d97f5<>res://.godot/imported/Untitled14-ezgif.com-gif-to-sprite-converter.png-fc1ce9b5d8fd46c5748f9c23ff2b92a5.ctex::
-::res://Arte/parallax backgound pack/::1791008408
+::res://Arte/parallax backgound pack/::1791008479
 _01_ground.png::CompressedTexture2D::4758627166848923129::1791008408::1791008479::1::::<><><>0<>0<>c09f528339b77bd99630ec9dda81dcdc<>res://.godot/imported/_01_ground.png-7b0e3a8df3e99cccc55716f72bce55e0.ctex::
 _02_trees and bushes.png::CompressedTexture2D::8547450061388008539::1791008408::1791008479::1::::<><><>0<>0<>e78c38383cd4f579ecd4808ce59cffba<>res://.godot/imported/_02_trees and bushes.png-9980ba4af04b04befa489f270223adef.ctex::
 _03_distant_trees.png::CompressedTexture2D::56172311454655021::1791008408::1791008479::1::::<><><>0<>0<>007533b003c98749fbf8ac0abad67546<>res://.godot/imported/_03_distant_trees.png-a5784574a748ac64fb71c90c8ac9f8a7.ctex::
@@ -51,53 +55,53 @@ _08_clouds.png::CompressedTexture2D::6189240237702563721::1791008408::1791008479
 _09_distant_clouds1.png::CompressedTexture2D::2213440458086161250::1791008408::1791008479::1::::<><><>0<>0<>d8fcd2a831ea617c6c82f641898f78e5<>res://.godot/imported/_09_distant_clouds1.png-a8ad2e994ad06a55b8ad2c811cabaa21.ctex::
 _10_distant_clouds.png::CompressedTexture2D::7699938966905923791::1791008408::1791008479::1::::<><><>0<>0<>16a149bd32491cda1d042a4f835ee326<>res://.godot/imported/_10_distant_clouds.png-68f05e144bac6968105735d185015ede.ctex::
 _11_background.png::CompressedTexture2D::8495202915890094847::1791008408::1791008479::1::::<><><>0<>0<>86ca8d18090ea0546f509b5de2f19ef1<>res://.godot/imported/_11_background.png-a5d1c72e068ff958092e52457fcfaeac.ctex::
-::res://editor/::1791008408
-areae_end.tscn-editstate-90d126ba0ce74821ee55c4188b20066e.cfg::TextFile::-1::1791008372::0::1::::<><><>0<>0<><>::
-areae_end.tscn-folding-90d126ba0ce74821ee55c4188b20066e.cfg::TextFile::-1::1791008372::0::1::::<><><>0<>0<><>::
-back_pack.gd-folding-7d3d7b270333e3149d23640fac40d10a.cfg::TextFile::-1::1791008408::0::1::::<><><>0<>0<><>::
-CamraSlide.gd-folding-545abad8a49d019f26eaf0ba7bce9a2d.cfg::TextFile::-1::1791008372::0::1::::<><><>0<>0<><>::
-coin.tscn-editstate-2c627f0aeee2256356f1e6ba540049dd.cfg::TextFile::-1::1791008372::0::1::::<><><>0<>0<><>::
-coin.tscn-folding-2c627f0aeee2256356f1e6ba540049dd.cfg::TextFile::-1::1791008372::0::1::::<><><>0<>0<><>::
-editor_layout.cfg::TextFile::-1::1791008408::0::1::::<><><>0<>0<><>::
-editor_script_doc_cache.res::Resource::-1::1791008408::0::1::::<><><>0<>0<><>::
-editor_script_doc_cache.res-folding-a7de57390d6e786984ca20c70a831128.cfg::TextFile::-1::1791008372::0::1::::<><><>0<>0<><>::
-EndScript.gd-folding-85d690fa89c9886af2a3abedebabfc47.cfg::TextFile::-1::1791008372::0::1::::<><><>0<>0<><>::
-EndScript.gd-folding-b6bfc3141569a031b89bb5e4b3ab9530.cfg::TextFile::-1::1791008408::0::1::::<><><>0<>0<><>::
-level.tscn-editstate-d85448a68f01bbd6644b4b40ef87233e.cfg::TextFile::-1::1791008408::0::1::::<><><>0<>0<><>::
-level.tscn-folding-d85448a68f01bbd6644b4b40ef87233e.cfg::TextFile::-1::1791008408::0::1::::<><><>0<>0<><>::
-Obstacle.gd-folding-8cd45b75a8ee56a6d5cc3f3947c2239d.cfg::TextFile::-1::1791008372::0::1::::<><><>0<>0<><>::
-Obstacle.gd-folding-22f400c29302d98d8797b9ea198aa5f9.cfg::TextFile::-1::1791008372::0::1::::<><><>0<>0<><>::
-obstacle.tscn-editstate-79a6f0481d83383c45504d6f5fd8236e.cfg::TextFile::-1::1791008372::0::1::::<><><>0<>0<><>::
-obstacle.tscn-folding-79a6f0481d83383c45504d6f5fd8236e.cfg::TextFile::-1::1791008372::0::1::::<><><>0<>0<><>::
-player.gd-folding-13afcdfc58999db2631c2e4013a8288c.cfg::TextFile::-1::1791008408::0::1::::<><><>0<>0<><>::
-player.gd-folding-37c9f666e3c0ec2c32be54b61af47c16.cfg::TextFile::-1::1791008372::0::1::::<><><>0<>0<><>::
-player.tscn-editstate-36a25e342948d0ceacc500772b5412b3.cfg::TextFile::-1::1791008408::0::1::::<><><>0<>0<><>::
-player.tscn-folding-36a25e342948d0ceacc500772b5412b3.cfg::TextFile::-1::1791008372::0::1::::<><><>0<>0<><>::
-project_metadata.cfg::TextFile::-1::1791008408::0::1::::<><><>0<>0<><>::
-quick_open_dialog_cache.cfg::TextFile::-1::1791008372::0::1::::<><><>0<>0<><>::
-script_editor_cache.cfg::TextFile::-1::1791008408::0::1::::<><><>0<>0<><>::
-TimeLimit.gd-folding-3b45a28ab109ad311bb985244d339b81.cfg::TextFile::-1::1791008408::0::1::::<><><>0<>0<><>::
-TimeLimit.gd-folding-ccba08a5812fbf0f79e33c1dff931162.cfg::TextFile::-1::1791008372::0::1::::<><><>0<>0<><>::
-::res://imported/::1791008408
-download (3).png-00ad5cf1e5b6ec4a94be644df0ce944d.ctex::CompressedTexture2D::6603551605332235625::1791008372::0::1::::<><><>0<>0<><>::
-download (3).png-ae5545f6049ca9ba90ac2992a361eccb.ctex::CompressedTexture2D::4949679459376865477::1791008372::0::1::::<><><>0<>0<><>::
-icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::CompressedTexture2D::4948173179577522612::1791008372::0::1::::<><><>0<>0<><>::
-Sanwiahstate1.png-4f008391ce4b469ab1c70b86ca0cb8d6.ctex::CompressedTexture2D::6007833231280575396::1791008372::0::1::::<><><>0<>0<><>::
-Sanwiahstate1.png-769f7079f2eb2a3286dde2dabd1a8856.ctex::CompressedTexture2D::8489107953153302165::1791008372::0::1::::<><><>0<>0<><>::
-Sanwiahstate2.png-8572e036ed9a74848d5cc50614d58493.ctex::CompressedTexture2D::4510506059722645456::1791008372::0::1::::<><><>0<>0<><>::
-Sanwiahstate2.png-e70c1ca6b0a8175c2f1c577f023db9e7.ctex::CompressedTexture2D::8475055144275078245::1791008372::0::1::::<><><>0<>0<><>::
-Sanwiahstate3.png-360a990c49e3487a656b2682270f2f8b.ctex::CompressedTexture2D::5308997238441044063::1791008372::0::1::::<><><>0<>0<><>::
-Sanwiahstate3.png-06222ec489cc6ec6aa25ee68587c9089.ctex::CompressedTexture2D::9058858259789086531::1791008372::0::1::::<><><>0<>0<><>::
-Sanwich.jpg-1c06eb50e468d7f8f0a92d3b00424730.ctex::CompressedTexture2D::7305282577694805596::1791008372::0::1::::<><><>0<>0<><>::
-Sanwich.jpg-db3ce0235a0aed69e2147d6bee11f397.ctex::CompressedTexture2D::3762823024214304689::1791008372::0::1::::<><><>0<>0<><>::
-Sprite-0001.png-7647bf9f8b536d839277d4b64aee9852.ctex::CompressedTexture2D::3083984577688588513::1791008372::0::1::::<><><>0<>0<><>::
-Untitled14-ezgif.com-gif-to-sprite-converter.png-dbd73823e6fe23264fd63d2a5cfb7c64.ctex::CompressedTexture2D::6024659530225472754::1791008372::0::1::::<><><>0<>0<><>::
-Untitled14-ezgif.com-gif-to-sprite-converter.png-fc1ce9b5d8fd46c5748f9c23ff2b92a5.ctex::CompressedTexture2D::6079466226246999654::1791008372::0::1::::<><><>0<>0<><>::
-::res://Scripts/::1791008408
+::res://editor/::1791008584
+areae_end.tscn-editstate-90d126ba0ce74821ee55c4188b20066e.cfg::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+areae_end.tscn-folding-90d126ba0ce74821ee55c4188b20066e.cfg::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+back_pack.gd-folding-7d3d7b270333e3149d23640fac40d10a.cfg::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+CamraSlide.gd-folding-545abad8a49d019f26eaf0ba7bce9a2d.cfg::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+coin.tscn-editstate-2c627f0aeee2256356f1e6ba540049dd.cfg::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+coin.tscn-folding-2c627f0aeee2256356f1e6ba540049dd.cfg::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+editor_layout.cfg::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+editor_script_doc_cache.res::Resource::-1::1791008584::0::1::::<><><>0<>0<><>::
+editor_script_doc_cache.res-folding-a7de57390d6e786984ca20c70a831128.cfg::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+EndScript.gd-folding-85d690fa89c9886af2a3abedebabfc47.cfg::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+EndScript.gd-folding-b6bfc3141569a031b89bb5e4b3ab9530.cfg::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+level.tscn-editstate-d85448a68f01bbd6644b4b40ef87233e.cfg::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+level.tscn-folding-d85448a68f01bbd6644b4b40ef87233e.cfg::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+Obstacle.gd-folding-8cd45b75a8ee56a6d5cc3f3947c2239d.cfg::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+Obstacle.gd-folding-22f400c29302d98d8797b9ea198aa5f9.cfg::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+obstacle.tscn-editstate-79a6f0481d83383c45504d6f5fd8236e.cfg::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+obstacle.tscn-folding-79a6f0481d83383c45504d6f5fd8236e.cfg::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+player.gd-folding-13afcdfc58999db2631c2e4013a8288c.cfg::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+player.gd-folding-37c9f666e3c0ec2c32be54b61af47c16.cfg::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+player.tscn-editstate-36a25e342948d0ceacc500772b5412b3.cfg::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+player.tscn-folding-36a25e342948d0ceacc500772b5412b3.cfg::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+project_metadata.cfg::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+quick_open_dialog_cache.cfg::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+script_editor_cache.cfg::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+TimeLimit.gd-folding-3b45a28ab109ad311bb985244d339b81.cfg::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+TimeLimit.gd-folding-ccba08a5812fbf0f79e33c1dff931162.cfg::TextFile::-1::1791008584::0::1::::<><><>0<>0<><>::
+::res://imported/::1791008585
+download (3).png-00ad5cf1e5b6ec4a94be644df0ce944d.ctex::CompressedTexture2D::6603551605332235625::1791008585::0::1::::<><><>0<>0<><>::
+download (3).png-ae5545f6049ca9ba90ac2992a361eccb.ctex::CompressedTexture2D::4949679459376865477::1791008585::0::1::::<><><>0<>0<><>::
+icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::CompressedTexture2D::4948173179577522612::1791008585::0::1::::<><><>0<>0<><>::
+Sanwiahstate1.png-4f008391ce4b469ab1c70b86ca0cb8d6.ctex::CompressedTexture2D::6007833231280575396::1791008584::0::1::::<><><>0<>0<><>::
+Sanwiahstate1.png-769f7079f2eb2a3286dde2dabd1a8856.ctex::CompressedTexture2D::8489107953153302165::1791008584::0::1::::<><><>0<>0<><>::
+Sanwiahstate2.png-8572e036ed9a74848d5cc50614d58493.ctex::CompressedTexture2D::4510506059722645456::1791008584::0::1::::<><><>0<>0<><>::
+Sanwiahstate2.png-e70c1ca6b0a8175c2f1c577f023db9e7.ctex::CompressedTexture2D::8475055144275078245::1791008584::0::1::::<><><>0<>0<><>::
+Sanwiahstate3.png-360a990c49e3487a656b2682270f2f8b.ctex::CompressedTexture2D::5308997238441044063::1791008584::0::1::::<><><>0<>0<><>::
+Sanwiahstate3.png-06222ec489cc6ec6aa25ee68587c9089.ctex::CompressedTexture2D::9058858259789086531::1791008584::0::1::::<><><>0<>0<><>::
+Sanwich.jpg-1c06eb50e468d7f8f0a92d3b00424730.ctex::CompressedTexture2D::7305282577694805596::1791008585::0::1::::<><><>0<>0<><>::
+Sanwich.jpg-db3ce0235a0aed69e2147d6bee11f397.ctex::CompressedTexture2D::3762823024214304689::1791008585::0::1::::<><><>0<>0<><>::
+Sprite-0001.png-7647bf9f8b536d839277d4b64aee9852.ctex::CompressedTexture2D::3083984577688588513::1791008585::0::1::::<><><>0<>0<><>::
+Untitled14-ezgif.com-gif-to-sprite-converter.png-dbd73823e6fe23264fd63d2a5cfb7c64.ctex::CompressedTexture2D::6024659530225472754::1791008585::0::1::::<><><>0<>0<><>::
+Untitled14-ezgif.com-gif-to-sprite-converter.png-fc1ce9b5d8fd46c5748f9c23ff2b92a5.ctex::CompressedTexture2D::6079466226246999654::1791008585::0::1::::<><><>0<>0<><>::
+::res://Scripts/::1791008584
 CamraSlide.gd::GDScript::7697887924742179777::1791008408::0::1::::<>Camera2D<><>0<>0<><>::
 EndScript.gd::GDScript::8617168726420455618::1791008408::0::1::::<>Area2D<><>0<>0<><>::
 game_state.gd::GDScript::5282685689546157663::1791008408::0::1::::<>Node<><>0<>0<><>::
-Obstacle.gd::GDScript::7217820080198511416::1791008408::0::1::::<>Node2D<><>0<>0<><>::
+Obstacle.gd::GDScript::7217820080198511416::1791008584::0::1::::<>Node2D<><>0<>0<><>::
 player.gd::GDScript::4941422316035096517::1791008408::0::1::::<>CharacterBody2D<><>0<>0<><>::
 TimeLimit.gd::GDScript::4359679090838498486::1791008408::0::1::::<>Timer<><>0<>0<><>::
 ::res://shader_cache/::1790893286
