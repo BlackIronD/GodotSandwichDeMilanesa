@@ -1,1 +1,4 @@
 res://V-currentmixed.txt
+res://Scripts/Obstacle.gd
+res://level.tscn
+res://menu_principal.tscn

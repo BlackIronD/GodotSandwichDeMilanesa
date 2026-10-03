@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://cjyvhig114x31"]
 
-[ext_resource type="Texture2D" uid="uid://b80atco4jb530" path="res://icon.svg" id="1_u52ul"]
 [ext_resource type="Texture2D" uid="uid://84w0nmqfeg0a" path="res://Arte/Sanwich.jpg" id="2_0b4ue"]
 [ext_resource type="PackedScene" uid="uid://06jbi1p0lyj5" path="res://player.tscn" id="2_vonw3"]
 [ext_resource type="Script" uid="uid://b3d4jo8rd2rak" path="res://Scripts/TimeLimit.gd" id="3_oi3di"]
@@ -23,16 +22,29 @@ disable_mode = 2
 [node name="Player" parent="." unique_id=61275997 instance=ExtResource("2_vonw3")]
 position = Vector2(-87, 386)
 
-[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=477890269]
+[node name="Ground" type="StaticBody2D" parent="." unique_id=477890269]
 position = Vector2(10, 378)
 scale = Vector2(1.72, 1)
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=556889498]
-position = Vector2(592.05994, 106.5)
-scale = Vector2(10.2040615, 0.5234375)
-texture = ExtResource("1_u52ul")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground" unique_id=1710601393]
+position = Vector2(458.38766, 131.5)
+scale = Vector2(2.4505062, 1)
+shape = SubResource("RectangleShape2D_fx85w")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1710601393]
+[node name="Ground2" type="StaticBody2D" parent="." unique_id=19429137]
+position = Vector2(5168, 378)
+scale = Vector2(1.72, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground2" unique_id=1367312585]
+position = Vector2(458.38766, 131.5)
+scale = Vector2(2.4505062, 1)
+shape = SubResource("RectangleShape2D_fx85w")
+
+[node name="Ground3" type="StaticBody2D" parent="." unique_id=324709150]
+position = Vector2(7832, 380)
+scale = Vector2(1.72, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground3" unique_id=1340993442]
 position = Vector2(458.38766, 131.5)
 scale = Vector2(2.4505062, 1)
 shape = SubResource("RectangleShape2D_fx85w")
@@ -41,24 +53,14 @@ shape = SubResource("RectangleShape2D_fx85w")
 position = Vector2(1838, 378)
 scale = Vector2(1.72, 1)
 
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D2" unique_id=457797653]
-position = Vector2(592.05994, 106.5)
-scale = Vector2(10.2040615, 0.5234375)
-texture = ExtResource("1_u52ul")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2" unique_id=1761308545]
-position = Vector2(591.55994, 107.5)
+position = Vector2(924.4186, 131)
 scale = Vector2(2.4505062, 1)
 shape = SubResource("RectangleShape2D_fx85w")
 
 [node name="StaticBody2D3" type="StaticBody2D" parent="." unique_id=530131743]
 position = Vector2(617, 341.00003)
 scale = Vector2(0.16017507, 0.6453999)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D3" unique_id=2115796484]
-position = Vector2(592.05994, 106.5)
-scale = Vector2(10.2040615, 0.5234375)
-texture = ExtResource("1_u52ul")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3" unique_id=389927022]
 position = Vector2(591.55994, 107.5)
@@ -68,11 +70,6 @@ shape = SubResource("RectangleShape2D_fx85w")
 [node name="StaticBody2D6" type="StaticBody2D" parent="." unique_id=119127041]
 position = Vector2(1343, 221)
 scale = Vector2(0.16307715, 0.7770008)
-
-[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D6" unique_id=1507343526]
-position = Vector2(592.05994, 106.5)
-scale = Vector2(10.2040615, 0.5234375)
-texture = ExtResource("1_u52ul")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6" unique_id=1314803978]
 position = Vector2(591.55994, 107.5)
@@ -94,21 +91,6 @@ scale = Vector2(0.6439645, 0.22948706)
 [node name="Obstacle4" parent="." unique_id=320233304 instance=ExtResource("6_1ainy")]
 position = Vector2(1440, 306.99994)
 scale = Vector2(0.6439645, 0.22948706)
-
-[node name="01Ground" type="Sprite2D" parent="." unique_id=345937418]
-z_index = -2
-position = Vector2(916, -53)
-texture = ExtResource("8_8cye3")
-
-[node name="03DistantTrees" type="Sprite2D" parent="." unique_id=190212391]
-z_index = -3
-position = Vector2(909, -11)
-texture = ExtResource("9_2orkt")
-
-[node name="04Bushes" type="Sprite2D" parent="." unique_id=129700276]
-z_index = -3
-position = Vector2(884, 17)
-texture = ExtResource("10_aicyk")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1939341080]
 position = Vector2(25.07, 231)
@@ -184,5 +166,49 @@ offset_bottom = 169.89363
 scale = Vector2(0.050077677, 0.03433911)
 theme_override_font_sizes/font_size = 121
 text = "Pago: "
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="Camera2D" unique_id=2027872962]
+
+[node name="Arboles" type="ParallaxLayer" parent="Camera2D/ParallaxBackground" unique_id=1034616916]
+position = Vector2(-1461, -749)
+motion_mirroring = Vector2(1500, 0)
+
+[node name="04Bushes2" type="Sprite2D" parent="Camera2D/ParallaxBackground/Arboles" unique_id=1516225868]
+z_index = 2
+position = Vector2(5, 125)
+texture = ExtResource("10_aicyk")
+centered = false
+
+[node name="04Bushes3" type="Sprite2D" parent="Camera2D/ParallaxBackground/Arboles" unique_id=476553275]
+z_index = -31
+position = Vector2(0, 33)
+texture = ExtResource("10_aicyk")
+centered = false
+
+[node name="03DistantTrees" type="Sprite2D" parent="Camera2D/ParallaxBackground/Arboles" unique_id=190212391]
+texture_filter = 1
+texture = ExtResource("9_2orkt")
+centered = false
+
+[node name="Arbustos" type="ParallaxLayer" parent="Camera2D/ParallaxBackground" unique_id=1897947542]
+position = Vector2(-1461, -749)
+motion_scale = Vector2(2, 2)
+motion_mirroring = Vector2(2000, 0)
+
+[node name="04Bushes" type="Sprite2D" parent="Camera2D/ParallaxBackground/Arbustos" unique_id=129700276]
+visible = false
+z_index = 4
+texture = ExtResource("10_aicyk")
+centered = false
+
+[node name="Piso" type="ParallaxLayer" parent="Camera2D/ParallaxBackground" unique_id=1855240018]
+position = Vector2(-1461, -749)
+motion_mirroring = Vector2(2000, 0)
+
+[node name="01Ground" type="Sprite2D" parent="Camera2D/ParallaxBackground/Piso" unique_id=345937418]
+z_index = 2
+position = Vector2(-2, 0)
+texture = ExtResource("8_8cye3")
+centered = false
 
 [connection signal="timeout" from="Camera2D/Control/Tiempo" to="Camera2D/Control/Tiempo" method="_on_timeout"]
