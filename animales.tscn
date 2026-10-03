@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://dalnehf2frfj"]
+
+[ext_resource type="Script" uid="uid://cob01do4emafc" path="res://character_body_2d.gd" id="1_s04kx"]
+[ext_resource type="Texture2D" uid="uid://bo7hc8rk01hsp" path="res://caballo_sheet_4x.png" id="2_dh2h4"]
+[ext_resource type="AudioStream" uid="uid://dtguyu777rt02" path="res://caballo_relincho_corto.wav" id="3_lk4by"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8col2"]
+atlas = ExtResource("2_dh2h4")
+region = Rect2(0, 0, 176, 136)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7h2rr"]
+atlas = ExtResource("2_dh2h4")
+region = Rect2(176, 0, 176, 136)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8b8ty"]
+atlas = ExtResource("2_dh2h4")
+region = Rect2(352, 0, 176, 136)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ob7jg"]
+atlas = ExtResource("2_dh2h4")
+region = Rect2(528, 0, 176, 136)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m2g58"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8col2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7h2rr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8b8ty")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ob7jg")
+}],
+"loop": 1,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m2g58"]
+size = Vector2(55.5, 51.5)
+
+[node name="Animales" type="Node2D" unique_id=477363840]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1087546268]
+script = ExtResource("1_s04kx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=683161885]
+position = Vector2(25.406252, 34.9375)
+scale = Vector2(0.33629262, 0.38327208)
+sprite_frames = SubResource("SpriteFrames_m2g58")
+animation = &"new_animation"
+frame_progress = 0.83803445
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1391566340]
+position = Vector2(30.25, 33.25)
+shape = SubResource("RectangleShape2D_m2g58")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1831915932]
+stream = ExtResource("3_lk4by")
+autoplay = true
+max_distance = 437.0

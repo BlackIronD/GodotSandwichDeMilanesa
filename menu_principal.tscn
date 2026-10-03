@@ -1,84 +1,31 @@
-[gd_scene format=3 uid="uid://ctuyrwwpjmjh6"]
+[gd_scene format=3 uid="uid://b54bdpld5u5jb"]
 
-[ext_resource type="Texture2D" uid="uid://b3kkkr64oy2jf" path="res://Arte/imgmenu.png" id="1_bj1uy"]
-[ext_resource type="Script" uid="uid://d2yxmdg07xoyr" path="res://menu_principal.gd" id="1_gmcsc"]
-[ext_resource type="Texture2D" uid="uid://c85c2uh3s6ac4" path="res://Arte/botonjugar2.png" id="3_ul6ys"]
+[ext_resource type="Script" uid="uid://0ibk2guy5d5f" path="res://menu_principal.gd" id="1_bj1uy"]
+[ext_resource type="Texture2D" uid="uid://cad1qu6aobjym" path="res://Imagen de ChatGPT 24 sept 2026, 07_38_54 p.m..png" id="2_gmcsc"]
 
-[node name="MenuPrincipal" type="Control" unique_id=275778130]
+[node name="MenuPrincipal" type="Control" unique_id=30930562]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-script = ExtResource("1_gmcsc")
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_bj1uy")
+metadata/_edit_vertical_guides_ = [20.0]
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=446691835]
-layout_mode = 0
-offset_right = 1152.0
-offset_bottom = 648.0
-
-[node name="TextureRect" type="TextureRect" parent="." unique_id=541910412]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("1_bj1uy")
-expand_mode = 1
-
-[node name="BotonJugar" type="TextureButton" parent="." unique_id=113141446]
-layout_mode = 0
-offset_left = 301.0
-offset_top = 93.0
-offset_right = 854.0
-offset_bottom = 229.0
-texture_normal = ExtResource("3_ul6ys")
-ignore_texture_size = true
-stretch_mode = 5
-
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2134553650]
+[node name="Button" type="Button" parent="." unique_id=1350255976]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -166.0
-offset_top = -89.0
-offset_right = 169.0
-offset_bottom = 261.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/separation = 15
+anchor_left = 7.7250004
+anchor_top = 4.9750004
+anchor_right = 17.800001
+anchor_bottom = 6.9
+offset_left = 125.0
+offset_top = 7.9999847
+offset_right = -6.1035156e-05
+text = "jugar"
 
-[node name="BotonOpciones" type="Button" parent="VBoxContainer" unique_id=1505806287]
-layout_mode = 2
-theme_override_font_sizes/font_size = 36
-text = "OPCIONES"
+[node name="ImagenDeChatGpt24Sept2026,073854P_m_" type="Sprite2D" parent="." unique_id=561082044]
+position = Vector2(583.99994, 306)
+scale = Vector2(0.72916657, 0.625)
+texture = ExtResource("2_gmcsc")
 
-[node name="BotonMejoras" type="Button" parent="VBoxContainer" unique_id=1141752916]
-layout_mode = 2
-theme_override_font_sizes/font_size = 36
-text = "MEJORAS"
-
-[node name="BotonVehiculos" type="Button" parent="VBoxContainer" unique_id=1882304598]
-layout_mode = 2
-theme_override_font_sizes/font_size = 36
-text = "VEHÍCULOS
-"
-
-[node name="BotonCreditos" type="Button" parent="VBoxContainer" unique_id=1927722639]
-layout_mode = 2
-theme_override_font_sizes/font_size = 36
-text = "CRÉDITOS"
-
-[node name="BotonSalir" type="Button" parent="VBoxContainer" unique_id=1457597555]
-layout_mode = 2
-theme_override_font_sizes/font_size = 36
-text = "SALIR"
-
-[connection signal="pressed" from="BotonJugar" to="." method="_on_texture_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/BotonMejoras" to="." method="_on_boton_mejoras_pressed"]
-[connection signal="pressed" from="VBoxContainer/BotonSalir" to="." method="_on_boton_salir_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://d18d762i2abou"]
+
+[ext_resource type="Texture2D" uid="uid://lgtrbh55jfmt" path="res://icon.svg" id="1_0kxka"]
+[ext_resource type="Script" uid="uid://b2253wvih86rj" path="res://zona_robo.gd" id="1_1ql3t"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_m2g58"]
+radius = 27.45906
+
+[node name="Eventos" type="Node2D" unique_id=1358956482]
+
+[node name="ZonaRobo" type="Area2D" parent="." unique_id=787023674]
+script = ExtResource("1_1ql3t")
+
+[node name="Sprite2D" type="Sprite2D" parent="ZonaRobo" unique_id=1513837512]
+position = Vector2(34, 22.999998)
+scale = Vector2(0.328125, 0.35937503)
+texture = ExtResource("1_0kxka")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ZonaRobo" unique_id=806954855]
+position = Vector2(35, 26)
+shape = SubResource("CircleShape2D_m2g58")
+
+[connection signal="body_entered" from="ZonaRobo" to="ZonaRobo" method="_on_body_entered"]

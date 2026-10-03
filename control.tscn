@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://c0we624wlhqa4"]
+
+[node name="economia" type="Control" unique_id=1753659898]
+layout_mode = 3
+anchor_right = 1.003
+anchor_bottom = 0.215
+offset_right = 0.5439453
+offset_bottom = -0.32000732
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1426412266]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 4.734
+offset_right = -11.0
+offset_bottom = -0.026000977

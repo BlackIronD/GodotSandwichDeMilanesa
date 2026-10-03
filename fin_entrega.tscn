@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://bxdaluev1b2ma"]
+
+[ext_resource type="Script" uid="uid://7hb06osup1qp" path="res://fin_entrega.gd" id="1_x5sio"]
+
+[node name="FinEntrega" type="Control" unique_id=1478892627]
+layout_mode = 3
+anchor_right = 1.0
+anchor_bottom = 0.125
+offset_right = -6.0
+offset_bottom = 357.0
+script = ExtResource("1_x5sio")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1480072081]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.01
+anchor_bottom = 8.247001
+offset_top = -6.0
+offset_right = 0.54003906
+offset_bottom = -6.00708
+color = Color(0, 0, 0, 1)
+
+[node name="Ganancias" type="Label" parent="." unique_id=1377669776]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.263
+anchor_top = 0.397
+anchor_right = 0.75900006
+anchor_bottom = 0.47700003
+offset_left = -0.39801025
+offset_top = 0.11399841
+offset_right = 0.18591309
+offset_bottom = 0.07398987
+text = "                                                           Ganancias: $0"
+
+[node name="Propinas" type="Label" parent="." unique_id=1379322787]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.25500003
+anchor_top = 0.5
+anchor_right = 0.77500004
+anchor_bottom = 0.555
+offset_left = -10.2300415
+offset_top = -9.0
+offset_right = -10.150024
+offset_bottom = -10.089996
+text = "                                                                Propinas: $0"
+
+[node name="TOTAL" type="Label" parent="." unique_id=805855177]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.333
+anchor_top = 0.582
+anchor_right = 0.69000006
+anchor_bottom = 0.63500005
+offset_left = -5.6180115
+offset_top = -16.916
+offset_right = -5.7400513
+offset_bottom = -17.130035
+text = "                                        TOTAL: $0"
+
+[node name="Button" type="Button" parent="." unique_id=395261740]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.40100002
+anchor_top = 0.63900006
+anchor_right = 0.62700003
+anchor_bottom = 0.763
+offset_left = 0.4539795
+offset_top = 0.11798096
+offset_right = 0.45794678
+offset_bottom = -0.19400024
+text = "Continuar"

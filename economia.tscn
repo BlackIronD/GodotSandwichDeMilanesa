@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://2pdmlqs5u3jj"]
+
+[ext_resource type="Script" uid="uid://b6nso8wyg88bu" path="res://economia.gd" id="1_gjkns"]
+
+[node name="Economia" type="Node" unique_id=1076393563]
+script = ExtResource("1_gjkns")
+
+[node name="Control" type="Control" parent="." unique_id=663762926]
+layout_mode = 3
+anchor_right = 1.0
+anchor_bottom = 1.011
+offset_left = 33.0
+offset_top = 9.0
+offset_right = 42.0
+offset_bottom = 8.871948
+
+[node name="ColorRect" type="ColorRect" parent="Control" unique_id=781532958]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.98
+offset_left = -27.0
+offset_top = -10.0
+offset_right = -54.0
+offset_bottom = -9.900024
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="Control" unique_id=759612810]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.35900003
+anchor_top = 0.25800002
+anchor_right = 0.58400005
+anchor_bottom = 0.293
+offset_left = 0.20095825
+offset_top = 0.009994507
+offset_right = -0.024047852
+offset_bottom = 0.084991455
+text = "                    ganancias :"
+
+[node name="Label2" type="Label" parent="Control" unique_id=611875421]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.30900002
+anchor_top = 0.31100002
+anchor_right = 0.6
+anchor_bottom = 0.347
+offset_left = 19.250977
+offset_top = 0.2949829
+offset_right = -8.600037
+offset_bottom = -0.28500366
+text = "                             propina :"
+
+[node name="Label3" type="Label" parent="Control" unique_id=2026848313]
+layout_mode = 0
+offset_left = 467.0
+offset_top = 233.0
+offset_right = 639.0
+offset_bottom = 256.0
+text = "        total:"
