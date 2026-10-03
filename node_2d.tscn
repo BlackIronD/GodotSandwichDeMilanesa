@@ -1,0 +1,72 @@
+[gd_scene format=3 uid="uid://cuhm0611lagwf"]
+
+[ext_resource type="Script" uid="uid://dnt41y4yuctyu" path="res://perro.gd" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://icjmkbj80i4f" path="res://perro_caminando_spritesheet_6.png" id="1_wtcfe"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0e48y"]
+atlas = ExtResource("1_wtcfe")
+region = Rect2(0, 0, 301, 235)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_epypp"]
+atlas = ExtResource("1_wtcfe")
+region = Rect2(301, 0, 301, 235)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0hol4"]
+atlas = ExtResource("1_wtcfe")
+region = Rect2(602, 0, 301, 235)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q6r6c"]
+atlas = ExtResource("1_wtcfe")
+region = Rect2(903, 0, 301, 235)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kdubu"]
+atlas = ExtResource("1_wtcfe")
+region = Rect2(1204, 0, 301, 235)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d21ai"]
+atlas = ExtResource("1_wtcfe")
+region = Rect2(1505, 0, 301, 235)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m2g58"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0e48y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_epypp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0hol4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q6r6c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kdubu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d21ai")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m2g58"]
+size = Vector2(40, 25)
+
+[node name="perro" type="Node2D" unique_id=1836327232]
+
+[node name="perro" type="CharacterBody2D" parent="." unique_id=282014225]
+script = ExtResource("1_0e48y")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="perro" unique_id=1093252815]
+position = Vector2(19.489761, 9.479875)
+scale = Vector2(0.12963615, 0.10655427)
+sprite_frames = SubResource("SpriteFrames_m2g58")
+frame_progress = 0.2730061
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="perro" unique_id=1277494961]
+position = Vector2(21, 10)
+shape = SubResource("RectangleShape2D_m2g58")

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://icjmkbj80i4f"
-path="res://.godot/imported/perro_caminando_spritesheet_6.png-7008e8eb15548c90efe262f629883567.ctex"
+uid="uid://byu63mcrtstvt"
+path="res://.godot/imported/platforms.png-d77465605ae903b67cbaa418ee6e1694.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://perro_caminando_spritesheet_6.png"
-dest_files=["res://.godot/imported/perro_caminando_spritesheet_6.png-7008e8eb15548c90efe262f629883567.ctex"]
+source_file="res://platforms.png"
+dest_files=["res://.godot/imported/platforms.png-d77465605ae903b67cbaa418ee6e1694.ctex"]
 
 [params]
 

@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://fk7edrqjjv87"]
+
+[ext_resource type="Script" uid="uid://b6nso8wyg88bu" path="res://economia.gd" id="1_vk27q"]
+
+[node name="Economia" type="Node" unique_id=1076393563]
+script = ExtResource("1_vk27q")
