@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://cuk6s6ldpjp1i" path="res://Arte/run_frame_6.png" id="8_urp6f"]
 [ext_resource type="Texture2D" uid="uid://bk5odt5o8mhk7" path="res://Arte/slide_1.png" id="9_n7ghd"]
 [ext_resource type="Texture2D" uid="uid://cppr3t4s51tb7" path="res://Arte/slide_2.png" id="10_nvl01"]
+[ext_resource type="Texture2D" uid="uid://c016l3djwpm8u" path="res://Arte/Final_chica.png" id="15_606se"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fx85w"]
 radius = 19.0
@@ -93,6 +94,14 @@ animations = [{
 "name": &"Slide",
 "speed": 5.0
 }, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_606se")
+}],
+"loop": 1,
+"name": &"Win",
+"speed": 5.0
+}, {
 "frames": [],
 "loop": 1,
 "name": &"default",
@@ -161,7 +170,7 @@ texture_filter = 1
 position = Vector2(-0.99999976, -1)
 scale = Vector2(0.045646794, 0.050881457)
 sprite_frames = SubResource("SpriteFrames_fx85w")
-animation = &"JumpUp"
+animation = &"Win"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=376878553]
 libraries/ = SubResource("AnimationLibrary_hqtel")

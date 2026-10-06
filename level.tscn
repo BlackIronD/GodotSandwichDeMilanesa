@@ -31,25 +31,7 @@ scale = Vector2(1.72, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Ground" unique_id=1710601393]
 position = Vector2(458.38766, 131.5)
-scale = Vector2(2.4505062, 1)
-shape = SubResource("RectangleShape2D_fx85w")
-
-[node name="Ground2" type="StaticBody2D" parent="." unique_id=19429137]
-position = Vector2(5168, 378)
-scale = Vector2(1.72, 1)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground2" unique_id=1367312585]
-position = Vector2(458.38766, 131.5)
-scale = Vector2(2.4505062, 1)
-shape = SubResource("RectangleShape2D_fx85w")
-
-[node name="Ground3" type="StaticBody2D" parent="." unique_id=324709150]
-position = Vector2(7832, 380)
-scale = Vector2(1.72, 1)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground3" unique_id=1340993442]
-position = Vector2(458.38766, 131.5)
-scale = Vector2(2.4505062, 1)
+scale = Vector2(12.962134, 1)
 shape = SubResource("RectangleShape2D_fx85w")
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=1837187629]

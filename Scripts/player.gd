@@ -44,6 +44,7 @@ func take_hit() -> void:
 
 		if sandwich_quantity <= 0:
 			print("Sin sannguches")
+			get_tree().change_scene_to_file("res://menu_principal.tscn")
 
 
 func _physics_process(delta: float) -> void:
