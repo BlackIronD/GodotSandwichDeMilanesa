@@ -1,25 +1,25 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1791310163
+::res://::1791312074
 areae_end.tscn::PackedScene::5450210693918614891::1791310163::0::1::::<><><>0<>0<><>::uid://du1hrlqxh3i4y::::res://Scripts/EndScript.gd
 back_pack.gd::GDScript::1263375806121503637::1791008408::0::1::::<>Node2D<><>0<>0<><>::
+banca.tscn::PackedScene::1162011601378323910::1791310163::0::1::::<><><>0<>0<><>::uid://dfjhgyo5dw41k::::res://Arte/park-bench-isolated-on-white-260nw-2519629265.webp
 coin.tscn::PackedScene::2648656114419898838::1791008408::0::1::::<><><>0<>0<><>::uid://b80atco4jb530::::res://icon.svg
 Final_mano.png::CompressedTexture2D::3353485613250196919::1791310163::1791310203::1::::<><><>0<>0<>4bd2942af11df644cd23729fa08587ef<>res://.godot/imported/Final_mano.png-bf4e8e2bbb668255e2b64fb57df2b5dd.ctex::
 global_script_class_cache.cfg::TextFile::-1::1790427820::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::4754296025687548545::1791008408::1791008478::1::::<><><>0<>0<>e0dbbfebd26b73a2eadc1b9c74e9415c<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 level.tscn::PackedScene::5455374014304218998::1791310163::0::1::::<><><>0<>0<><>::uid://84w0nmqfeg0a::::res://Arte/Sanwich.jpg<>uid://06jbi1p0lyj5::::res://player.tscn<>uid://b3d4jo8rd2rak::::res://Scripts/TimeLimit.gd<>uid://qs5fqp3tyo75::::res://banca.tscn<>uid://cjwef57y1ty0b::::res://areae_end.tscn<>uid://co58gasnip40b::::res://obstacleSky.tscn<>uid://whp651biq2pp::::res://obstacle.tscn<>uid://dhw6dbnstu78p::::res://Scripts/CamraSlide.gd<>uid://b82d5nxnpx1eb::::res://Arte/parallax backgound pack/_01_ground.png<>uid://2hfdejnpcft::::res://Arte/parallax backgound pack/_03_distant_trees.png<>uid://1ijjy4r8ter8::::res://ReturnToMenu.gd<>uid://bbq52475qc06j::::res://Arte/parallax backgound pack/_04_bushes.png
-mejoras.tscn::PackedScene::6998576289105583073::1791310163::0::1::::<><><>0<>0<><>::
+mejoras.tscn::PackedScene::6998576289105583073::1791310990::0::1::::<><><>0<>0<><>::uid://v80huggi6hsr::::res://Arte/FondoMejoras.png<>uid://b6acp2o217iy::::res://mejoras.gd<>uid://bqy20f1ra3ole::::res://Arte/CartaMejoras.png<>uid://b0hvsagehso3r::::res://Arte/moneda.png
 menu_principal.gd::GDScript::9105323983782545873::1791008408::0::1::::<>Control<><>0<>0<><>::
 menu_principal.tscn::PackedScene::6149205708106232321::1791033053::0::1::::<><><>0<>0<><>::uid://b3kkkr64oy2jf::::res://Arte/imgmenu.png<>uid://d2yxmdg07xoyr::::res://menu_principal.gd<>uid://c85c2uh3s6ac4::::res://Arte/botonjugar2.png
-obstacle.tscn::PackedScene::1559572934739885465::1791310163::0::1::::<><><>0<>0<><>::uid://da3mpbfuuylci::::res://Scripts/Obstacle.gd<>uid://br75ocb5adn7x::::res://Arte/Ladron.jpg
-player.tscn::PackedScene::1819265501122581880::1791310163::0::1::::<><><>0<>0<><>::uid://ccnwrefje3rd2::::res://Scripts/player.gd<>uid://bukoksg5yl7ws::::res://Arte/miss_1.png<>uid://bgswca3tetomw::::res://Arte/run_frame_2 (1).png<>uid://cbox1qointhdf::::res://Arte/miss_2.png<>uid://cwv2scld67lob::::res://Arte/run_frame_1.png<>uid://3hivt8gh2dss::::res://Arte/run_frame_2.png<>uid://c84xw2605pl81::::res://Arte/run_frame_3.png<>uid://dbiijhj30r25t::::res://Arte/run_frame_4.png<>uid://bkx5sdc3qw8uy::::res://Arte/jump_down.png<>uid://c0vj0bclyrfp2::::res://Arte/run_frame_5.png<>uid://c3hmgugvjkcwk::::res://Arte/jump_up.png<>uid://cuk6s6ldpjp1i::::res://Arte/run_frame_6.png<>uid://bk5odt5o8mhk7::::res://Arte/slide_1.png<>uid://cppr3t4s51tb7::::res://Arte/slide_2.png<>uid://c016l3djwpm8u::::res://Arte/Final_chica.png
-README.md::TextFile::-1::1790427820::0::1::::<><><>0<>0<><>::
 minigame.tscn::PackedScene::6211353475632634903::1791008519::0::1::::<><><>0<>0<><>::
+obstacle.tscn::PackedScene::1559572934739885465::1791310163::0::1::::<><><>0<>0<><>::uid://da3mpbfuuylci::::res://Scripts/Obstacle.gd<>uid://br75ocb5adn7x::::res://Arte/Ladron.jpg
 obstacleSky.tscn::PackedScene::5819430914873626079::1791310163::0::1::::<><><>0<>0<><>::uid://da3mpbfuuylci::::res://Scripts/Obstacle.gd<>uid://vixb7xwstbtf::::res://Arte/images (4).jpg
-banca.tscn::PackedScene::1162011601378323910::1791310163::0::1::::<><><>0<>0<><>::uid://dfjhgyo5dw41k::::res://Arte/park-bench-isolated-on-white-260nw-2519629265.webp
+player.tscn::PackedScene::1819265501122581880::1791310817::0::1::::<><><>0<>0<><>::uid://ccnwrefje3rd2::::res://Scripts/player.gd<>uid://bukoksg5yl7ws::::res://Arte/miss_1.png<>uid://bgswca3tetomw::::res://Arte/run_frame_2 (1).png<>uid://cbox1qointhdf::::res://Arte/miss_2.png<>uid://cwv2scld67lob::::res://Arte/run_frame_1.png<>uid://3hivt8gh2dss::::res://Arte/run_frame_2.png<>uid://c84xw2605pl81::::res://Arte/run_frame_3.png<>uid://dbiijhj30r25t::::res://Arte/run_frame_4.png<>uid://bkx5sdc3qw8uy::::res://Arte/jump_down.png<>uid://c0vj0bclyrfp2::::res://Arte/run_frame_5.png<>uid://c3hmgugvjkcwk::::res://Arte/jump_up.png<>uid://cuk6s6ldpjp1i::::res://Arte/run_frame_6.png<>uid://bk5odt5o8mhk7::::res://Arte/slide_1.png<>uid://cppr3t4s51tb7::::res://Arte/slide_2.png<>uid://c016l3djwpm8u::::res://Arte/Final_chica.png
+README.md::TextFile::-1::1790427820::0::1::::<><><>0<>0<><>::
 ReturnToMenu.gd::GDScript::1841988787878347259::1791310163::0::1::::<>Button<><>0<>0<><>::
 scene_groups_cache.cfg::TextFile::-1::1791008409::0::1::::<><><>0<>0<><>::
 V-currentmixed.txt::TextFile::-1::1791310163::0::1::::<><><>0<>0<><>::
-::res://Arte/::1791310163
+::res://Arte/::1791310203
 botonjugar2.png::CompressedTexture2D::7151175253062127417::1791008408::1791008479::1::::<><><>0<>0<>2d2227304bceea5f364d0ebf0b1afc30<>res://.godot/imported/botonjugar2.png-decac26ed1222dfa5b60ac03abc9f793.ctex::
 download (3).png::CompressedTexture2D::4815663972043742506::1791008408::1791008479::1::::<><><>0<>0<>b6937d01da90e2b03540b576ab89dce1<>res://.godot/imported/download (3).png-ae5545f6049ca9ba90ac2992a361eccb.ctex::
 Final_chica.png::CompressedTexture2D::6583139626178420190::1791008408::1791008480::1::::<><><>0<>0<>9a0a936e879b2089b1b33f11faf44a1e<>res://.godot/imported/Final_chica.png-0eb00f9c633fa59f3370abfff57d0e6a.ctex::
