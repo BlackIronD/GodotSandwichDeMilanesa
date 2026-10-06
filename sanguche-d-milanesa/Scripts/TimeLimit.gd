@@ -3,6 +3,7 @@ extends Timer
 @onready var progress_bar: ProgressBar = $"../TemperaturaSandwich"
 @onready var sprite: Sprite2D = $"../Sprite2D"
 
+
 @export var DecayRate := 10
 
 var state := 0

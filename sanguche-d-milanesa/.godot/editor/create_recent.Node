@@ -1,7 +1,11 @@
-TextureRect
 Label
-ColorRect
+VBoxContainer
+TextureRect
+AudioStreamPlayer
 Button
+CheckButton
+HSlider
+ConfirmationDialog
+ColorRect
 Panel
 TextureButton
-VBoxContainer

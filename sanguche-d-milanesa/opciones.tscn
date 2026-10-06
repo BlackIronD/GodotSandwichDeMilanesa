@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://ck3by0w6jihxg"]
+
+[ext_resource type="Script" uid="uid://b88hu547ipj33" path="res://opciones.gd" id="1_0bc36"]
+[ext_resource type="Texture2D" uid="uid://ch8s1jn6ygwg" path="res://Arte/fondo noche.jpg" id="2_wvblx"]
+
+[node name="Opciones" type="Control" unique_id=1659232581]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0bc36")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=400938891]
+z_index = 10
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -95.0
+offset_top = -39.0
+offset_right = 262.0
+offset_bottom = 48.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Titulo" type="Label" parent="VBoxContainer" unique_id=1009438624]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+text = "OPCIONES"
+horizontal_alignment = 1
+
+[node name="PantallaCompleta" type="CheckButton" parent="VBoxContainer" unique_id=1337665144]
+z_index = 10
+layout_mode = 2
+theme_override_font_sizes/font_size = 40
+text = "Pantalla Completa"
+
+[node name="Volumen" type="HSlider" parent="VBoxContainer" unique_id=1601892323]
+z_index = 10
+custom_minimum_size = Vector2(500, 0)
+layout_mode = 2
+value = 100.0
+
+[node name="BotonVolver" type="Button" parent="." unique_id=83325571]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 25.0
+offset_right = 341.0
+offset_bottom = 68.0
+theme_override_font_sizes/font_size = 30
+text = "Volver al menu principal"
+
+[node name="FondoNoche" type="TextureRect" parent="." unique_id=811545124]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_wvblx")
+
+[connection signal="toggled" from="VBoxContainer/PantallaCompleta" to="." method="_on_pantalla_completa_toggled"]
+[connection signal="value_changed" from="VBoxContainer/Volumen" to="." method="_on_volumen_value_changed"]
+[connection signal="pressed" from="BotonVolver" to="." method="_on_boton_volver_pressed"]

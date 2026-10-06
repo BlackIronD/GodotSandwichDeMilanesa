@@ -6,7 +6,7 @@ extends Control
 @onready var boton_comenzar = $ComenzarJuego
 @onready var instrucciones = $Instrucciones
 
-var tiempo = 25
+var tiempo = 30
 var minijuego_iniciado = false
 var resistencia = ""
 
@@ -32,7 +32,7 @@ func _ready():
 	boton_comenzar.visible = false
 
 	# Mostrar tiempo inicial
-	tiempo_label.text = "Tiempo: 25"
+	tiempo_label.text = "Tiempo: 30"
 
 	instrucciones.visible = false
 

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ctuyrwwpjmjh6"]
 
-[ext_resource type="Texture2D" uid="uid://b3kkkr64oy2jf" path="res://Arte/imgmenu.png" id="1_bj1uy"]
 [ext_resource type="Script" uid="uid://d2yxmdg07xoyr" path="res://menu_principal.gd" id="1_gmcsc"]
+[ext_resource type="Texture2D" uid="uid://bul1rwc6klg0o" path="res://Arte/Fondo_titulo_contraste.png" id="2_ul6ys"]
 [ext_resource type="Texture2D" uid="uid://c85c2uh3s6ac4" path="res://Arte/botonjugar2.png" id="3_ul6ys"]
 
 [node name="MenuPrincipal" type="Control" unique_id=275778130]
@@ -25,15 +25,15 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_bj1uy")
+texture = ExtResource("2_ul6ys")
 expand_mode = 1
 
 [node name="BotonJugar" type="TextureButton" parent="." unique_id=113141446]
 layout_mode = 0
-offset_left = 613.0
-offset_top = 178.0
-offset_right = 1354.0
-offset_bottom = 357.0
+offset_left = 627.0
+offset_top = 181.0
+offset_right = 1368.0
+offset_bottom = 360.0
 texture_normal = ExtResource("3_ul6ys")
 ignore_texture_size = true
 stretch_mode = 5
@@ -63,12 +63,6 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 36
 text = "MEJORAS"
 
-[node name="BotonVehiculos" type="Button" parent="VBoxContainer" unique_id=1882304598]
-layout_mode = 2
-theme_override_font_sizes/font_size = 36
-text = "VEHÍCULOS
-"
-
 [node name="BotonCreditos" type="Button" parent="VBoxContainer" unique_id=1927722639]
 layout_mode = 2
 theme_override_font_sizes/font_size = 36
@@ -79,6 +73,14 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 36
 text = "SALIR"
 
+[node name="ConfirmarSalir" type="ConfirmationDialog" parent="." unique_id=1798999827]
+title = "Salir del juego"
+ok_button_text = "Si, salir"
+dialog_text = "¿Quieres salir del juego?"
+cancel_button_text = "Cancelar"
+
 [connection signal="pressed" from="BotonJugar" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/BotonOpciones" to="." method="_on_boton_opciones_pressed"]
 [connection signal="pressed" from="VBoxContainer/BotonMejoras" to="." method="_on_boton_mejoras_pressed"]
 [connection signal="pressed" from="VBoxContainer/BotonSalir" to="." method="_on_boton_salir_pressed"]
+[connection signal="confirmed" from="ConfirmarSalir" to="." method="_on_confirmar_salir_confirmed"]

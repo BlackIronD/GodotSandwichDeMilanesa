@@ -2,8 +2,14 @@
 
 [ext_resource type="Texture2D" uid="uid://v80huggi6hsr" path="res://Arte/FondoMejoras.png" id="1_le2be"]
 [ext_resource type="Script" uid="uid://b6acp2o217iy" path="res://mejoras.gd" id="1_mtvv0"]
-[ext_resource type="Texture2D" uid="uid://bqy20f1ra3ole" path="res://Arte/CartaMejoras.png" id="2_mtvv0"]
 [ext_resource type="Texture2D" uid="uid://b0hvsagehso3r" path="res://Arte/moneda.png" id="4_0mo0r"]
+[ext_resource type="Texture2D" uid="uid://c5xgxl28bkrtw" path="res://Arte/CartaLinternaTienda.png" id="4_0ym2d"]
+[ext_resource type="Texture2D" uid="uid://cqgis3rexe6aq" path="res://Arte/CartaCajaBasicaTienda.png" id="5_scdsf"]
+[ext_resource type="Texture2D" uid="uid://fgao6je7wc12" path="res://Arte/CartaConservadoraTienda.png" id="6_41lvc"]
+[ext_resource type="Texture2D" uid="uid://dtuccurjxi7bh" path="res://Arte/CartaCajaTermicaTienda.png" id="7_dknst"]
+[ext_resource type="Texture2D" uid="uid://bv86jxpnnelhi" path="res://Arte/CartaZapasTienda.png" id="8_knewc"]
+[ext_resource type="Texture2D" uid="uid://bm0g728gcvaqc" path="res://Arte/CartaCajaReforzadaTienda.png" id="9_7kalv"]
+[ext_resource type="Texture2D" uid="uid://bkpwp751qw0q7" path="res://Arte/CartaPeligrosyaTienda.png" id="10_ems5f"]
 
 [node name="Mejoras" type="Control" unique_id=662157870]
 layout_mode = 3
@@ -68,7 +74,7 @@ theme_override_constants/separation = 12
 
 [node name="CartaMejora1" type="TextureRect" parent="TiendaScroll/Cartas/Mejora1" unique_id=153335333]
 layout_mode = 2
-texture = ExtResource("2_mtvv0")
+texture = ExtResource("4_0ym2d")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="TiendaScroll/Cartas/Mejora1" unique_id=1080662914]
 layout_mode = 2
@@ -101,7 +107,7 @@ theme_override_constants/separation = 12
 
 [node name="CartaMejora1" type="TextureRect" parent="TiendaScroll/Cartas/Mejora2" unique_id=1284836730]
 layout_mode = 2
-texture = ExtResource("2_mtvv0")
+texture = ExtResource("5_scdsf")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="TiendaScroll/Cartas/Mejora2" unique_id=201445906]
 layout_mode = 2
@@ -130,7 +136,7 @@ theme_override_constants/separation = 12
 
 [node name="CartaMejora1" type="TextureRect" parent="TiendaScroll/Cartas/Mejora3" unique_id=1362260797]
 layout_mode = 2
-texture = ExtResource("2_mtvv0")
+texture = ExtResource("6_41lvc")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="TiendaScroll/Cartas/Mejora3" unique_id=1926274920]
 layout_mode = 2
@@ -159,7 +165,7 @@ theme_override_constants/separation = 12
 
 [node name="CartaMejora1" type="TextureRect" parent="TiendaScroll/Cartas/Mejora4" unique_id=1204381212]
 layout_mode = 2
-texture = ExtResource("2_mtvv0")
+texture = ExtResource("7_dknst")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="TiendaScroll/Cartas/Mejora4" unique_id=316944087]
 layout_mode = 2
@@ -192,7 +198,7 @@ theme_override_constants/separation = 12
 
 [node name="CartaMejora1" type="TextureRect" parent="TiendaScroll/Cartas/Mejora5" unique_id=614842035]
 layout_mode = 2
-texture = ExtResource("2_mtvv0")
+texture = ExtResource("8_knewc")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="TiendaScroll/Cartas/Mejora5" unique_id=2013025459]
 layout_mode = 2
@@ -221,7 +227,7 @@ theme_override_constants/separation = 12
 
 [node name="CartaMejora1" type="TextureRect" parent="TiendaScroll/Cartas/Mejora6" unique_id=1536331822]
 layout_mode = 2
-texture = ExtResource("2_mtvv0")
+texture = ExtResource("9_7kalv")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="TiendaScroll/Cartas/Mejora6" unique_id=398832475]
 layout_mode = 2
@@ -250,7 +256,7 @@ theme_override_constants/separation = 12
 
 [node name="CartaMejora1" type="TextureRect" parent="TiendaScroll/Cartas/Mejora7" unique_id=1092210231]
 layout_mode = 2
-texture = ExtResource("2_mtvv0")
+texture = ExtResource("10_ems5f")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="TiendaScroll/Cartas/Mejora7" unique_id=80839999]
 layout_mode = 2
@@ -273,6 +279,20 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "COMPRAR"
 
+[node name="ConfirmarCompra" type="ConfirmationDialog" parent="." unique_id=1232282973]
+title = "Comprar mejora"
+ok_button_text = "Si"
+cancel_button_text = "No"
+
+[node name="Volver" type="Button" parent="." unique_id=1119913484]
+layout_mode = 0
+offset_left = 1558.0
+offset_top = 23.0
+offset_right = 1895.0
+offset_bottom = 70.0
+theme_override_font_sizes/font_size = 28
+text = "Volver al menu principal"
+
 [connection signal="pressed" from="TiendaScroll/Cartas/Mejora1/BotonComprar" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="TiendaScroll/Cartas/Mejora2/BotonComprar" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="TiendaScroll/Cartas/Mejora3/BotonComprar" to="." method="_on_button_pressed"]
@@ -280,3 +300,5 @@ text = "COMPRAR"
 [connection signal="pressed" from="TiendaScroll/Cartas/Mejora5/BotonComprar" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="TiendaScroll/Cartas/Mejora6/BotonComprar" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="TiendaScroll/Cartas/Mejora7/BotonComprar" to="." method="_on_button_pressed"]
+[connection signal="confirmed" from="ConfirmarCompra" to="." method="_on_confirmar_compra_confirmed"]
+[connection signal="pressed" from="Volver" to="." method="_on_volver_pressed"]

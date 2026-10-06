@@ -1,0 +1,84 @@
+[gd_scene format=3 uid="uid://ivyv7iryqixb"]
+
+[ext_resource type="Texture2D" uid="uid://bud2xf72fhasg" path="res://Arte/acarela bosque.jpg" id="1_fpedf"]
+
+[node name="Resultados" type="Control" unique_id=1722939170]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="FondoDia" type="TextureRect" parent="." unique_id=505596554]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_fpedf")
+
+[node name="Label" type="Label" parent="." unique_id=708236916]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.135
+anchor_right = 0.5
+anchor_bottom = 0.135
+offset_left = -119.0
+offset_top = -33.800003
+offset_right = 120.0
+offset_bottom = 29.199997
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 45
+text = "Resultados"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=554225037]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.6
+anchor_top = 0.46
+anchor_right = 0.6
+anchor_bottom = 0.46
+offset_left = -398.0
+offset_top = -248.80002
+offset_right = 54.0
+offset_bottom = 78.19998
+theme_override_constants/separation = 15
+
+[node name="Tiempo" type="Label" parent="VBoxContainer" unique_id=2075064035]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.0010853444, 0.0010853446, 0.0010853445, 1)
+theme_override_font_sizes/font_size = 30
+text = "Tiempo:"
+
+[node name="EstadoPedido" type="Label" parent="VBoxContainer" unique_id=1416150474]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Estado del Pedido:"
+
+[node name="PagoNoche" type="Label" parent="VBoxContainer" unique_id=590626099]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Pago de la noche:"
+
+[node name="Propina" type="Label" parent="VBoxContainer" unique_id=1372531741]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Propina:"
+
+[node name="TotalNoche" type="Label" parent="VBoxContainer" unique_id=578209925]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Total de la noche:"
+
+[node name="PlataAcumulada" type="Label" parent="VBoxContainer" unique_id=865488305]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Plata acumulada:"
