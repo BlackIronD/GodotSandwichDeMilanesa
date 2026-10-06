@@ -25,7 +25,7 @@ func _on_body_entered(body: Node2D) -> void:
 		return
 	delivered = true
 	end_panel.visible = true
-
+	
 	var pay := 0
 	if body.sandwich_quantity > 0:
 		var is_broken: bool = body.sandwich_hits >= broken_hits

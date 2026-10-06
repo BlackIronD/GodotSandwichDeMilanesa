@@ -1,1 +1,12 @@
+res://V-currentmixed.txt
+res://Scripts/Obstacle.gd
+res://level.tscn
+res://menu_principal.tscn
+res://areae_end.tscn
+res://obstacle.tscn
+res://obstacleSky.tscn
+res://ReturnToMenu.gd
+res://Scripts/player.gd
 res://player.tscn
+res://Scripts/EndScript.gd
+res://banca.tscn

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://whp651biq2pp"]
 
 [ext_resource type="Script" uid="uid://da3mpbfuuylci" path="res://Scripts/Obstacle.gd" id="1_aubd6"]
-[ext_resource type="Texture2D" uid="uid://b80atco4jb530" path="res://icon.svg" id="1_sl1jc"]
+[ext_resource type="Texture2D" uid="uid://br75ocb5adn7x" path="res://Arte/Ladron.jpg" id="2_aubd6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fx85w"]
 size = Vector2(534, 67)
@@ -21,6 +21,6 @@ scale = Vector2(0.5195577, 3.0668566)
 shape = SubResource("RectangleShape2D_fx85w")
 
 [node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D" unique_id=389832052]
-position = Vector2(0.2040863, -1)
-scale = Vector2(4.1640625, 0.5234375)
-texture = ExtResource("1_sl1jc")
+position = Vector2(-5.5715303, -1.0158509)
+scale = Vector2(1.2748002, 0.12707974)
+texture = ExtResource("2_aubd6")
