@@ -1,7 +1,7 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1791412196
+::res://::1791413068
 areae_end.tscn::PackedScene::5450210693918614891::1791310163::0::1::::<><><>0<>0<><>::uid://du1hrlqxh3i4y::::res://Scripts/EndScript.gd
-audiojuego.mp3::AudioStreamMP3::88242340214173499::1791412194::1791412439::1::::<><><>0<>0<>8f674fc6bbb663a021b877d2b41ba271<>res://.godot/imported/audiojuego.mp3-8e27109c0204e5d223527d825fe05418.mp3str::
+audiojuego.mp3::AudioStreamMP3::88242340214173499::1791413068::1791413104::1::::<><><>0<>0<>8f674fc6bbb663a021b877d2b41ba271<>res://.godot/imported/audiojuego.mp3-8e27109c0204e5d223527d825fe05418.mp3str::
 back_pack.gd::GDScript::1263375806121503637::1791008408::0::1::::<>Node2D<><>0<>0<><>::
 banca.tscn::PackedScene::1162011601378323910::1791310163::0::1::::<><><>0<>0<><>::uid://dfjhgyo5dw41k::::res://Arte/park-bench-isolated-on-white-260nw-2519629265.webp
 coin.tscn::PackedScene::2648656114419898838::1791008408::0::1::::<><><>0<>0<><>::uid://b80atco4jb530::::res://icon.svg
@@ -9,35 +9,35 @@ Final_mano.png::CompressedTexture2D::3353485613250196919::1791310163::1791310203
 global_script_class_cache.cfg::TextFile::-1::1790427820::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::4754296025687548545::1791008408::1791008478::1::::<><><>0<>0<>e0dbbfebd26b73a2eadc1b9c74e9415c<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 level.tscn::PackedScene::5455374014304218998::1791312262::0::1::::<><><>0<>0<><>::uid://84w0nmqfeg0a::::res://Arte/Sanwich.jpg<>uid://06jbi1p0lyj5::::res://player.tscn<>uid://b3d4jo8rd2rak::::res://Scripts/TimeLimit.gd<>uid://qs5fqp3tyo75::::res://banca.tscn<>uid://cjwef57y1ty0b::::res://areae_end.tscn<>uid://co58gasnip40b::::res://obstacleSky.tscn<>uid://whp651biq2pp::::res://obstacle.tscn<>uid://dhw6dbnstu78p::::res://Scripts/CamraSlide.gd<>uid://b82d5nxnpx1eb::::res://Arte/parallax backgound pack/_01_ground.png<>uid://2hfdejnpcft::::res://Arte/parallax backgound pack/_03_distant_trees.png<>uid://1ijjy4r8ter8::::res://ReturnToMenu.gd<>uid://bbq52475qc06j::::res://Arte/parallax backgound pack/_04_bushes.png
-mejoras.tscn::PackedScene::6998576289105583073::1791412194::0::1::::<><><>0<>0<><>::uid://v80huggi6hsr::::res://Arte/FondoMejoras.png<>uid://b6acp2o217iy::::res://mejoras.gd<>uid://bqy20f1ra3ole::::res://Arte/CartaMejoras.png<>uid://b0hvsagehso3r::::res://Arte/moneda.png
+mejoras.tscn::PackedScene::6998576289105583073::1791413068::0::1::::<><><>0<>0<><>::uid://v80huggi6hsr::::res://Arte/FondoMejoras.png<>uid://b6acp2o217iy::::res://mejoras.gd<>uid://bqy20f1ra3ole::::res://Arte/CartaMejoras.png<>uid://b0hvsagehso3r::::res://Arte/moneda.png
 menu_principal.gd::GDScript::9105323983782545873::1791008408::0::1::::<>Control<><>0<>0<><>::
 menu_principal.tscn::PackedScene::6149205708106232321::1791033053::0::1::::<><><>0<>0<><>::uid://b3kkkr64oy2jf::::res://Arte/imgmenu.png<>uid://d2yxmdg07xoyr::::res://menu_principal.gd<>uid://c85c2uh3s6ac4::::res://Arte/botonjugar2.png
 minigame.tscn::PackedScene::6211353475632634903::1791008519::0::1::::<><><>0<>0<><>::
-musica.tscn::PackedScene::6508771025392251592::1791412194::0::1::::<><><>0<>0<><>::
+musica.tscn::PackedScene::6508771025392251592::1791413068::0::1::::<><><>0<>0<><>::
 obstacle.tscn::PackedScene::1559572934739885465::1791310163::0::1::::<><><>0<>0<><>::uid://da3mpbfuuylci::::res://Scripts/Obstacle.gd<>uid://br75ocb5adn7x::::res://Arte/Ladron.jpg
 obstacleSky.tscn::PackedScene::5819430914873626079::1791310163::0::1::::<><><>0<>0<><>::uid://da3mpbfuuylci::::res://Scripts/Obstacle.gd<>uid://vixb7xwstbtf::::res://Arte/images (4).jpg
-opciones.gd::GDScript::4771239346424663088::1791412194::0::1::::<>Control<><>0<>0<><>::
-opciones.tscn::PackedScene::5532637305416982880::1791412194::0::1::::<><><>0<>0<><>::
+opciones.gd::GDScript::4771239346424663088::1791413068::0::1::::<>Control<><>0<>0<><>::
+opciones.tscn::PackedScene::5532637305416982880::1791413068::0::1::::<><><>0<>0<><>::
 player.tscn::PackedScene::1819265501122581880::1791310817::0::1::::<><><>0<>0<><>::uid://ccnwrefje3rd2::::res://Scripts/player.gd<>uid://bukoksg5yl7ws::::res://Arte/miss_1.png<>uid://bgswca3tetomw::::res://Arte/run_frame_2 (1).png<>uid://cbox1qointhdf::::res://Arte/miss_2.png<>uid://cwv2scld67lob::::res://Arte/run_frame_1.png<>uid://3hivt8gh2dss::::res://Arte/run_frame_2.png<>uid://c84xw2605pl81::::res://Arte/run_frame_3.png<>uid://dbiijhj30r25t::::res://Arte/run_frame_4.png<>uid://bkx5sdc3qw8uy::::res://Arte/jump_down.png<>uid://c0vj0bclyrfp2::::res://Arte/run_frame_5.png<>uid://c3hmgugvjkcwk::::res://Arte/jump_up.png<>uid://cuk6s6ldpjp1i::::res://Arte/run_frame_6.png<>uid://bk5odt5o8mhk7::::res://Arte/slide_1.png<>uid://cppr3t4s51tb7::::res://Arte/slide_2.png<>uid://c016l3djwpm8u::::res://Arte/Final_chica.png
 README.md::TextFile::-1::1790427820::0::1::::<><><>0<>0<><>::
-resultados.tscn::PackedScene::606359085348665423::1791412196::0::1::::<><><>0<>0<><>::
-ReturnToMenu.gd::GDScript::1841988787878347259::1791412194::0::1::::<>Button<><>0<>0<><>::
+resultados.tscn::PackedScene::606359085348665423::1791413068::0::1::::<><><>0<>0<><>::
+ReturnToMenu.gd::GDScript::1841988787878347259::1791413068::0::1::::<>Button<><>0<>0<><>::
 scene_groups_cache.cfg::TextFile::-1::1791008409::0::1::::<><><>0<>0<><>::
-V-currentmixed.txt::TextFile::-1::1791412173::0::1::::<><><>0<>0<><>::
-::res://Arte/::1791412194
-acarela bosque.jpg::CompressedTexture2D::3798071435064641106::1791412194::1791412440::1::::<><><>0<>0<>3bda1d8fd502543b4991d4f4bb50ddb3<>res://.godot/imported/acarela bosque.jpg-f0c98889d466348e3f5bbd3ce22ce3bf.ctex::
+V-currentmixed.txt::TextFile::-1::1791413068::0::1::::<><><>0<>0<><>::
+::res://Arte/::1791413068
+acarela bosque.jpg::CompressedTexture2D::3798071435064641106::1791413068::1791413105::1::::<><><>0<>0<>3bda1d8fd502543b4991d4f4bb50ddb3<>res://.godot/imported/acarela bosque.jpg-f0c98889d466348e3f5bbd3ce22ce3bf.ctex::
 botonjugar2.png::CompressedTexture2D::7151175253062127417::1791008408::1791008479::1::::<><><>0<>0<>2d2227304bceea5f364d0ebf0b1afc30<>res://.godot/imported/botonjugar2.png-decac26ed1222dfa5b60ac03abc9f793.ctex::
-CartaCajaBasicaTienda.png::CompressedTexture2D::5908768509479648348::1791412194::1791412439::1::::<><><>0<>0<>af9cc7ae30d97d7570159a32a54b24b7<>res://.godot/imported/CartaCajaBasicaTienda.png-49a3a1592043b5e809b3c02b642422d2.ctex::
-CartaCajaReforzadaTienda.png::CompressedTexture2D::3280719167947650282::1791412194::1791412439::1::::<><><>0<>0<>59a379ba5d426045378cce6c1e34c030<>res://.godot/imported/CartaCajaReforzadaTienda.png-d217ed59211e68a426f51681897b1ea6.ctex::
-CartaCajaTermicaTienda.png::CompressedTexture2D::8534263718025140665::1791412194::1791412439::1::::<><><>0<>0<>3e13e12aff40e704e501cb39c18e3f5d<>res://.godot/imported/CartaCajaTermicaTienda.png-f7b28b5a1395cd7d043aa78de647dfb6.ctex::
-CartaConservadoraTienda.png::CompressedTexture2D::363357128181655687::1791412194::1791412439::1::::<><><>0<>0<>a56fae76e509989cece04dfa92e8067a<>res://.godot/imported/CartaConservadoraTienda.png-a546035bf46bf1f3fcdb64c644e0b670.ctex::
-CartaLinternaTienda.png::CompressedTexture2D::6926393361054649376::1791412194::1791412439::1::::<><><>0<>0<>8d65386cc2fe79863c9a7fc8b15efe32<>res://.godot/imported/CartaLinternaTienda.png-f67be137d409fb11959ac22c96d1d4bd.ctex::
-CartaPeligrosyaTienda.png::CompressedTexture2D::3120639075428690836::1791412194::1791412439::1::::<><><>0<>0<>7882cdc7d062f4ab02e58c6ad6551f76<>res://.godot/imported/CartaPeligrosyaTienda.png-2ba85ce65be052aed883c0b6c5b8f855.ctex::
-CartaZapasTienda.png::CompressedTexture2D::3930410396713980786::1791412194::1791412439::1::::<><><>0<>0<>c905e15dd1bbddd6205dac7dc433cdc7<>res://.godot/imported/CartaZapasTienda.png-6cbc51fab2d721da5c79404cd4c8d975.ctex::
+CartaCajaBasicaTienda.png::CompressedTexture2D::5908768509479648348::1791413068::1791413104::1::::<><><>0<>0<>af9cc7ae30d97d7570159a32a54b24b7<>res://.godot/imported/CartaCajaBasicaTienda.png-49a3a1592043b5e809b3c02b642422d2.ctex::
+CartaCajaReforzadaTienda.png::CompressedTexture2D::3280719167947650282::1791413068::1791413104::1::::<><><>0<>0<>59a379ba5d426045378cce6c1e34c030<>res://.godot/imported/CartaCajaReforzadaTienda.png-d217ed59211e68a426f51681897b1ea6.ctex::
+CartaCajaTermicaTienda.png::CompressedTexture2D::8534263718025140665::1791413068::1791413105::1::::<><><>0<>0<>3e13e12aff40e704e501cb39c18e3f5d<>res://.godot/imported/CartaCajaTermicaTienda.png-f7b28b5a1395cd7d043aa78de647dfb6.ctex::
+CartaConservadoraTienda.png::CompressedTexture2D::363357128181655687::1791413068::1791413104::1::::<><><>0<>0<>a56fae76e509989cece04dfa92e8067a<>res://.godot/imported/CartaConservadoraTienda.png-a546035bf46bf1f3fcdb64c644e0b670.ctex::
+CartaLinternaTienda.png::CompressedTexture2D::6926393361054649376::1791413068::1791413104::1::::<><><>0<>0<>8d65386cc2fe79863c9a7fc8b15efe32<>res://.godot/imported/CartaLinternaTienda.png-f67be137d409fb11959ac22c96d1d4bd.ctex::
+CartaPeligrosyaTienda.png::CompressedTexture2D::3120639075428690836::1791413068::1791413104::1::::<><><>0<>0<>7882cdc7d062f4ab02e58c6ad6551f76<>res://.godot/imported/CartaPeligrosyaTienda.png-2ba85ce65be052aed883c0b6c5b8f855.ctex::
+CartaZapasTienda.png::CompressedTexture2D::3930410396713980786::1791413068::1791413104::1::::<><><>0<>0<>c905e15dd1bbddd6205dac7dc433cdc7<>res://.godot/imported/CartaZapasTienda.png-6cbc51fab2d721da5c79404cd4c8d975.ctex::
 download (3).png::CompressedTexture2D::4815663972043742506::1791008408::1791008479::1::::<><><>0<>0<>b6937d01da90e2b03540b576ab89dce1<>res://.godot/imported/download (3).png-ae5545f6049ca9ba90ac2992a361eccb.ctex::
 Final_chica.png::CompressedTexture2D::6583139626178420190::1791008408::1791008480::1::::<><><>0<>0<>9a0a936e879b2089b1b33f11faf44a1e<>res://.godot/imported/Final_chica.png-0eb00f9c633fa59f3370abfff57d0e6a.ctex::
 Final_mano.png::CompressedTexture2D::941177781354632105::1791008408::1791008479::1::::<><><>0<>0<>9f9e42614eb14546c9beae295f040dab<>res://.godot/imported/Final_mano.png-2c96491a093ee9190be3dad6ef92e5c2.ctex::
-Fondo_titulo_contraste.png::CompressedTexture2D::3814515872082331216::1791412194::1791412440::1::::<><><>0<>0<>17382cd4ff47d66944a2b943818a4b68<>res://.godot/imported/Fondo_titulo_contraste.png-c97a4e34231fb70f8f8e62f2c0ea0ea5.ctex::
+Fondo_titulo_contraste.png::CompressedTexture2D::3814515872082331216::1791413068::1791413105::1::::<><><>0<>0<>17382cd4ff47d66944a2b943818a4b68<>res://.godot/imported/Fondo_titulo_contraste.png-c97a4e34231fb70f8f8e62f2c0ea0ea5.ctex::
 images (4).jpg::CompressedTexture2D::1491880732360779975::1791310163::1791310203::1::::<><><>0<>0<>11a148c0e53ccef3c051a2af5cb8c09d<>res://.godot/imported/images (4).jpg-549937b60a05f024da79833934dc12e5.ctex::
 imgmenu.png::CompressedTexture2D::4372978053088519331::1791008408::1791008479::1::::<><><>0<>0<>b113fcae433bc62d646334653a7c2514<>res://.godot/imported/imgmenu.png-ed4cf17c60d136d6a1d593fcb8351c35.ctex::
 jump_down.png::CompressedTexture2D::3137643624444217844::1791008408::1791008480::1::::<><><>0<>0<>a1892c9f4ee98fc5401bb129a44ba200<>res://.godot/imported/jump_down.png-7cfa13b6077dd47e899ea21a46fee96d.ctex::
@@ -114,40 +114,47 @@ Sanwich.jpg-db3ce0235a0aed69e2147d6bee11f397.ctex::CompressedTexture2D::37628230
 Sprite-0001.png-7647bf9f8b536d839277d4b64aee9852.ctex::CompressedTexture2D::3083984577688588513::1791310163::0::1::::<><><>0<>0<><>::
 Untitled14-ezgif.com-gif-to-sprite-converter.png-dbd73823e6fe23264fd63d2a5cfb7c64.ctex::CompressedTexture2D::6024659530225472754::1791310163::0::1::::<><><>0<>0<><>::
 Untitled14-ezgif.com-gif-to-sprite-converter.png-fc1ce9b5d8fd46c5748f9c23ff2b92a5.ctex::CompressedTexture2D::6079466226246999654::1791310163::0::1::::<><><>0<>0<><>::
-::res://respaldo-godot/::1791412196
-botonjugar2.png-647742bdeeb133838a2928bf0857e755.ctex::CompressedTexture2D::7019312999388452008::1791412195::0::1::::<><><>0<>0<><>::
-botonjugar2.png-decac26ed1222dfa5b60ac03abc9f793.ctex::CompressedTexture2D::7700617293488522700::1791412195::0::1::::<><><>0<>0<><>::
-CAJAS_APILADAS.png-bd63de2b87eef7342f1e7ed1298a3f0d.ctex::CompressedTexture2D::8482915919209037903::1791412194::0::1::::<><><>0<>0<><>::
-CAJA_ATADA_BIEN.png-9660ed3035b4bcf5203eedf2f2dc1dd7.ctex::CompressedTexture2D::1364022954338614638::1791412194::0::1::::<><><>0<>0<><>::
-CAJA_ATADA_MAL.png-a4a37b93fc4b3050c585c7328d7e2303.ctex::CompressedTexture2D::5358862248243837377::1791412194::0::1::::<><><>0<>0<><>::
-CAJA_ATADA_PERFECTO.png-b975a4162aeee404afc59d5a258a7706.ctex::CompressedTexture2D::1528295467638053870::1791412195::0::1::::<><><>0<>0<><>::
-CAJA_CENTRO.png-d710020006a68c96703b24a7539acec9.ctex::CompressedTexture2D::6383399405980876932::1791412195::0::1::::<><><>0<>0<><>::
-CAJA_CENTRO_SUPERPOSICION.png-a4093ab1de30e1ad9cce833d573547b7.ctex::CompressedTexture2D::193783770695833465::1791412195::0::1::::<><><>0<>0<><>::
-CAJA_TAPADA.png-b3cc957dfab349281ca667dd085784df.ctex::CompressedTexture2D::9075161550643644106::1791412195::0::1::::<><><>0<>0<><>::
-CartaMejoras.png-7671f42507cdcde967c1b40d01f10301.ctex::CompressedTexture2D::7505753900904781029::1791412195::0::1::::<><><>0<>0<><>::
-download (3).png-ae5545f6049ca9ba90ac2992a361eccb.ctex::CompressedTexture2D::122950193383548564::1791412195::0::1::::<><><>0<>0<><>::
-fondo noche.jpg-7ce173e2e56da3dec4045ffd6f2e0e68.ctex::CompressedTexture2D::8030655039802901280::1791412195::0::1::::<><><>0<>0<><>::
-FondoMejoras.png-0019147f61943f446c7d89b4ed4d6850.ctex::CompressedTexture2D::1920535063268512769::1791412195::0::1::::<><><>0<>0<><>::
-FONDO_ARMADO_SANGUCHES.png-0176751212da2c8e72984370730a237f.ctex::CompressedTexture2D::8876322683183393682::1791412195::0::1::::<><><>0<>0<><>::
-FONDO_ARMADO_SANGUCHES_CAJA.png-dd75214c426809409dba43bd552714ea.ctex::CompressedTexture2D::4978823164501720828::1791412195::0::1::::<><><>0<>0<><>::
-icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::CompressedTexture2D::6811731573822666692::1791412195::0::1::::<><><>0<>0<><>::
-imgmenu.png-ed4cf17c60d136d6a1d593fcb8351c35.ctex::CompressedTexture2D::5698060010342263909::1791412196::0::1::::<><><>0<>0<><>::
-LUZ_MESA_MODODEFUSION_AÑADIR.png-44857b775e2d6ca5f282ce90c197a2d1.ctex::CompressedTexture2D::7850312845688315289::1791412195::0::1::::<><><>0<>0<><>::
-LUZ_MESA_MODODEFUSION_AÑADIR.png-aa547534ff71a5a975119e5aa12377b9.ctex::CompressedTexture2D::6576226620110181024::1791412195::0::1::::<><><>0<>0<><>::
-moneda.png-073bf84dd9a1963f222e37e032418945.ctex::CompressedTexture2D::7032845522372525070::1791412196::0::1::::<><><>0<>0<><>::
-PAPEL_PARAFINADO.png-9ea327f22b02bab1034317b504c88c68.ctex::CompressedTexture2D::634498326639157261::1791412195::0::1::::<><><>0<>0<><>::
-PAPEL_PARAFINADO_DENTRO_CAJA.png-51754a35f6386a2b0b2547d85a866c97.ctex::CompressedTexture2D::7751963004009629126::1791412195::0::1::::<><><>0<>0<><>::
-PAPEL_PARAFINADO_SELECCIONADO.png-261fff51bc3b6ea870cd42c7b4d7adbb.ctex::CompressedTexture2D::8814768539114406813::1791412195::0::1::::<><><>0<>0<><>::
-PIOLIN.png-cda3b75a919a559949de5555623ae653.ctex::CompressedTexture2D::6602229452216447968::1791412195::0::1::::<><><>0<>0<><>::
-PISO_FONDO.png-9f555bf7d886bc7ee6d70648da943c88.ctex::CompressedTexture2D::3408644179022821774::1791412195::0::1::::<><><>0<>0<><>::
-SANGUCHE.png-e9e01d629a2491c6b4dcb24bcfaa78b4.ctex::CompressedTexture2D::7718301381102794194::1791412195::0::1::::<><><>0<>0<><>::
-SANGUCHE_DENTRO_CAJA.png-7d6d6bb90d73eda2ce803569eff509e0.ctex::CompressedTexture2D::8421762337682590132::1791412195::0::1::::<><><>0<>0<><>::
-Sanwiahstate1.png-769f7079f2eb2a3286dde2dabd1a8856.ctex::CompressedTexture2D::4005574608725918587::1791412195::0::1::::<><><>0<>0<><>::
-Sanwiahstate2.png-8572e036ed9a74848d5cc50614d58493.ctex::CompressedTexture2D::6331545600504013783::1791412195::0::1::::<><><>0<>0<><>::
-Sanwiahstate3.png-360a990c49e3487a656b2682270f2f8b.ctex::CompressedTexture2D::8267031617540788680::1791412195::0::1::::<><><>0<>0<><>::
-Sanwich.jpg-db3ce0235a0aed69e2147d6bee11f397.ctex::CompressedTexture2D::8182611124388275490::1791412195::0::1::::<><><>0<>0<><>::
-TAPA_CAJA.png-25fab9e60f98dab00626df903bee6a5c.ctex::CompressedTexture2D::1645613997595452250::1791412195::0::1::::<><><>0<>0<><>::
-Untitled14-ezgif.com-gif-to-sprite-converter.png-fc1ce9b5d8fd46c5748f9c23ff2b92a5.ctex::CompressedTexture2D::2852980456833689748::1791412195::0::1::::<><><>0<>0<><>::
+::res://respaldo-godot/::1791413068
+botonjugar2.png-647742bdeeb133838a2928bf0857e755.ctex::CompressedTexture2D::7019312999388452008::1791413068::0::1::::<><><>0<>0<><>::
+botonjugar2.png-decac26ed1222dfa5b60ac03abc9f793.ctex::CompressedTexture2D::7700617293488522700::1791413068::0::1::::<><><>0<>0<><>::
+CAJAS_APILADAS.png-bd63de2b87eef7342f1e7ed1298a3f0d.ctex::CompressedTexture2D::8482915919209037903::1791413068::0::1::::<><><>0<>0<><>::
+CAJA_ATADA_BIEN.png-9660ed3035b4bcf5203eedf2f2dc1dd7.ctex::CompressedTexture2D::1364022954338614638::1791413068::0::1::::<><><>0<>0<><>::
+CAJA_ATADA_MAL.png-a4a37b93fc4b3050c585c7328d7e2303.ctex::CompressedTexture2D::5358862248243837377::1791413068::0::1::::<><><>0<>0<><>::
+CAJA_ATADA_PERFECTO.png-b975a4162aeee404afc59d5a258a7706.ctex::CompressedTexture2D::1528295467638053870::1791413068::0::1::::<><><>0<>0<><>::
+CAJA_CENTRO.png-d710020006a68c96703b24a7539acec9.ctex::CompressedTexture2D::6383399405980876932::1791413068::0::1::::<><><>0<>0<><>::
+CAJA_CENTRO_SUPERPOSICION.png-a4093ab1de30e1ad9cce833d573547b7.ctex::CompressedTexture2D::193783770695833465::1791413068::0::1::::<><><>0<>0<><>::
+CAJA_TAPADA.png-b3cc957dfab349281ca667dd085784df.ctex::CompressedTexture2D::9075161550643644106::1791413068::0::1::::<><><>0<>0<><>::
+CartaMejoras.png-7671f42507cdcde967c1b40d01f10301.ctex::CompressedTexture2D::7505753900904781029::1791413068::0::1::::<><><>0<>0<><>::
+download (3).png-ae5545f6049ca9ba90ac2992a361eccb.ctex::CompressedTexture2D::122950193383548564::1791413068::0::1::::<><><>0<>0<><>::
+fondo noche.jpg-7ce173e2e56da3dec4045ffd6f2e0e68.ctex::CompressedTexture2D::8030655039802901280::1791413068::0::1::::<><><>0<>0<><>::
+FondoMejoras.png-0019147f61943f446c7d89b4ed4d6850.ctex::CompressedTexture2D::1920535063268512769::1791413068::0::1::::<><><>0<>0<><>::
+FONDO_ARMADO_SANGUCHES.png-0176751212da2c8e72984370730a237f.ctex::CompressedTexture2D::8876322683183393682::1791413068::0::1::::<><><>0<>0<><>::
+FONDO_ARMADO_SANGUCHES_CAJA.png-dd75214c426809409dba43bd552714ea.ctex::CompressedTexture2D::4978823164501720828::1791413068::0::1::::<><><>0<>0<><>::
+icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::CompressedTexture2D::6811731573822666692::1791413068::0::1::::<><><>0<>0<><>::
+imgmenu.png-ed4cf17c60d136d6a1d593fcb8351c35.ctex::CompressedTexture2D::5698060010342263909::1791413068::0::1::::<><><>0<>0<><>::
+LUZ_MESA_MODODEFUSION_AÑADIR.png-44857b775e2d6ca5f282ce90c197a2d1.ctex::CompressedTexture2D::7850312845688315289::1791413068::0::1::::<><><>0<>0<><>::
+LUZ_MESA_MODODEFUSION_AÑADIR.png-aa547534ff71a5a975119e5aa12377b9.ctex::CompressedTexture2D::6576226620110181024::1791413068::0::1::::<><><>0<>0<><>::
+moneda.png-073bf84dd9a1963f222e37e032418945.ctex::CompressedTexture2D::7032845522372525070::1791413068::0::1::::<><><>0<>0<><>::
+PAPEL_PARAFINADO.png-9ea327f22b02bab1034317b504c88c68.ctex::CompressedTexture2D::634498326639157261::1791413068::0::1::::<><><>0<>0<><>::
+PAPEL_PARAFINADO_DENTRO_CAJA.png-51754a35f6386a2b0b2547d85a866c97.ctex::CompressedTexture2D::7751963004009629126::1791413068::0::1::::<><><>0<>0<><>::
+PAPEL_PARAFINADO_SELECCIONADO.png-261fff51bc3b6ea870cd42c7b4d7adbb.ctex::CompressedTexture2D::8814768539114406813::1791413068::0::1::::<><><>0<>0<><>::
+PIOLIN.png-cda3b75a919a559949de5555623ae653.ctex::CompressedTexture2D::6602229452216447968::1791413068::0::1::::<><><>0<>0<><>::
+PISO_FONDO.png-9f555bf7d886bc7ee6d70648da943c88.ctex::CompressedTexture2D::3408644179022821774::1791413068::0::1::::<><><>0<>0<><>::
+SANGUCHE.png-e9e01d629a2491c6b4dcb24bcfaa78b4.ctex::CompressedTexture2D::7718301381102794194::1791413068::0::1::::<><><>0<>0<><>::
+SANGUCHE_DENTRO_CAJA.png-7d6d6bb90d73eda2ce803569eff509e0.ctex::CompressedTexture2D::8421762337682590132::1791413068::0::1::::<><><>0<>0<><>::
+Sanwiahstate1.png-769f7079f2eb2a3286dde2dabd1a8856.ctex::CompressedTexture2D::4005574608725918587::1791413068::0::1::::<><><>0<>0<><>::
+Sanwiahstate2.png-8572e036ed9a74848d5cc50614d58493.ctex::CompressedTexture2D::6331545600504013783::1791413068::0::1::::<><><>0<>0<><>::
+Sanwiahstate3.png-360a990c49e3487a656b2682270f2f8b.ctex::CompressedTexture2D::8267031617540788680::1791413068::0::1::::<><><>0<>0<><>::
+Sanwich.jpg-db3ce0235a0aed69e2147d6bee11f397.ctex::CompressedTexture2D::8182611124388275490::1791413068::0::1::::<><><>0<>0<><>::
+TAPA_CAJA.png-25fab9e60f98dab00626df903bee6a5c.ctex::CompressedTexture2D::1645613997595452250::1791413068::0::1::::<><><>0<>0<><>::
+Untitled14-ezgif.com-gif-to-sprite-converter.png-fc1ce9b5d8fd46c5748f9c23ff2b92a5.ctex::CompressedTexture2D::2852980456833689748::1791413068::0::1::::<><><>0<>0<><>::
+::res://sanguche-d-milanesa/::1791413068
+menu_principal.gd::GDScript::8859184516247247363::1791413068::0::1::::<>Control<><>0<>0<><>::
+menu_principal.tscn::PackedScene::6149205708106232321::1791413068::0::1::::<><><>0<>0<><>::uid://d2yxmdg07xoyr::::res://menu_principal.gd<>uid://bul1rwc6klg0o::::res://Arte/Fondo_titulo_contraste.png<>uid://c85c2uh3s6ac4::::res://Arte/botonjugar2.png
+minijuego_caja.gd::GDScript::1644894553359728345::1791413068::0::1::::<>Control<><>0<>0<><>::
+minijuego_caja.tscn::PackedScene::2010764672209264926::1791413068::0::1::::<><><>0<>0<><>::uid://p8mwpnbt50u8::::res://Arte/PISO_FONDO.png<>uid://dml6g4ek042qe::::res://minijuego_caja.gd<>uid://dxa5gohe82f3v::::res://Arte/FONDO_ARMADO_SANGUCHES.png<>uid://beljndjgi28oy::::res://Arte/SANGUCHE.png<>uid://deuwwnxfssnph::::res://sandwich.gd<>uid://cr3ibx18f4ka::::res://Arte/PAPEL_PARAFINADO.png<>uid://ejr54xniyrks::::res://Arte/CAJAS_APILADAS.png<>uid://drns18c4u0k2f::::res://papel_parafinado.gd<>uid://mot3a8igtdwv::::res://cajas_apiladas.gd<>uid://cp83gpjn7x8qc::::res://Arte/PIOLIN.png<>uid://cwjtwboddawk7::::res://Arte/CAJA_CENTRO.png<>uid://che3kjuk11nox::::res://Arte/PAPEL_PARAFINADO_DENTRO_CAJA.png<>uid://sikysdxysoq::::res://Arte/SANGUCHE_DENTRO_CAJA.png<>uid://td3ws8kiymp8::::res://Arte/CAJA_TAPADA.png<>uid://b501b1wqmgfqk::::res://Arte/CAJA_ATADA_BIEN.png<>uid://byyq02lh660wu::::res://Arte/CAJA_ATADA_MAL.png<>uid://dq5vwlg3mwrqd::::res://Arte/CAJA_ATADA_PERFECTO.png<>uid://dbn35vrm3suea::::res://Arte/FONDO_ARMADO_SANGUCHES_CAJA.png<>uid://cwkav27y8fjaj::::res://Arte/TAPA_CAJA.png<>uid://dxe8w035vlhy::::res://Arte/PAPEL_PARAFINADO_SELECCIONADO.png<>uid://dkdjk3se0r8d3::::res://caja_tapar.gd<>uid://c8cjhfvn6wjt6::::res://Arte/CAJA_CENTRO_SUPERPOSICION.png<>uid://cj3ra67wqlwm::::res://hilo_piolin.gd
+::res://sanguche-d-milanesa/Scripts/::1791413068
+TimeLimit.gd::GDScript::4896843732530511715::1791413068::0::1::::<>Timer<><>0<>0<><>::
 ::res://Scripts/::1791310163
 CamraSlide.gd::GDScript::7697887924742179777::1791008408::0::1::::<>Camera2D<><>0<>0<><>::
 EndScript.gd::GDScript::8617168726420455618::1791310163::0::1::::<>Area2D<><>0<>0<><>::
