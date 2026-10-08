@@ -1,11 +1,11 @@
 78098b89c88a74ebe8c20117b8754620
-::res://::1791309498
+::res://::1791333943
 areae_end.tscn::PackedScene::5450210693918614891::1790290799::0::1::::<><><>0<>0<><>::uid://du1hrlqxh3i4y::::res://Scripts/EndScript.gd<>uid://84w0nmqfeg0a::::res://Arte/Sanwich.jpg<>uid://bjumjt7atdj6f::::res://Arte/Sanwiahstate1.png<>uid://xmbwrh8cdu1r::::res://Arte/Sanwiahstate2.png<>uid://dg3r30a3no5je::::res://Arte/Sanwiahstate3.png<>uid://b80atco4jb530::::res://icon.svg
 area_2d.gd::GDScript::7871237997584117985::1790978105::0::1::::<>Area2D<><>0<>0<><>::
 audiojuego.mp3::AudioStreamMP3::88242340214173499::1791028264::1791028674::1::::<><><>0<>0<>8f674fc6bbb663a021b877d2b41ba271<>res://.godot/imported/audiojuego.mp3-8e27109c0204e5d223527d825fe05418.mp3str::
 back_pack.gd::GDScript::1263375806121503637::1790977716::0::1::::<>Node2D<><>0<>0<><>::
-cajas_apiladas.gd::GDScript::872371088655923525::1790978105::0::1::::<>Sprite2D<><>0<>0<><>::
-caja_tapar.gd::GDScript::7867909430271893534::1790978105::0::1::::<>Area2D<><>0<>0<><>::
+cajas_apiladas.gd::GDScript::872371088655923525::1791311650::0::1::::<>Sprite2D<><>0<>0<><>::
+caja_tapar.gd::GDScript::7867909430271893534::1791311650::0::1::::<>Area2D<><>0<>0<><>::
 coin.tscn::PackedScene::2648656114419898838::1790290799::0::1::::<><><>0<>0<><>::uid://b80atco4jb530::::res://icon.svg
 global_script_class_cache.cfg::TextFile::-1::1790977716::0::1::::<><><>0<>0<><>::
 hilo_piolin.gd::GDScript::160687570729359172::1790978105::0::1::::<>Area2D<><>0<>0<><>::
@@ -15,7 +15,7 @@ mejoras.gd::GDScript::134188955834902824::1791027621::0::1::::<>Control<><>0<>0<
 mejoras.tscn::PackedScene::6998576289105583073::1791027621::0::1::::<><><>0<>0<><>::uid://v80huggi6hsr::::res://Arte/FondoMejoras.png<>uid://b6acp2o217iy::::res://mejoras.gd<>uid://b0hvsagehso3r::::res://Arte/moneda.png<>uid://c5xgxl28bkrtw::::res://Arte/CartaLinternaTienda.png<>uid://cqgis3rexe6aq::::res://Arte/CartaCajaBasicaTienda.png<>uid://fgao6je7wc12::::res://Arte/CartaConservadoraTienda.png<>uid://dtuccurjxi7bh::::res://Arte/CartaCajaTermicaTienda.png<>uid://bv86jxpnnelhi::::res://Arte/CartaZapasTienda.png<>uid://bm0g728gcvaqc::::res://Arte/CartaCajaReforzadaTienda.png<>uid://bkpwp751qw0q7::::res://Arte/CartaPeligrosyaTienda.png
 menu_principal.gd::GDScript::9105323983782545873::1791024548::0::1::::<>Control<><>0<>0<><>::
 menu_principal.tscn::PackedScene::6149205708106232321::1791042509::0::1::::<><><>0<>0<><>::uid://d2yxmdg07xoyr::::res://menu_principal.gd<>uid://bul1rwc6klg0o::::res://Arte/Fondo_titulo_contraste.png<>uid://c85c2uh3s6ac4::::res://Arte/botonjugar2.png
-minijuego_caja.gd::GDScript::8026130801414845128::1791036169::0::1::::<>Control<><>0<>0<><>::
+minijuego_caja.gd::GDScript::8026130801414845128::1791311651::0::1::::<>Control<><>0<>0<><>::
 minijuego_caja.gdshader::Shader::2709148956259644082::1790987330::0::1::::<><><>0<>0<><>::
 minijuego_caja.tscn::PackedScene::2010764672209264926::1791043795::0::1::::<><><>0<>0<><>::uid://p8mwpnbt50u8::::res://Arte/PISO_FONDO.png<>uid://dml6g4ek042qe::::res://minijuego_caja.gd<>uid://dxa5gohe82f3v::::res://Arte/FONDO_ARMADO_SANGUCHES.png<>uid://beljndjgi28oy::::res://Arte/SANGUCHE.png<>uid://deuwwnxfssnph::::res://sandwich.gd<>uid://cr3ibx18f4ka::::res://Arte/PAPEL_PARAFINADO.png<>uid://ejr54xniyrks::::res://Arte/CAJAS_APILADAS.png<>uid://drns18c4u0k2f::::res://papel_parafinado.gd<>uid://mot3a8igtdwv::::res://cajas_apiladas.gd<>uid://cp83gpjn7x8qc::::res://Arte/PIOLIN.png<>uid://cwjtwboddawk7::::res://Arte/CAJA_CENTRO.png<>uid://che3kjuk11nox::::res://Arte/PAPEL_PARAFINADO_DENTRO_CAJA.png<>uid://sikysdxysoq::::res://Arte/SANGUCHE_DENTRO_CAJA.png<>uid://td3ws8kiymp8::::res://Arte/CAJA_TAPADA.png<>uid://b501b1wqmgfqk::::res://Arte/CAJA_ATADA_BIEN.png<>uid://byyq02lh660wu::::res://Arte/CAJA_ATADA_MAL.png<>uid://dq5vwlg3mwrqd::::res://Arte/CAJA_ATADA_PERFECTO.png<>uid://dbn35vrm3suea::::res://Arte/FONDO_ARMADO_SANGUCHES_CAJA.png<>uid://cwkav27y8fjaj::::res://Arte/TAPA_CAJA.png<>uid://dxe8w035vlhy::::res://Arte/PAPEL_PARAFINADO_SELECCIONADO.png<>uid://dkdjk3se0r8d3::::res://caja_tapar.gd<>uid://c8cjhfvn6wjt6::::res://Arte/CAJA_CENTRO_SUPERPOSICION.png<>uid://cj3ra67wqlwm::::res://hilo_piolin.gd
 musica.tscn::PackedScene::6508771025392251592::1791028751::0::1::::<><><>0<>0<><>::uid://bi0lriqg45lf::::res://audiojuego.mp3
@@ -25,7 +25,7 @@ opciones.tscn::PackedScene::5532637305416982880::1791027874::0::1::::<><><>0<>0<
 papel_parafinado.gd::GDScript::8380450377945467115::1790978105::0::1::::<>Sprite2D<><>0<>0<><>::
 README.md::TextFile::-1::1790977716::0::1::::<><><>0<>0<><>::
 resultados.tscn::PackedScene::606359085348665423::1791042509::0::1::::<><><>0<>0<><>::uid://bud2xf72fhasg::::res://Arte/acarela bosque.jpg
-sandwich.gd::GDScript::7482680760605405769::1790978105::0::1::::<>Sprite2D<><>0<>0<><>::
+sandwich.gd::GDScript::7482680760605405769::1791311651::0::1::::<>Sprite2D<><>0<>0<><>::
 scene_groups_cache.cfg::TextFile::-1::1790977717::0::1::::<><><>0<>0<><>::
 ::res://Arte/::1791039148
 acarela bosque.jpg::CompressedTexture2D::3798071435064641106::1791039147::1791039148::1::::<><><>0<>0<>3bda1d8fd502543b4991d4f4bb50ddb3<>res://.godot/imported/acarela bosque.jpg-f0c98889d466348e3f5bbd3ce22ce3bf.ctex::

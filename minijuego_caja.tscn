@@ -1,0 +1,403 @@
+[gd_scene format=3 uid="uid://3wbaaoy8l3yw"]
+
+[ext_resource type="Texture2D" uid="uid://p8mwpnbt50u8" path="res://Arte/PISO_FONDO.png" id="1_7owgb"]
+[ext_resource type="Script" uid="uid://cj4mvsandbshs" path="res://Scripts/minijuego_caja.gd" id="1_wrg76"]
+[ext_resource type="Texture2D" uid="uid://dxa5gohe82f3v" path="res://Arte/FONDO_ARMADO_SANGUCHES.png" id="2_5dywk"]
+[ext_resource type="Texture2D" uid="uid://beljndjgi28oy" path="res://Arte/SANGUCHE.png" id="3_ekprv"]
+[ext_resource type="Texture2D" uid="uid://cr3ibx18f4ka" path="res://Arte/PAPEL_PARAFINADO.png" id="4_n8lkk"]
+[ext_resource type="Texture2D" uid="uid://ejr54xniyrks" path="res://Arte/CAJAS_APILADAS.png" id="5_r5ugc"]
+[ext_resource type="Script" uid="uid://6qd6amuehvva" path="res://Scripts/sandwich.gd" id="6_h8kv7"]
+[ext_resource type="Texture2D" uid="uid://cp83gpjn7x8qc" path="res://Arte/PIOLIN.png" id="7_n3pqp"]
+[ext_resource type="Texture2D" uid="uid://cwjtwboddawk7" path="res://Arte/CAJA_CENTRO.png" id="8_pcbys"]
+[ext_resource type="Texture2D" uid="uid://che3kjuk11nox" path="res://Arte/PAPEL_PARAFINADO_DENTRO_CAJA.png" id="9_nrcyw"]
+[ext_resource type="Script" uid="uid://bjl4jchrk13wn" path="res://Scripts/papel_parafinado.gd" id="10_xtuqv"]
+[ext_resource type="Texture2D" uid="uid://sikysdxysoq" path="res://Arte/SANGUCHE_DENTRO_CAJA.png" id="10_ybcvs"]
+[ext_resource type="Texture2D" uid="uid://td3ws8kiymp8" path="res://Arte/CAJA_TAPADA.png" id="11_evqos"]
+[ext_resource type="Script" uid="uid://bdqscd0sfpiat" path="res://Scripts/cajas_apiladas.gd" id="12_765b3"]
+[ext_resource type="Texture2D" uid="uid://b501b1wqmgfqk" path="res://Arte/CAJA_ATADA_BIEN.png" id="12_wrg76"]
+[ext_resource type="Texture2D" uid="uid://byyq02lh660wu" path="res://Arte/CAJA_ATADA_MAL.png" id="13_evqos"]
+[ext_resource type="Texture2D" uid="uid://dq5vwlg3mwrqd" path="res://Arte/CAJA_ATADA_PERFECTO.png" id="13_h8kv7"]
+[ext_resource type="Texture2D" uid="uid://dbn35vrm3suea" path="res://Arte/FONDO_ARMADO_SANGUCHES_CAJA.png" id="14_ekprv"]
+[ext_resource type="Texture2D" uid="uid://cwkav27y8fjaj" path="res://Arte/TAPA_CAJA.png" id="15_n8lkk"]
+[ext_resource type="Texture2D" uid="uid://dxe8w035vlhy" path="res://Arte/PAPEL_PARAFINADO_SELECCIONADO.png" id="17_n3pqp"]
+[ext_resource type="Texture2D" uid="uid://c8cjhfvn6wjt6" path="res://Arte/CAJA_CENTRO_SUPERPOSICION.png" id="19_pcbys"]
+[ext_resource type="Script" uid="uid://bypa6su7n7jqh" path="res://Scripts/caja_tapar.gd" id="19_wo65r"]
+[ext_resource type="Script" uid="uid://c8p7u236ct7or" path="res://Scripts/hilo_piolin.gd" id="22_ityo2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mo5xt"]
+size = Vector2(563, 171)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8jrhq"]
+size = Vector2(225.23077, 339.31888)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n3exi"]
+size = Vector2(117, 89)
+
+[node name="MinijuegoCaja" type="Control" unique_id=1200982645]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wrg76")
+
+[node name="Fondo" type="TextureRect" parent="." unique_id=113372538]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_7owgb")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="FondoArmado" type="TextureRect" parent="." unique_id=157604574]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_5dywk")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="FondoArmadoCaja" type="TextureRect" parent="." unique_id=611399706]
+visible = false
+z_index = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_ekprv")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="BotonIniciar" type="Button" parent="." unique_id=1235366491]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 385.5
+offset_top = 292.5
+offset_right = -335.0
+offset_bottom = -272.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "INICIAR MINIJUEGO"
+
+[node name="Tiempo" type="Label" parent="." unique_id=1821964748]
+layout_mode = 0
+offset_left = 15.0
+offset_top = 12.0
+offset_right = 200.0
+offset_bottom = 58.0
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 33
+text = "TIEMPO: 30"
+
+[node name="Temporizador" type="Timer" parent="." unique_id=432470801]
+wait_time = 10.0
+
+[node name="Sandwich" type="Sprite2D" parent="." unique_id=994169810]
+z_index = 45
+position = Vector2(576, 323.99997)
+scale = Vector2(0.6000001, 0.5999999)
+texture = ExtResource("3_ekprv")
+script = ExtResource("6_h8kv7")
+
+[node name="CajaCentro" type="Sprite2D" parent="." unique_id=1620771249]
+visible = false
+position = Vector2(576, 323.99997)
+scale = Vector2(0.6, 0.59999996)
+texture = ExtResource("8_pcbys")
+
+[node name="SandwichDentroCaja" type="Sprite2D" parent="." unique_id=936346585]
+visible = false
+position = Vector2(576, 323.49997)
+scale = Vector2(0.6, 0.5990741)
+texture = ExtResource("10_ybcvs")
+
+[node name="PapelParafinado" type="Sprite2D" parent="." unique_id=1271336101]
+z_index = 10
+position = Vector2(575.50006, 324.00003)
+scale = Vector2(0.5994792, 0.59999996)
+texture = ExtResource("4_n8lkk")
+script = ExtResource("10_xtuqv")
+
+[node name="CajasApiladas" type="Sprite2D" parent="." unique_id=858969813]
+z_index = 5
+position = Vector2(575, 324)
+scale = Vector2(0.5989583, 0.59999996)
+texture = ExtResource("5_r5ugc")
+script = ExtResource("12_765b3")
+
+[node name="Area2D" type="Area2D" parent="CajasApiladas" unique_id=1305933539]
+position = Vector2(287, -474)
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CajasApiladas/Area2D" unique_id=2128092671]
+position = Vector2(5.174016, 18.99999)
+shape = SubResource("RectangleShape2D_mo5xt")
+
+[node name="GuiaCaja" type="Sprite2D" parent="." unique_id=1716113059]
+visible = false
+modulate = Color(1, 1, 1, 0.15686275)
+position = Vector2(575.99994, 324.00003)
+scale = Vector2(0.59999996, 0.59999996)
+texture = ExtResource("8_pcbys")
+
+[node name="PapelDentroCaja" type="Sprite2D" parent="." unique_id=758917634]
+visible = false
+z_index = 10
+position = Vector2(576, 324)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("9_nrcyw")
+
+[node name="GuiaPapel" type="Sprite2D" parent="." unique_id=1512234085]
+visible = false
+modulate = Color(1, 1, 1, 0.15686275)
+z_index = 10
+position = Vector2(574, 325.5)
+scale = Vector2(0.59791666, 0.6027777)
+texture = ExtResource("9_nrcyw")
+
+[node name="GuiaSandwich" type="Sprite2D" parent="." unique_id=1875364675]
+visible = false
+modulate = Color(1, 1, 1, 0.15686275)
+z_index = 12
+position = Vector2(576, 324)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("10_ybcvs")
+
+[node name="CajaAtadaMal" type="Sprite2D" parent="." unique_id=618051323]
+visible = false
+z_index = 55
+position = Vector2(576.49994, 324.5)
+scale = Vector2(0.59947914, 0.599074)
+texture = ExtResource("13_evqos")
+
+[node name="CajaBienAtada" type="Sprite2D" parent="." unique_id=1716635306]
+visible = false
+z_index = 55
+position = Vector2(576.00006, 324)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("12_wrg76")
+
+[node name="CajaAtadaPerfecta" type="Sprite2D" parent="." unique_id=467133456]
+visible = false
+z_index = 55
+position = Vector2(576, 324)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("13_h8kv7")
+
+[node name="PapelSeleccionado" type="Sprite2D" parent="." unique_id=772884916]
+visible = false
+z_index = 10
+position = Vector2(571.5, 324.99997)
+scale = Vector2(0.59531254, 0.6018518)
+texture = ExtResource("17_n3pqp")
+
+[node name="CajaSuperpuesta" type="Sprite2D" parent="." unique_id=8766369]
+visible = false
+z_index = 50
+position = Vector2(577, 324)
+scale = Vector2(0.6010417, 0.6)
+texture = ExtResource("19_pcbys")
+
+[node name="CajaTapar" type="Area2D" parent="." unique_id=995890037]
+z_index = 20
+position = Vector2(1019, 399)
+script = ExtResource("19_wo65r")
+
+[node name="Sprite2D" type="Sprite2D" parent="CajaTapar" unique_id=1471463253]
+z_index = 20
+position = Vector2(-443, -77)
+scale = Vector2(0.5989584, 0.59907407)
+texture = ExtResource("15_n8lkk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CajaTapar" unique_id=1412694481]
+z_index = 20
+position = Vector2(-33, -33.999985)
+rotation = -0.28099805
+scale = Vector2(0.9999996, 0.9999996)
+shape = SubResource("RectangleShape2D_8jrhq")
+
+[node name="CajaTapada" type="Sprite2D" parent="." unique_id=66463640]
+visible = false
+z_index = 50
+position = Vector2(576.5, 327.5)
+scale = Vector2(0.60052085, 0.6064815)
+texture = ExtResource("11_evqos")
+
+[node name="GuiaCajaTapar" type="Sprite2D" parent="." unique_id=724662749]
+visible = false
+modulate = Color(1, 1, 1, 0.15686275)
+position = Vector2(579.5, 327.5)
+scale = Vector2(0.6036458, 0.6064815)
+texture = ExtResource("11_evqos")
+
+[node name="HiloPiolin" type="Area2D" parent="." unique_id=1680324321]
+z_index = 15
+position = Vector2(323, 197)
+script = ExtResource("22_ityo2")
+
+[node name="Sprite2D" type="Sprite2D" parent="HiloPiolin" unique_id=1582331256]
+z_index = 15
+position = Vector2(251.99998, 124.999985)
+scale = Vector2(0.5989583, 0.5962963)
+texture = ExtResource("7_n3pqp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HiloPiolin" unique_id=2124897790]
+z_index = 15
+position = Vector2(-1, -2)
+shape = SubResource("RectangleShape2D_n3exi")
+
+[node name="Teclas" type="Control" parent="." unique_id=1442016292]
+visible = false
+z_index = 35
+anchors_preset = 0
+offset_right = 415.0
+offset_bottom = 288.0
+
+[node name="Tecla1" type="Label" parent="Teclas" unique_id=1859815765]
+z_index = 30
+layout_mode = 0
+offset_left = 19.0
+offset_top = 6.0
+offset_right = 118.0
+offset_bottom = 165.0
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 110
+text = "→"
+
+[node name="Tecla2" type="Label" parent="Teclas" unique_id=1071048846]
+z_index = 30
+layout_mode = 0
+offset_left = 13.0
+offset_top = 5.0
+offset_right = 112.0
+offset_bottom = 164.0
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 110
+text = "←"
+
+[node name="Tecla3" type="Label" parent="Teclas" unique_id=936121020]
+z_index = 30
+layout_mode = 0
+offset_left = 13.0
+offset_top = 3.0
+offset_right = 119.0
+offset_bottom = 480.0
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 110
+text = "→
+"
+
+[node name="Tecla4" type="Label" parent="Teclas" unique_id=1770798533]
+z_index = 30
+layout_mode = 0
+offset_left = -3.0
+offset_top = 70.0
+offset_right = 96.0
+offset_bottom = 222.0
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 110
+text = "←"
+
+[node name="Tecla5" type="Label" parent="Teclas" unique_id=1915637488]
+z_index = 30
+layout_mode = 0
+offset_left = 27.0
+offset_top = 77.0
+offset_right = 79.0
+offset_bottom = 536.0
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 110
+text = "↑
+"
+
+[node name="Tecla6" type="Label" parent="Teclas" unique_id=1567270810]
+z_index = 30
+layout_mode = 0
+offset_left = 26.0
+offset_top = 81.0
+offset_right = 80.0
+offset_bottom = 558.0
+theme_override_constants/outline_size = 15
+theme_override_font_sizes/font_size = 110
+text = "↓
+"
+
+[node name="CuentaRegresiva" type="Label" parent="." unique_id=678844927]
+visible = false
+z_index = 60
+layout_mode = 0
+offset_left = 433.0
+offset_top = 204.0
+offset_right = 776.0
+offset_bottom = 546.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 21
+theme_override_font_sizes/font_size = 190
+
+[node name="ResultadoResistencia" type="Label" parent="." unique_id=634962847]
+visible = false
+z_index = 60
+layout_mode = 0
+offset_left = 171.0
+offset_top = 194.0
+offset_right = 1035.0
+offset_bottom = 553.0
+theme_override_constants/line_spacing = 3
+theme_override_constants/shadow_offset_y = 1
+theme_override_font_sizes/font_size = 120
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ComenzarJuego" type="Button" parent="." unique_id=2032129417]
+visible = false
+z_index = 110
+layout_mode = 0
+offset_left = 343.0
+offset_top = 547.0
+offset_right = 855.0
+offset_bottom = 624.0
+theme_override_font_sizes/font_size = 40
+text = "COMENZAR RECORRIDO
+"
+
+[node name="Instrucciones" type="Label" parent="." unique_id=857752970]
+visible = false
+z_index = 200
+layout_mode = 0
+offset_left = 244.0
+offset_top = 126.0
+offset_right = 956.0
+offset_bottom = 204.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/line_spacing = 4
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 22
+text = "TOCA LAS CAJAS APILADAS Y 
+ARRASTRA HACIA EL CENTRO"
+horizontal_alignment = 1
+
+[node name="ReiniciarMinijuego" type="Button" parent="." unique_id=171734719]
+visible = false
+layout_mode = 0
+offset_left = 985.0
+offset_top = 11.0
+offset_right = 1141.0
+offset_bottom = 42.0
+text = "Reiniciar Minijuego"
+
+[connection signal="input_event" from="CajasApiladas/Area2D" to="CajasApiladas" method="_on_area_2d_input_event"]
+[connection signal="input_event" from="CajaTapar" to="Sandwich" method="_on_caja_tapar_input_event"]
