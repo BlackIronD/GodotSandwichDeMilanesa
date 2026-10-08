@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://ctuyrwwpjmjh6"]
 
-[ext_resource type="Script" uid="uid://d2yxmdg07xoyr" path="res://menu_principal.gd" id="1_gmcsc"]
+[ext_resource type="Script" uid="uid://d2yxmdg07xoyr" path="res://Scripts/menu_principal.gd" id="1_gmcsc"]
 [ext_resource type="Texture2D" uid="uid://bul1rwc6klg0o" path="res://Arte/Fondo_titulo_contraste.png" id="2_ul6ys"]
 [ext_resource type="Texture2D" uid="uid://c85c2uh3s6ac4" path="res://Arte/botonjugar2.png" id="3_ul6ys"]
+
 
 [node name="MenuPrincipal" type="Control" unique_id=275778130]
 layout_mode = 3
