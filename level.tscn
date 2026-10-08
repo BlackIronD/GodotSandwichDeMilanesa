@@ -10,7 +10,6 @@
 [ext_resource type="Script" uid="uid://dhw6dbnstu78p" path="res://Scripts/CamraSlide.gd" id="8_2orkt"]
 [ext_resource type="Texture2D" uid="uid://b82d5nxnpx1eb" path="res://Arte/parallax backgound pack/_01_ground.png" id="8_8cye3"]
 [ext_resource type="Texture2D" uid="uid://2hfdejnpcft" path="res://Arte/parallax backgound pack/_03_distant_trees.png" id="9_2orkt"]
-[ext_resource type="Script" uid="uid://1ijjy4r8ter8" path="res://ReturnToMenu.gd" id="9_aicyk"]
 [ext_resource type="Texture2D" uid="uid://bbq52475qc06j" path="res://Arte/parallax backgound pack/_04_bushes.png" id="10_aicyk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fx85w"]
@@ -165,7 +164,6 @@ offset_right = 38.93183
 offset_bottom = 23.682442
 scale = Vector2(0.3992961, 0.2212742)
 text = "Return"
-script = ExtResource("9_aicyk")
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="Camera2D" unique_id=2027872962]
 

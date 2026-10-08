@@ -6,12 +6,15 @@ extends Control
 
 func _ready() -> void:
 	volumen.value = 100
-	pantalla_completa.button_pressed = false
+	
+	pantalla_completa.button_pressed = (
+		DisplayServer.window_get_mode() == DisplayServer.WINDOW_MODE_FULLSCREEN
+	)
 
 
 func _on_volumen_value_changed(value: float) -> void:
 	var bus = AudioServer.get_bus_index("Master")
-	
+
 	if value <= 0:
 		AudioServer.set_bus_mute(bus, true)
 	else:
