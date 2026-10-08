@@ -17,7 +17,6 @@ func _ready():
 
 func _process(_delta):
 
-	# ENTER = BLOQUEAR COMPLETAMENTE EL SÁNDWICH
 	if Input.is_key_pressed(KEY_ENTER):
 		click = false
 		sandwich_colocado = true
@@ -25,15 +24,12 @@ func _process(_delta):
 		$"../Instrucciones".text = "TOCA LA CAJA Y ARRASTRALA HACIA EL CENTRO."
 		return
 
-
 	if sandwich_colocado:
 		return
 
 	if not papel_dentro_caja.visible:
 		return
 
-
-	# AGARRAR EL SÁNDWICH
 	if Input.is_action_just_pressed("left_click"):
 		if is_pixel_opaque(to_local(get_global_mouse_position())):
 
@@ -44,7 +40,6 @@ func _process(_delta):
 			mi_offset = global_position - get_global_mouse_position()
 
 
-	# MOVER EL SÁNDWICH
 	if click:
 		global_position = get_global_mouse_position() + mi_offset
 
@@ -55,7 +50,6 @@ func _process(_delta):
 			rotation += velocidad_rotacion
 
 
-	# SOLTAR
 	if Input.is_action_just_released("left_click") and click:
 		click = false
 

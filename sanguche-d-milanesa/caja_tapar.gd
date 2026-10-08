@@ -16,21 +16,15 @@ func _ready():
 
 func _process(_delta):
 
-	# Si ya terminó, no se mueve
 	if bloqueada:
 		return
 
-
-	# ENTER = BLOQUEAR
 	if colocada and Input.is_key_pressed(KEY_ENTER):
 		agarrada = false
 		bloqueada = true
 		return
 
 
-	# =========================
-	# AGARRAR CAJA TAPAR
-	# =========================
 	if Input.is_action_just_pressed("left_click"):
 
 		var mouse = get_global_mouse_position()
@@ -41,13 +35,10 @@ func _process(_delta):
 
 			offset = global_position - mouse
 
-			# Poner horizontal
 			rotation = 0
 
-			# 🔴 OCULTAR SOLO LA IMAGEN DE CAJA TAPAR
 			$Sprite2D.visible = false
 
-			# 🟢 MOSTRAR CAJA TAPADA
 			caja_tapada.global_position = global_position
 			caja_tapada.rotation = 0
 			caja_tapada.visible = true
@@ -57,21 +48,12 @@ func _process(_delta):
 
 			print("TAPA AGARRADA")
 
-
-	# =========================
-	# ARRASTRAR
-	# =========================
 	if agarrada:
 
 		global_position = get_global_mouse_position() + offset
 
-		# CajaTapada sigue al mouse
 		caja_tapada.global_position = global_position
 
-
-	# =========================
-	# SOLTAR
-	# =========================
 	if Input.is_action_just_released("left_click") and agarrada:
 
 		agarrada = false

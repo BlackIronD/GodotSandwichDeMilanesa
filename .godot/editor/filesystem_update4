@@ -1,1 +1,7 @@
-res://player.tscn
+res://minijuego_caja.tscn
+res://menu_principal.tscn
+res://Scripts/caja_tapar.gd
+res://Scripts/minijuego_caja.gd
+res://Scripts/hilo_piolin.gd
+res://Scripts/sandwich.gd
+res://Scripts/cajas_apiladas.gd
