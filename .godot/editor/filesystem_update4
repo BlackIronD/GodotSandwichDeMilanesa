@@ -14,3 +14,4 @@ res://Scripts/Obstacle.gd
 res://Scripts/papel_parafinado.gd
 res://Scripts/player.gd
 res://Scripts/sandwich.gd
+res://level.tscn
