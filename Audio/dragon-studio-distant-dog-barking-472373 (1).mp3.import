@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bmftd4hdi2ckl"
+path="res://.godot/imported/dragon-studio-distant-dog-barking-472373 (1).mp3-e2cbf3a2bf6e77bff6349f46727477a6.mp3str"
+
+[deps]
+
+source_file="res://Audio/dragon-studio-distant-dog-barking-472373 (1).mp3"
+dest_files=["res://.godot/imported/dragon-studio-distant-dog-barking-472373 (1).mp3-e2cbf3a2bf6e77bff6349f46727477a6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

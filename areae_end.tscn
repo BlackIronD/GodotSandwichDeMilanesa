@@ -3,12 +3,12 @@
 [ext_resource type="Script" uid="uid://du1hrlqxh3i4y" path="res://Scripts/EndScript.gd" id="1_2rmc7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fx85w"]
-size = Vector2(534, 67)
+size = Vector2(534, 115.91448)
 
 [node name="AreaeEnd" type="Area2D" unique_id=681665101]
 script = ExtResource("1_2rmc7")
 
 [node name="HurtArea" type="CollisionShape2D" parent="." unique_id=1824322186]
-position = Vector2(1, -5)
+position = Vector2(1, -91.65364)
 scale = Vector2(0.7089099, 3.5430667)
 shape = SubResource("RectangleShape2D_fx85w")

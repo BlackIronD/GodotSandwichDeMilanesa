@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://os6clxdjxgjt"]
+
+[ext_resource type="Texture2D" uid="uid://dgkbqthqbo10n" path="res://perro_caminando_spritesheet_6.png" id="1_8ebar"]
+[ext_resource type="Script" uid="uid://b6ohn8d5j66dh" path="res://Scripts/perro.gd" id="1_8yi8i"]
+[ext_resource type="AudioStream" uid="uid://bmftd4hdi2ckl" path="res://Audio/dragon-studio-distant-dog-barking-472373 (1).mp3" id="3_q6lsh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8yi8i"]
+atlas = ExtResource("1_8ebar")
+region = Rect2(0, 0, 301, 235)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q6lsh"]
+atlas = ExtResource("1_8ebar")
+region = Rect2(301, 0, 301, 235)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4hch8"]
+atlas = ExtResource("1_8ebar")
+region = Rect2(602, 0, 301, 235)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_glmwn"]
+atlas = ExtResource("1_8ebar")
+region = Rect2(903, 0, 301, 235)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vi785"]
+atlas = ExtResource("1_8ebar")
+region = Rect2(1204, 0, 301, 235)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cfwrc"]
+atlas = ExtResource("1_8ebar")
+region = Rect2(1505, 0, 301, 235)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m2g58"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8yi8i")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q6lsh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4hch8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_glmwn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vi785")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cfwrc")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6387j"]
+size = Vector2(116, 79.9375)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8ykry"]
+radius = 226.71788
+
+[node name="perro" type="Node2D" unique_id=73568385]
+metadata/_edit_horizontal_guides_ = [11.0]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=610461389]
+script = ExtResource("1_8yi8i")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=711349036]
+position = Vector2(511.5, 204.5)
+scale = Vector2(0.34219265, 0.31914893)
+sprite_frames = SubResource("SpriteFrames_m2g58")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=458422599]
+position = Vector2(510, 199.96875)
+shape = SubResource("RectangleShape2D_6387j")
+
+[node name="Area2D2" type="Area2D" parent="." unique_id=1220385881]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2" unique_id=580297528]
+position = Vector2(502, 196)
+shape = SubResource("CircleShape2D_8ykry")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1849589655]
+position = Vector2(463, 207)
+stream = ExtResource("3_q6lsh")
+
+[connection signal="body_entered" from="Area2D2" to="CharacterBody2D" method="_on_area_2d_2_body_entered"]

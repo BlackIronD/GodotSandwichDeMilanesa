@@ -1,84 +1,111 @@
-[gd_scene format=3 uid="uid://ivyv7iryqixb"]
+[gd_scene format=3 uid="uid://cchheo5ccfpm8"]
 
-[ext_resource type="Texture2D" uid="uid://bud2xf72fhasg" path="res://Arte/acarela bosque.jpg" id="1_fpedf"]
+[ext_resource type="Script" uid="uid://bbe731bl0vt15" path="res://Scripts/resultados.gd" id="1_fpedf"]
+[ext_resource type="Texture2D" uid="uid://cdjjgfdwke5k5" path="res://Arte/fondo noche.jpg" id="2_atr5v"]
 
-[node name="Resultados" type="Control" unique_id=1722939170]
+[node name="Resultados" type="Control" unique_id=1839902321]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_fpedf")
 
-[node name="FondoDia" type="TextureRect" parent="." unique_id=505596554]
+[node name="Fondo" type="TextureRect" parent="." unique_id=1489682442]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_fpedf")
+texture = ExtResource("2_atr5v")
+expand_mode = 1
+stretch_mode = 6
 
-[node name="Label" type="Label" parent="." unique_id=708236916]
+[node name="PanelResultados" type="Panel" parent="." unique_id=2011262992]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.5
-anchor_top = 0.135
-anchor_right = 0.5
-anchor_bottom = 0.135
-offset_left = -119.0
-offset_top = -33.800003
-offset_right = 120.0
-offset_bottom = 29.199997
-grow_horizontal = 2
-theme_override_font_sizes/font_size = 45
-text = "Resultados"
+anchor_left = 0.049000002
+anchor_top = 0.062000003
+anchor_right = 0.049000002
+anchor_bottom = 0.062000003
+offset_left = 253.552
+offset_top = 61.823997
+offset_right = 822.552
+offset_bottom = 427.824
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=554225037]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.6
-anchor_top = 0.46
-anchor_right = 0.6
-anchor_bottom = 0.46
-offset_left = -398.0
-offset_top = -248.80002
-offset_right = 54.0
-offset_bottom = 78.19998
-theme_override_constants/separation = 15
+[node name="Titulo" type="Label" parent="PanelResultados" unique_id=1922678492]
+layout_mode = 0
+offset_left = 239.0
+offset_top = 33.0
+offset_right = 296.0
+offset_bottom = 64.0
+text = "TITULO"
 
-[node name="Tiempo" type="Label" parent="VBoxContainer" unique_id=2075064035]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.0010853444, 0.0010853446, 0.0010853445, 1)
-theme_override_font_sizes/font_size = 30
+[node name="TiempoLabel" type="Label" parent="PanelResultados" unique_id=1572832069]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 72.0
+offset_right = 171.0
+offset_bottom = 111.0
 text = "Tiempo:"
 
-[node name="EstadoPedido" type="Label" parent="VBoxContainer" unique_id=1416150474]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-text = "Estado del Pedido:"
+[node name="EstadoLabel" type="Label" parent="PanelResultados" unique_id=1915951245]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 114.0
+offset_right = 182.0
+offset_bottom = 137.0
+text = "Estado del pedido:"
 
-[node name="PagoNoche" type="Label" parent="VBoxContainer" unique_id=590626099]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-text = "Pago de la noche:"
+[node name="PagoLabel" type="Label" parent="PanelResultados" unique_id=2135010094]
+layout_mode = 0
+offset_left = 46.0
+offset_top = 150.0
+offset_right = 89.0
+offset_bottom = 173.0
+text = "Pago:"
 
-[node name="Propina" type="Label" parent="VBoxContainer" unique_id=1372531741]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-text = "Propina:"
+[node name="PropinaLabel" type="Label" parent="PanelResultados" unique_id=1464704526]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 187.0
+offset_right = 170.0
+offset_bottom = 210.0
+text = "Propina de hoy:"
 
-[node name="TotalNoche" type="Label" parent="VBoxContainer" unique_id=578209925]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-text = "Total de la noche:"
+[node name="TotalLabel" type="Label" parent="PanelResultados" unique_id=466281413]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.031000001
+anchor_bottom = 0.047000002
+offset_left = 51.0
+offset_top = 226.0
+offset_right = 72.361
+offset_bottom = 231.798
+text = "Total"
 
-[node name="PlataAcumulada" type="Label" parent="VBoxContainer" unique_id=865488305]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 30
-text = "Plata acumulada:"
+[node name="PlataLabel" type="Label" parent="PanelResultados" unique_id=870542429]
+layout_mode = 0
+offset_left = 53.0
+offset_top = 259.0
+offset_right = 97.0
+offset_bottom = 282.0
+text = "Plata:"
+
+[node name="PasarNivel" type="Button" parent="PanelResultados" unique_id=674174003]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 323.0
+offset_right = 238.0
+offset_bottom = 354.0
+text = "PASAR AL SIGUIENTE NIVEL"
+
+[node name="VolverMenu" type="Button" parent="PanelResultados" unique_id=1124102592]
+layout_mode = 0
+offset_left = 395.0
+offset_top = 320.0
+offset_right = 540.0
+offset_bottom = 351.0
+text = "VOLVER AL MENU"

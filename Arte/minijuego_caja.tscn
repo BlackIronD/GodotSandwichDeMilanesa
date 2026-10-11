@@ -23,6 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://c8cjhfvn6wjt6" path="res://Arte/CAJA_CENTRO_SUPERPOSICION.png" id="19_pcbys"]
 [ext_resource type="Script" uid="uid://bypa6su7n7jqh" path="res://Scripts/caja_tapar.gd" id="19_wo65r"]
 [ext_resource type="Script" uid="uid://c8p7u236ct7or" path="res://Scripts/hilo_piolin.gd" id="22_ityo2"]
+[ext_resource type="AudioStream" uid="uid://lemaes2yjcgj" path="res://Audio/SonidoMinijuego.mp3" id="24_h8kv7"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mo5xt"]
 size = Vector2(563, 171)
@@ -398,6 +399,20 @@ offset_top = 11.0
 offset_right = 1141.0
 offset_bottom = 42.0
 text = "Reiniciar Minijuego"
+
+[node name="VolverMenu" type="Button" parent="." unique_id=2033429622]
+visible = false
+layout_mode = 0
+offset_left = 996.0
+offset_top = 608.0
+offset_right = 1142.0
+offset_bottom = 639.0
+text = "Volver al Menu"
+
+[node name="SonidoMiniJuego" type="AudioStreamPlayer" parent="." unique_id=1974995900]
+stream = ExtResource("24_h8kv7")
+volume_db = 8.0
+autoplay = true
 
 [connection signal="input_event" from="CajasApiladas/Area2D" to="CajasApiladas" method="_on_area_2d_input_event"]
 [connection signal="input_event" from="CajaTapar" to="Sandwich" method="_on_caja_tapar_input_event"]

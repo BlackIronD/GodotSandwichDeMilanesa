@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://disf3dw2m35fw"]
 
 [ext_resource type="Script" path="res://opciones.gd" id="1_0bc36"]
-[ext_resource type="Texture2D" path="res://Arte/fondo noche.jpg" id="2_wvblx"]
+[ext_resource type="Texture2D" uid="uid://cdjjgfdwke5k5" path="res://Arte/fondo noche.jpg" id="2_wvblx"]
 
 [node name="Opciones" type="Control" unique_id=1659232581]
 layout_mode = 3

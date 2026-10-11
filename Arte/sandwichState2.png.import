@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bjumjt7atdj6f"
-path="res://.godot/imported/Sanwiahstate1.png-769f7079f2eb2a3286dde2dabd1a8856.ctex"
+uid="uid://c1i4vvbepjb6e"
+path="res://.godot/imported/sandwichState2.png-65a066cd73d6e249d653a1f493bf6a87.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Arte/Sanwiahstate1.png"
-dest_files=["res://.godot/imported/Sanwiahstate1.png-769f7079f2eb2a3286dde2dabd1a8856.ctex"]
+source_file="res://Arte/sandwichState2.png"
+dest_files=["res://.godot/imported/sandwichState2.png-65a066cd73d6e249d653a1f493bf6a87.ctex"]
 
 [params]
 

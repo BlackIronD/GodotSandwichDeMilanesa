@@ -1,3 +1,4 @@
+
 extends CharacterBody2D
 
 @export var SPEED = 300.0
@@ -13,10 +14,13 @@ var sandwich_hits := 0
 
 var knockback_timer := 0.0
 var post_knockback_timer := 0.0
+var estaba_en_el_aire := false
 
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
 @onready var cantidad_sangu: Label = $"../Camera2D/Control/CantidadSangu"
+@onready var sonido_salto: AudioStreamPlayer = $SonidoSalto
+@onready var sonido_caida: AudioStreamPlayer = $SonidoCaida
 
 
 func apply_knockback(direction: Vector2, force: float) -> void:
@@ -42,9 +46,10 @@ func take_hit() -> void:
 
 		cantidad_sangu.text = "x" + str(sandwich_quantity)
 
-		if sandwich_quantity <= 0:
-			print("Sin sannguches")
-			get_tree().change_scene_to_file("res://menu_principal.tscn")
+	if sandwich_quantity <= 0:
+		print("Sin sannguches")
+		get_tree().call_deferred("change_scene_to_file", "res://menu_principal.tscn")
+		
 
 
 func _physics_process(delta: float) -> void:
@@ -91,9 +96,11 @@ func _physics_process(delta: float) -> void:
 	# Jump
 	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+		sonido_salto.play()
 
 	if Input.is_action_just_pressed("ui_up") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+		sonido_salto.play()
 
 
 	# Slide
@@ -113,4 +120,11 @@ func _physics_process(delta: float) -> void:
 		animated_sprite_2d.play("Run")
 
 
+	if not is_on_floor():
+		estaba_en_el_aire = true
+
 	move_and_slide()
+
+	if is_on_floor() and estaba_en_el_aire:
+		sonido_caida.play()
+		estaba_en_el_aire = false
