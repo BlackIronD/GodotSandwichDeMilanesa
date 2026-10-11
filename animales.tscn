@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://dalnehf2frfj"]
+
+[ext_resource type="Script" uid="uid://c0ykod0bd22jw" path="res://character_body_2d.gd" id="1_s04kx"]
+[ext_resource type="Texture2D" uid="uid://cy77t3vcl5ttb" path="res://Arte/caballo_sheet_4x.png" id="2_dh2h4"]
+[ext_resource type="AudioStream" uid="uid://b4lbiqtlkb2yb" path="res://Audio/caballo_relincho.wav" id="3_dh2h4"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8col2"]
+atlas = ExtResource("2_dh2h4")
+region = Rect2(0, 0, 176, 136)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7h2rr"]
+atlas = ExtResource("2_dh2h4")
+region = Rect2(176, 0, 176, 136)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8b8ty"]
+atlas = ExtResource("2_dh2h4")
+region = Rect2(352, 0, 176, 136)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ob7jg"]
+atlas = ExtResource("2_dh2h4")
+region = Rect2(528, 0, 176, 136)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_m2g58"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8col2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7h2rr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8b8ty")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ob7jg")
+}],
+"loop": 1,
+"name": &"new_animation",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m2g58"]
+size = Vector2(95.5, 72.5)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_m2g58"]
+radius = 57.035076
+
+[node name="Animales" type="Node2D" unique_id=477363840]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1087546268]
+script = ExtResource("1_s04kx")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=683161885]
+texture_filter = 1
+position = Vector2(43.90625, 47.9375)
+scale = Vector2(0.5465199, 0.5744486)
+sprite_frames = SubResource("SpriteFrames_m2g58")
+animation = &"new_animation"
+frame_progress = 0.83803445
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1391566340]
+position = Vector2(50.25, 43.75)
+shape = SubResource("RectangleShape2D_m2g58")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1876463326]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1902510710]
+position = Vector2(66, 34)
+shape = SubResource("CircleShape2D_m2g58")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1831915932]
+stream = ExtResource("3_dh2h4")
+max_distance = 437.0
+
+[connection signal="body_entered" from="Area2D" to="CharacterBody2D" method="_on_area_2d_body_entered"]

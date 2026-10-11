@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xmbwrh8cdu1r"
-path="res://.godot/imported/Sanwiahstate2.png-8572e036ed9a74848d5cc50614d58493.ctex"
+uid="uid://c02hi43a7jghx"
+path="res://.godot/imported/sandwicheria_noche.png-13ea45e9bf302950a8ae153a41100efd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Arte/Sanwiahstate2.png"
-dest_files=["res://.godot/imported/Sanwiahstate2.png-8572e036ed9a74848d5cc50614d58493.ctex"]
+source_file="res://Arte/sandwicheria_noche.png"
+dest_files=["res://.godot/imported/sandwicheria_noche.png-13ea45e9bf302950a8ae153a41100efd.ctex"]
 
 [params]
 

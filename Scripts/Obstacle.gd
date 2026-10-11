@@ -16,7 +16,7 @@ func _on_body_entered(body: Node2D) -> void:
 
 		body.take_hit()
 
-		tiempo.sandwich_state((tiempo.state + 1) % 4)
+		tiempo.avanzar_sandwich()
 
 		# Knockback
 		if abs(difference.x) > abs(difference.y):

@@ -18,6 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 GameState="*uid://chi8cddcmt1ex"
+MusicaMenu="*uid://cjnh0x3qa8iev"
+Global="*uid://1omj6ddy2gop"
 
 [display]
 

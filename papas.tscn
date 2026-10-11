@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://byr2to30ok1e8"]
+
+[ext_resource type="Script" uid="uid://wg6cryt1jg0y" path="res://Scripts/papas.gd" id="1_us0to"]
+[ext_resource type="Texture2D" uid="uid://4npwb5ogruli" path="res://Arte/papasicon.png" id="2_vxjri"]
+[ext_resource type="AudioStream" uid="uid://dql5y5jskjn82" path="res://Audio/pickup_papas.mp3" id="3_y8acc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m2g58"]
+size = Vector2(32.5, 37)
+
+[node name="papas" type="Area2D" unique_id=1767145771]
+z_index = 20
+script = ExtResource("1_us0to")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2023094627]
+position = Vector2(7.96095, 10.0859375)
+scale = Vector2(0.27722347, 0.25652903)
+texture = ExtResource("2_vxjri")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1819361128]
+position = Vector2(7.75, 10.5)
+shape = SubResource("RectangleShape2D_m2g58")
+
+[node name="SonidoPickup" type="AudioStreamPlayer" parent="." unique_id=1469864262]
+stream = ExtResource("3_y8acc")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

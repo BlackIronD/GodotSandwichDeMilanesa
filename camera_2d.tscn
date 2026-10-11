@@ -1,0 +1,213 @@
+[gd_scene format=3 uid="uid://blxwewncumss5"]
+
+[ext_resource type="Script" uid="uid://dhw6dbnstu78p" path="res://Scripts/CamraSlide.gd" id="1_ohi6b"]
+[ext_resource type="Script" uid="uid://b3d4jo8rd2rak" path="res://Scripts/TimeLimit.gd" id="2_1y3n2"]
+[ext_resource type="Texture2D" uid="uid://beljndjgi28oy" path="res://Arte/SANGUCHE.png" id="3_0djkc"]
+[ext_resource type="Texture2D" uid="uid://c1i4vvbepjb6e" path="res://Arte/sandwichState2.png" id="4_w8mdc"]
+[ext_resource type="Texture2D" uid="uid://kjnkha67dd5n" path="res://Arte/sandwichState3.png" id="5_3lmpp"]
+[ext_resource type="Texture2D" uid="uid://b1824g56iew54" path="res://Arte/sandwichState4.png" id="6_5156p"]
+[ext_resource type="Texture2D" uid="uid://6uil78ftixo7" path="res://Arte/sandwichState5.png" id="7_o5ian"]
+[ext_resource type="Texture2D" uid="uid://nxugg60ksya2" path="res://Arte/sandwichState6.png" id="8_unono"]
+[ext_resource type="Texture2D" uid="uid://d2n3nmpkw6nxg" path="res://Arte/reloj.png" id="9_pnt41"]
+[ext_resource type="Texture2D" uid="uid://bbq52475qc06j" path="res://Arte/parallax backgound pack/_04_bushes.png" id="10_sybjd"]
+[ext_resource type="Texture2D" uid="uid://2hfdejnpcft" path="res://Arte/parallax backgound pack/_03_distant_trees.png" id="11_qiey3"]
+[ext_resource type="Texture2D" uid="uid://b82d5nxnpx1eb" path="res://Arte/parallax backgound pack/_01_ground.png" id="12_btwwl"]
+
+[node name="Camera2D" type="Camera2D" unique_id=1517803007]
+offset = Vector2(0, -13.16)
+zoom = Vector2(1.06, 1.06)
+script = ExtResource("1_ohi6b")
+
+[node name="Control" type="Control" parent="." unique_id=977388885]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -647.07
+offset_top = -319.0
+offset_right = 506.93
+offset_bottom = 323.0
+
+[node name="TemperaturaSandwich" type="ProgressBar" parent="Control" unique_id=537650544]
+modulate = Color(18.892157, 0, 0, 1)
+self_modulate = Color(18.892157, 18.892157, 18.892157, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.934
+anchor_bottom = 0.91600007
+offset_left = 1024.0001
+offset_top = 126.0
+offset_right = -3.8359375
+offset_bottom = -362.07202
+scale = Vector2(1.0707814, 1.2238864)
+max_value = 600.0
+step = 1.0
+value = 600.0
+fill_mode = 3
+
+[node name="Tiempo" type="Timer" parent="Control" unique_id=1146931938]
+autostart = true
+script = ExtResource("2_1y3n2")
+
+[node name="SandwichIcon" type="Node2D" parent="Control" unique_id=1304343138]
+
+[node name="Sandwich1" type="Sprite2D" parent="Control/SandwichIcon" unique_id=149835595]
+position = Vector2(1189, 33)
+scale = Vector2(0.18820685, 0.17798468)
+texture = ExtResource("3_0djkc")
+
+[node name="Sandwich2" type="Sprite2D" parent="Control/SandwichIcon" unique_id=1583003313]
+visible = false
+position = Vector2(1056.5, 60.7899)
+scale = Vector2(0.25970873, 0.23209946)
+texture = ExtResource("4_w8mdc")
+
+[node name="Sandwich3" type="Sprite2D" parent="Control/SandwichIcon" unique_id=1494875447]
+visible = false
+position = Vector2(1048, 60.999996)
+scale = Vector2(0.26634377, 0.22479339)
+texture = ExtResource("5_3lmpp")
+
+[node name="Sandwich4" type="Sprite2D" parent="Control/SandwichIcon" unique_id=921152295]
+visible = false
+position = Vector2(1047, 57.999996)
+scale = Vector2(0.2615012, 0.21818179)
+texture = ExtResource("6_5156p")
+
+[node name="Sandwich5" type="Sprite2D" parent="Control/SandwichIcon" unique_id=1475698859]
+visible = false
+position = Vector2(1046.5, 60.500004)
+scale = Vector2(0.23970942, 0.21652892)
+texture = ExtResource("7_o5ian")
+
+[node name="Sandwich6" type="Sprite2D" parent="Control/SandwichIcon" unique_id=1265071297]
+visible = false
+position = Vector2(1046.5, 60.500004)
+scale = Vector2(0.23970942, 0.21652892)
+texture = ExtResource("8_unono")
+
+[node name="CantidadSangu" type="Label" parent="Control" unique_id=561548785]
+texture_filter = 2
+layout_mode = 0
+offset_left = 1113.0001
+offset_top = 75.0
+offset_right = 1153.0001
+offset_bottom = 98.0
+scale = Vector2(2.119024, 1.8895631)
+text = "x3"
+
+[node name="TiempoLabel" type="Label" parent="Control" unique_id=504900884]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.018000001
+anchor_top = 0.018000001
+anchor_right = -0.018000001
+anchor_bottom = 0.018000001
+offset_left = 846.772
+offset_top = 9.443999
+offset_right = 1004.772
+offset_bottom = 51.444
+theme_override_font_sizes/font_size = 30
+text = "Tiempo: 45"
+
+[node name="Reloj" type="Sprite2D" parent="Control" unique_id=137490224]
+position = Vector2(803, 44)
+scale = Vector2(0.09218737, 0.088541664)
+texture = ExtResource("9_pnt41")
+
+[node name="EndPanel" type="Control" parent="." unique_id=1064558872]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="EndPanel" unique_id=291851]
+layout_mode = 0
+offset_left = -201.07
+offset_top = -238.0
+offset_right = -161.07
+offset_bottom = -198.0
+scale = Vector2(9.455576, 10.273192)
+
+[node name="Label" type="Label" parent="EndPanel/Panel" unique_id=940129412]
+texture_filter = 1
+layout_mode = 0
+offset_left = 0.52878857
+offset_top = 3.8936293
+offset_right = 350.52878
+offset_bottom = 169.89363
+scale = Vector2(0.050077677, 0.03433911)
+theme_override_font_sizes/font_size = 80
+text = "Pago: "
+
+[node name="VerResultados" type="Button" parent="EndPanel/Panel" unique_id=951465808]
+z_index = 20
+texture_filter = 2
+texture_repeat = 3
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.5
+anchor_right = 0.77500004
+anchor_bottom = 0.98600006
+offset_left = 2.3266692
+offset_top = 12.21978
+offset_right = 59.326668
+offset_bottom = 16.779778
+scale = Vector2(0.3992961, 0.2212742)
+theme_override_font_sizes/font_size = 11
+text = "Ver Resultados
+"
+
+[node name="Titulo" type="Label" parent="EndPanel/Panel/VerResultados" unique_id=69090013]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.136
+anchor_right = -0.136
+offset_left = -1.0101604
+offset_right = 51.967995
+offset_bottom = 23.0
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1851213440]
+
+[node name="Arboles" type="ParallaxLayer" parent="ParallaxBackground" unique_id=44231463]
+position = Vector2(-1461, -749)
+motion_mirroring = Vector2(1500, 0)
+
+[node name="04Bushes2" type="Sprite2D" parent="ParallaxBackground/Arboles" unique_id=1156409186]
+z_index = 2
+position = Vector2(5, 125)
+texture = ExtResource("10_sybjd")
+centered = false
+
+[node name="04Bushes3" type="Sprite2D" parent="ParallaxBackground/Arboles" unique_id=680348014]
+z_index = -31
+position = Vector2(162, 35)
+texture = ExtResource("10_sybjd")
+centered = false
+
+[node name="03DistantTrees" type="Sprite2D" parent="ParallaxBackground/Arboles" unique_id=1816916039]
+texture_filter = 1
+texture = ExtResource("11_qiey3")
+centered = false
+
+[node name="Arbustos" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1347431337]
+position = Vector2(-1461, -749)
+motion_scale = Vector2(2, 2)
+motion_mirroring = Vector2(2000, 0)
+
+[node name="04Bushes" type="Sprite2D" parent="ParallaxBackground/Arbustos" unique_id=1631521813]
+visible = false
+z_index = 4
+texture = ExtResource("10_sybjd")
+centered = false
+
+[node name="Piso" type="ParallaxLayer" parent="ParallaxBackground" unique_id=467097643]
+position = Vector2(-1461, -749)
+motion_mirroring = Vector2(2000, 0)
+
+[node name="01Ground" type="Sprite2D" parent="ParallaxBackground/Piso" unique_id=329438597]
+z_index = 2
+position = Vector2(-2, 0)
+texture = ExtResource("12_btwwl")
+centered = false
+
+[connection signal="timeout" from="Control/Tiempo" to="Control/Tiempo" method="_on_timeout"]
+[connection signal="pressed" from="EndPanel/Panel/VerResultados" to="EndPanel/Panel/VerResultados" method="_on_pressed"]

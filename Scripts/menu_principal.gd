@@ -1,8 +1,10 @@
+
 extends Control
 
 @onready var confirmar_salir = $ConfirmarSalir
 
 func _on_texture_button_pressed() -> void:
+	MusicaMenu.detener()
 	get_tree().change_scene_to_file("res://minijuego_caja.tscn")
 	
 func _on_boton_opciones_pressed() -> void:

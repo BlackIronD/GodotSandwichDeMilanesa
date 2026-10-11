@@ -1,7 +1,7 @@
 extends Control
 
 var nombres = [
-	"Mejora 1",
+	"Linterna Extra",
 	"Protección Básica",
 	"Conservadora",
 	"Caja Térmica",
@@ -87,31 +87,30 @@ func _comprar_mejora(indice: int) -> void:
 	confirmar_compra.popup_centered()
 
 
-func _on_confirmar_compra_confirmed() -> void:
 
+func _on_confirmar_compra_confirmed() -> void:
 	if mejora_seleccionada == -1:
 		return
 
-	GameState.money -= precios[mejora_seleccionada]
+	var indice = mejora_seleccionada
+	var precio = precios[indice]
 
-	compradas[mejora_seleccionada] = true
+	if GameState.money < precio:
+		actualizar_dinero()
+		actualizar_botones()
+		mejora_seleccionada = -1
+		return
+
+	GameState.money -= precio
+	compradas[indice] = true
 
 	actualizar_dinero()
+	actualizar_botones()
 
-	var boton = get_node(
-		"TiendaScroll/Cartas/Mejora"
-		+ str(mejora_seleccionada + 1)
-		+ "/BotonComprar"
-	)
-
-	boton.text = "¡Listo! Ya es tuya."
-
-	print("Compraste: ", nombres[mejora_seleccionada])
+	print("Compraste: ", nombres[indice])
 	print("Plata restante: $", GameState.money)
 
 	mejora_seleccionada = -1
-
-	actualizar_botones()
 
 func _on_volver_pressed() -> void:
 	get_tree().change_scene_to_file("res://menu_principal.tscn")

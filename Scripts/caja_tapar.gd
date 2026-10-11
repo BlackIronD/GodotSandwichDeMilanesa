@@ -48,7 +48,6 @@ func _process(_delta):
 
 			guia_caja.visible = true
 
-			print("TAPA AGARRADA")
 
 	if agarrada:
 
@@ -74,5 +73,3 @@ func _process(_delta):
 			$"../Instrucciones".text = "TOCA EL HILO PIOLIN\nY CON LAS TECLAS A TU IZQUIERDA\n¡EMPEZÁ A ATAR LA CAJA!"
 
 			colocada = true
-
-			print("CAJA TAPADA COLOCADA")
